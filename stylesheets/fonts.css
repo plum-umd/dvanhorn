@@ -1,0 +1,41 @@
+@font-face {
+  font-family: IowanOldStyleBT-BoldSmallCap;
+  src: url("../fonts/IowanOldStyleBT-BoldSmallCap.otf") format("opentype");
+}
+
+@font-face {
+  font-family: IowanOldStyleBT-Roman;
+  src: url("../fonts/IowanOldStyleBT-Roman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: IowanOldStyleBT-Italic;
+  src: url("../fonts/IowanOldStyleBT-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: IowanOldStyleBT-BoldSmallCap;
+  src: url("../fonts/IowanOldStyleBT-BoldSmallCap.otf") format("opentype");
+}
+
+@font-face {
+  font-family: IowanOldStyleBT-SmallCap;
+  src: url("../fonts/IowanOldStyleBT-SmallCap.otf") format("opentype");
+}
+
+
+.italic {
+  font-family: IowanOldStyleBT-Italic;
+}
+
+.bold-sc {
+  font-family: IowanOldStyleBT-BoldSmallCap;
+}
+
+.sc {
+  font-family: IowanOldStyleBT-SmallCap;
+}
+
+abbr {
+  font-family: IowanOldStyleBT-SmallCap;
+}

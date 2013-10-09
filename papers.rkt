@@ -4,6 +4,7 @@
 (define-type Jour jour-paper)
 (define-type Conf conf-paper)
 (define-type Auth auth)
+(define-type Venue venue)
 
 (define-type Xexpr
   (Rec x
@@ -15,7 +16,7 @@
 (struct: conf-paper 
   ([title : String] 
    [coauthors : [Listof Auth]] 
-   [conf : Xexpr]
+   [conf : Venue]
    [location : String]
    [date : String]
    [links : [Listof [List Symbol String]]]))
@@ -23,7 +24,7 @@
 (struct: jour-paper 
   ([title : String]
    [coauthors : [Listof Auth]]
-   [journal : Xexpr]
+   [journal : Venue]
    [vol : String]
    [number : String]
    [date : String]
@@ -66,9 +67,9 @@
 (define (format-paper p)
   (match p
     [(conf-paper title coauthors conf location date links)
-     conf]
+     ""]
     [(jour-paper title coauthors journal vol number date links)
-     `(span ((class "italic")) ,journal)]))
+     "" #;`(span ((class "italic")) ,journal)]))
       
 (define papers
   (list
@@ -146,8 +147,8 @@
    
    (conf-paper "A Family of Abstract Interpretations for Static Analysis of Concurrent Higher-Order Programs"
                (list might)
-               `(a ((href "http://sas2011.cs.technion.ac.il/"))
-                   "The 18th International Static Analysis Symposium (SAS 2011)")
+               (venue "The 18th International Static Analysis Symposium (SAS 2011)"
+                      "http://sas2011.cs.technion.ac.il/")
                "Venice, Italy"
                "September 2011"
                '((Springer "http://www.springerlink.com/content/j272827h5r088h78/")
@@ -155,18 +156,16 @@
    
    (conf-paper "Semantic Solutions to Program Analysis Problems"
                (list samth)
-               '(span "FIT Session, " ;; FIXME
-                      `(a ((href "http://pldi11.cs.utah.edu/"))
-                          "The ACM SIGPLAN 2011 Conference on Programming Language Design and Implementation (PLDI'11)"))
-               
+               (venue "FIT Session, The ACM SIGPLAN 2011 Conference on Programming Language Design and Implementation (PLDI'11)"
+                      "http://pldi11.cs.utah.edu/")               
                "San Jose, California"
                "June 2011"
                '((arXiv "http://arxiv.org/abs/1105.0106")))
    
    (conf-paper "Abstracting Abstract Machines"
                (list might)
-               '(a ((href ""))
-                   "The 15th ACM SIGPLAN International Conference on Functional Programming (ICFP'10)")
+               (venue "The 15th ACM SIGPLAN International Conference on Functional Programming (ICFP'10)"
+                      "http://www.icfpconference.org/icfp2010/")
                "Baltimore, Maryland"
                "September 2010"
                '((ACM "http://doi.acm.org/10.1145/1863543.1863553")
@@ -174,8 +173,8 @@
                
    (conf-paper "Pushdown Control-Flow Analysis of Higher-Order Programs"
                (list earl might)
-               '(a ((href "http://www.iro.umontreal.ca/~sfp2010/"))
-                   "The 2010 Workshop on Scheme and Functional Programming (SFP'10)")               
+               (venue "The 2010 Workshop on Scheme and Functional Programming (SFP'10)"
+                      "http://www.iro.umontreal.ca/~sfp2010/")
                "Montréal, Québec"
                "August 2010"
                '((arXiv "http://arxiv.org/abs/1007.4268")))

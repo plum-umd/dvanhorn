@@ -82,9 +82,9 @@
                (ul ((class "inline-list right subheader italic category"))
                   (li (a ((href "index.html") (class "category")) "Home"))
                   (li (a ((href "research.html") (class "category")) "Research"))
-                  (li (a ((href "teaching.html") (class "category")) "Teaching"))
-                  (li (a ((href "service.html") (class "category")) "Service"))
-                  (li (a ((href "about.html") (class "category")) "About")))))
+                  #;(li (a ((href "teaching.html") (class "category")) "Teaching"))
+                  #;(li (a ((href "service.html") (class "category")) "Service"))
+                  #;(li (a ((href "about.html") (class "category")) "About")))))
               
           
      
@@ -113,7 +113,19 @@
    `(div ((class "row"))
          (div ((class "large-3 columns right")
                (role "content"))
-              (div ((id "scroller")) 
+              (div #;((id "scroller")) 
+		   (hr)
+		   (a ((href "http://www.cs.umd.edu/projects/PL/"))
+		      (img ((src "http://www.cs.umd.edu/projects/PL/images/PLUM.svg")
+			    (alt "Programming Languages at University of Maryland")
+			    (type "image/svg+xml")
+					;(height "100")
+			    (width "150")
+			    (border "0"))))
+		   (hr)
+		   (a ((href "http://nostarch.com/realmofracket.htm"))
+		      (img ((src "img/racket_cover_web.png")
+			    (alt "Realm of Racket"))))
                    (hr)
                    ;(h4 ((class "bold-sc")) (a ((href "#")) "quick jumps"))
                    ;(hr)
@@ -128,24 +140,12 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "research.html##collaborators")) "CS 2500"))
+                       (li (a ((href "http://www.ccs.neu.edu/course/cs2500f13/")) "CS 2500"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
-                       (li (a ((href "#books")) "Calendar"))                       
+                       (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       
                        #;(li (a ((href "#talks") (class "category")) "Talks")))
-		   (hr)
-		   (a ((href "http://www.cs.umd.edu/projects/PL/"))
-		      (img ((src "http://www.cs.umd.edu/projects/PL/images/PLUM.svg")
-			    (alt "Programming Languages at University of Maryland")
-			    (type "image/svg+xml")
-					;(height "100")
-			    (width "150")
-			    (border "0"))))
-		   (hr)
-		   (a ((href "http://nostarch.com/realmofracket.htm"))
-		      (img ((src "img/racket_cover_web.png")
-			    (alt "Realm of Racket"))))
-                   (hr)))
+		   (hr)))
          
          (div ((class "large-9 columns")
                (role "content"))
@@ -180,9 +180,9 @@
                  (a ((href "http://www.cs.uu.nl/wiki/bin/view/TFP2014/WebHome")) "TFP") ". "
                  "I" rsquo "m the co-chair of " (a ((href "http://hopa.cs.rhul.ac.uk/")) "HOPA") " 2014, together with "
                  (a ((href "http://www.cs.ox.ac.uk/people/luke.ong/personal/")) "Luke Ong") ".")
-              (p "I wrote the book " (span ((class "italic")) "Realm of Racket") " with " 
+              (p "I co-authored the book " (span ((class "italic")) "Realm of Racket") " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
-                 "from Northeastern University.  The book introduces programming interactive video games.")
+                 "from Northeastern University, which introduces programming interactive video games.")
               ))))
 
 
@@ -238,7 +238,7 @@
                     (ul ((class "inline-list subheader italic category"))
                         (li (a ((href "#projects") (class "category")) "Projects"))
                         (li (a ((href "#students") (class "category")) "Students"))
-                        (li (a ((href "#collaborators") (class "category")) "Collaborators"))
+                        #;(li (a ((href "#collaborators") (class "category")) "Collaborators"))
                         (li (a ((href "#papers") (class "category")) "Papers"))
                         (li (a ((href "#talks") (class "category")) "Talks")))
                     (hr)))

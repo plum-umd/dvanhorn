@@ -1,8 +1,14 @@
 #lang typed/racket
+(provide confs jours workshop&others papers-list)
 
-(define-type Paper (U Conf Jour))
+(require/typed "help.rkt"
+  [oxford ([Listof Xexpr] -> [Listof Xexpr])]
+  [delimit ((Listof Xexpr) (Listof Xexpr) (Listof Xexpr) (Listof Xexpr) -> (Listof Xexpr))])
+
+(define-type Paper (U Conf Jour Work))
 (define-type Jour jour-paper)
 (define-type Conf conf-paper)
+(define-type Work work-paper)
 (define-type Auth auth)
 (define-type Venue venue)
 
@@ -14,6 +20,14 @@
           (List* Symbol (Listof x)))))
   
 (struct: conf-paper 
+  ([title : String] 
+   [coauthors : [Listof Auth]] 
+   [conf : Venue]
+   [location : String]
+   [date : String]
+   [links : [Listof [List Symbol String]]]))
+
+(struct: work-paper 
   ([title : String] 
    [coauthors : [Listof Auth]] 
    [conf : Venue]
@@ -63,13 +77,62 @@
   (auth "Ilya Sergey"
         "http://ilyasergey.net/"))
 
+(: format-venue : Venue -> Xexpr)
+(define (format-venue v)
+  (match v
+    [(venue name url)
+     `(a ((href ,url)) ,name)]))
+
+(: format-auth : Auth -> Xexpr)
+(define (format-auth a)
+  (match a
+    [(auth name url)
+     (if (false? url)
+         name   
+	 `(a ((href ,url)) ,name))]))
+
+(: format-link : (List Symbol String) -> Xexpr)
+(define (format-link l)
+  (match l
+    [(list name url)
+     `(a ((href ,url))
+	 ,(symbol->string name))]))
+
+(: format-links : (Listof (List Symbol String)) -> (Listof Xexpr))
+(define (format-links l)  
+  (delimit (map format-link l) 
+	   '("[" nbsp) 
+	   '(nbsp "|" nbsp)
+	   '(nbsp "]")))
+
+
 (: format-paper : Paper -> Xexpr)
 (define (format-paper p)
   (match p
+    [(work-paper title coauthors conf location date links)
+     (format-paper (conf-paper title coauthors conf location date links))]
     [(conf-paper title coauthors conf location date links)
-     ""]
+     `(p (span ((class "paper-title")) ,title) ". "
+	 "With " ,@(oxford (map format-auth coauthors)) ". "
+	 (br)
+	 (span ((class "italic")) ,(format-venue conf))
+	 ", "
+	 ,location
+	 ", "
+	 ,date
+	 "."
+	 (br)
+	 ,@(format-links links)
+	 )]
+
     [(jour-paper title coauthors journal vol number date links)
-     "" #;`(span ((class "italic")) ,journal)]))
+     `(p (span ((class "paper-title")) ,title) ". "
+      "With " ,@(oxford (map format-auth coauthors)) ". "
+      (br)
+      (span ((class "italic")) ,(format-venue journal)))
+       
+	
+     #;`(span ((class "italic")) ,journal)]))
       
 (define papers
   (list
@@ -81,7 +144,7 @@
                "September 2013"
                '((arXiv "http://arxiv.org/abs/1211.3722")))
    
-   (conf-paper "AnaDroid: Malware Analysis of Android with User-supplied Predicates"
+   (work-paper "AnaDroid: Malware Analysis of Android with User-supplied Predicates"
                (list shuying might)
                (venue "Workshop on Tools for Automatic Program Analysis"
                       "http://pl.cs.colorado.edu/tapas2013/")
@@ -89,7 +152,7 @@
                "June 2013"
                '((FIXME "http://www.ccs.neu.edu/home/dvanhorn/pubs/tapas-preprint-2013.pdf")))
    
-   (conf-paper "Concrete Semantics for Pushdown Analysis: The Essence of Summarization"
+   (work-paper "Concrete Semantics for Pushdown Analysis: The Essence of Summarization"
                (list ianj)
                (venue "Workshop on Higher-Order Program Analysis"
                       "http://hopa.cs.rhul.ac.uk/")
@@ -97,7 +160,7 @@
                "June 2013"
                '((arXiv "http://arxiv.org/abs/1305.3163")))
    
-   (conf-paper "From Principles to Practice with Class in the First Year"
+   (work-paper "From Principles to Practice with Class in the First Year"
                (list samth)
                (venue "International Workshop on Trends in Functional Programming in Education"
                       "http://wwwhome.ewi.utwente.nl/~holzenspiespkf/TFPIE2013.html")
@@ -154,7 +217,7 @@
                '((Springer "http://www.springerlink.com/content/j272827h5r088h78/")
                  (arXiv "http://arxiv.org/abs/1103.5167")))
    
-   (conf-paper "Semantic Solutions to Program Analysis Problems"
+   (work-paper "Semantic Solutions to Program Analysis Problems"
                (list samth)
                (venue "FIT Session, The ACM SIGPLAN 2011 Conference on Programming Language Design and Implementation (PLDI'11)"
                       "http://pldi11.cs.utah.edu/")               
@@ -171,17 +234,29 @@
                '((ACM "http://doi.acm.org/10.1145/1863543.1863553")
                  (arXiv "http://arxiv.org/abs/1007.4446")))
                
-   (conf-paper "Pushdown Control-Flow Analysis of Higher-Order Programs"
+   (work-paper "Pushdown Control-Flow Analysis of Higher-Order Programs"
                (list earl might)
                (venue "The 2010 Workshop on Scheme and Functional Programming (SFP'10)"
                       "http://www.iro.umontreal.ca/~sfp2010/")
                "Montréal, Québec"
                "August 2010"
                '((arXiv "http://arxiv.org/abs/1007.4268")))
+  	       
    
-               
+		
                
    ))
                       
    
   
+(define workshop&others
+  (map format-paper (filter work-paper? papers)))
+
+(define confs
+  (map format-paper (filter conf-paper? papers)))
+
+(define jours
+  (map format-paper (filter jour-paper? papers)))
+
+(define papers-list
+  (map format-paper papers))

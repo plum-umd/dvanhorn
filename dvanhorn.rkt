@@ -1,6 +1,7 @@
 #lang racket
 (require xml)
 
+(require "papers.rkt")
 
 (define www "")
 
@@ -265,10 +266,15 @@
                
                (hr ((id "papers") (class "phat midphat")))
                (h4 "Papers")
+               ,@papers-list
+#|
                (h5 "Journal articles")
+	       ,@jours
                (h5 "Conference articles")
+               ,@confs
                (h5 "Workshop & other articles")
-               
+               ,@workshop&others
+|#
                ,@(talks-section talks)))))
 
 

@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: IowanOldStyleBT-Bold;
+  src: url("../fonts/IowanOldStyleBT-Bold.otf") format("opentype");
+}
+
+@font-face {
   font-family: IowanOldStyleBT-Roman;
   src: url("../fonts/IowanOldStyleBT-Roman.otf") format("opentype");
 }
@@ -38,4 +43,8 @@
 
 abbr {
   font-family: IowanOldStyleBT-SmallCap;
+}
+
+.paper-title {
+  font-family: IowanOldStyleBT-Bold;
 }

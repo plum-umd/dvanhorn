@@ -5,10 +5,11 @@
   [oxford ([Listof Xexpr] -> [Listof Xexpr])]
   [delimit ((Listof Xexpr) (Listof Xexpr) (Listof Xexpr) (Listof Xexpr) -> (Listof Xexpr))])
 
-(define-type Paper (U Conf Jour Work))
+(define-type Paper (U Conf Jour Work Diss))
 (define-type Jour jour-paper)
 (define-type Conf conf-paper)
 (define-type Work work-paper)
+(define-type Diss diss-paper)
 (define-type Auth auth)
 (define-type Venue venue)
 
@@ -44,11 +45,23 @@
    [date : String]
    [links : [Listof [List Symbol String]]]))
 
+(struct: diss-paper
+  ([title : String]
+   [school : String]
+   [date : String]
+   [links : [Listof [List Symbol String]]]))
+
 (struct: auth ([name : String]
                [url : (U String #f)]))
 
 (struct: venue ([name : String]
                 [url : String]))
+
+
+(define jfp
+  (venue "Journal of Functional Programming"
+	 "http://journals.cambridge.org/action/displayJournal?jid=JFP"))
+
 
 (define ianj 
   (auth "J. Ian Johnson" 
@@ -76,6 +89,47 @@
 (define sergey
   (auth "Ilya Sergey"
         "http://ilyasergey.net/"))
+
+(define keep
+  (auth "Andrew W. Keep"
+        "http://faculty.utah.edu/u0884345-ANDREW_W_KEEP/research/index.hml"))
+
+(define lyde
+  (auth "Steven Lyde"
+        "https://faculty.utah.edu/u0286788-STEVEN_VAL_LYDE/research/index.hml"))
+
+(define gilray 
+  (auth "Thomas Gilray"
+        "http://faculty.utah.edu/u0706517-THOMAS_EVAN_GILRAY/contact/index.hml"))
+
+(define aldous
+  (auth "Petey Aldous"
+        "http://eng.utah.edu/~paldous/about.html"))
+
+(define chang
+  (auth "Stephen Chang"
+	"http://www.ccs.neu.edu/home/stchang/"))
+
+(define matthias
+  (auth "Matthias Felleisen"
+	"http://www.ccs.neu.edu/home/matthias/"))
+
+(define smaragdakis
+  (auth "Yannis Smaragdakis"
+	"http://smaragd.org/"))
+
+(define mairson
+  (auth "Harry G. Mairson"
+	"http://www.cs.brandeis.edu/~mairson/"))
+
+(define skalka
+  (auth "Christian Skalka"
+	"http://www.cs.uvm.edu/~skalka/"))
+
+(define smith
+  (auth "Scott F. Smith"
+	"http://www.cs.jhu.edu/~smith/"))
+
 
 (: format-venue : Venue -> Xexpr)
 (define (format-venue v)
@@ -129,10 +183,30 @@
      `(p (span ((class "paper-title")) ,title) ". "
       "With " ,@(oxford (map format-auth coauthors)) ". "
       (br)
-      (span ((class "italic")) ,(format-venue journal)))
+      (span ((class "italic")) ,(format-venue journal))
+      ", "
+      ,vol
+      "("
+      ,number
+      "), "
+      ,date
+      "."
+      (br)
+      ,@(format-links links))]
        
 	
-     #;`(span ((class "italic")) ,journal)]))
+;     #;`(span ((class "italic")) ,journal)]
+
+    [(diss-paper title school date links)
+     `(p (span ((class "paper-title")) ,title) ". "
+	 (br)
+	 "PhD dissertation, "
+	 ,school
+	 ", "
+	 ,date
+	 "."
+	 (br)
+	 ,@(format-links links))]))
       
 (define papers
   (list
@@ -142,7 +216,17 @@
                       "http://icfpconference.org/icfp2013/")               
                "Boston, Massachusetts"
                "September 2013"
-               '((arXiv "http://arxiv.org/abs/1211.3722")))
+               '((ACM "http://dl.acm.org/citation.cfm?id=2500604")
+                 (arXiv "http://arxiv.org/abs/1211.3722")))
+
+   (work-paper "Sound and Precise Malware Analysis for Android via Pushdown Reachability and Entry-Point Saturation"
+               (list shuying keep might lyde gilray aldous)
+               (venue "Proceedings of the Third ACM workshop on Security and privacy in smartphones & mobile devices"
+                      "http://www.spsm-workshop.org/2013/")
+               "Berlin, Germany"
+               "November 2013"
+               '((ACM "http://dl.acm.org/citation.cfm?doid=2516760.2516769")
+		 (arXiv "http://arxiv.org/abs/1311.4201")))
    
    (work-paper "AnaDroid: Malware Analysis of Android with User-supplied Predicates"
                (list shuying might)
@@ -150,7 +234,7 @@
                       "http://pl.cs.colorado.edu/tapas2013/")
                "Seattle, Washington"
                "June 2013"
-               '((FIXME "http://www.ccs.neu.edu/home/dvanhorn/pubs/tapas-preprint-2013.pdf")))
+               '((arXiv "http://arxiv.org/abs/1311.4198")))
    
    (work-paper "Concrete Semantics for Pushdown Analysis: The Essence of Summarization"
                (list ianj)
@@ -190,10 +274,9 @@
    ;; http://journals.cambridge.org/action/displayFulltext?type=1&pdftype=1&fid=8669091&jid=JFP&volumeId=22&issueId=4-5&aid=8669090
    (jour-paper "Systematic Abstraction of Abstract Machines"
                (list might)
-               (venue "Journal of Functional Programming"
-                      "http://journals.cambridge.org/action/displayJournal?jid=JFP")
+	       jfp
                "22"
-               "4--5"
+               "4-5"
                "September 2012"
                '((CUP "http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8669075")
                  (arXiv "http://arxiv.org/abs/1107.3539")))
@@ -242,9 +325,73 @@
                "August 2010"
                '((arXiv "http://arxiv.org/abs/1007.4268")))
   	       
-   
+   (conf-paper "Evaluating Call-By-Need on the Control Stack"
+               (list chang matthias)
+               (venue "Symposium on Trends in Functional Programming (TFP 2010)"
+                      "http://www.cs.ou.edu/tfp2010/")
+               "Norman, Oklahoma"
+ 	       "May 2010"
+	       '((Springer "http://www.springerlink.com/content/4156483l58237m45/")
+		 (arXiv "http://arxiv.org/abs/1009.3174")))
 		
-               
+   (conf-paper "Resolving and Exploiting the k-CFA Paradox"
+               (list might smaragdakis)		
+               (venue "The ACM SIGPLAN 2010 Conference on Programming Language Design and Implementation (PLDI'10)"
+		      "http://cs.stanford.edu/pldi10/")
+	       "Toronto, Canada"
+	       "June 2010"
+	       '((ACM "http://dl.acm.org/citation.cfm?doid=1806596.1806631")
+		 (arXiv "http://arxiv.org/abs/1311.4231")))
+		 
+   (diss-paper "The Complexity of Flow Analysis in Higher-Order Languages"
+               "Brandeis University"
+               "August 2009"
+               '((UMI "http://gradworks.umi.com/33/69/3369445.html")
+		 (arXiv "http://arxiv.org/abs/1311.4733")))
+
+   #;
+   (jour-paper "Subcubic Control Flow Analysis Algorithms"
+               (list midtgaard)
+               (venue "Higher-Order and Symbolic Execution (to appear)"
+		      "http://www.springer.com/computer/theoretical+computer+science/journal/10990"))
+	
+   (conf-paper "Deciding kCFA is complete for EXPTIME"
+	       (list mairson)
+	       (venue "The 13th ACM SIGPLAN International Conference on Functional Programming (ICFP'08)"
+		      "http://www.icfpconference.org/icfp2008/")
+	       "Victoria, British Columbia, Canada"
+	       "September 2008"
+	       '((ACM "http://doi.acm.org/10.1145/1411204.1411243")))
+
+   ;; A few principles of macro design
+
+   (conf-paper "Flow Analysis, Linearity, and PTIME"
+	       (list mairson)
+	       (venue "The 15th International Static Analysis Symposium (SAS 2008)"
+		      "http://users.dsic.upv.es/~sas2008/")
+	       "Valencia, Spain"
+	       "July 2008"
+	       '((Springer "http://dx.doi.org/10.1007/978-3-540-69166-2_17")))
+
+   (jour-paper "Types and Trace Effects of Higher Order Programs"
+	       (list skalka smith)
+	       jfp
+	       "18"
+	       "2"
+	       "March 2008"
+	       '((CUP "http://dx.doi.org/10.1017/S0956796807006466")))
+
+   (conf-paper "Relating Complexity and Precision in Control Flow Analysis"
+	       (list mairson)
+	       (venue "The Twelth ACM SIGPLAN International Conference on Functional Programming (ICFP'07)"
+		      "http://www.icfpconference.org/archived/icfp2007/proglang.informatik.uni-freiburg.de/ICFP2007/index.html")
+	       "Freiburg, Germany"
+	       "October 2007"
+	       '((ACM "http://doi.acm.org/10.1145/1291151.1291166")))
+
+   
+		 
+   
    ))
                       
    

@@ -261,8 +261,8 @@
                    (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "
                        "Ph.D. candidate at University of Utah (Committee member)"))
                
-               (hr ((id "collaborators") (class "phat midphat")))
-               (h4 "Collaborators")
+               #;(hr ((id "collaborators") (class "phat midphat")))
+               #;(h4 "Collaborators")
                
                (hr ((id "papers") (class "phat midphat")))
                (h4 "Papers")

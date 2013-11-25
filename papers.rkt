@@ -5,11 +5,12 @@
   [oxford ([Listof Xexpr] -> [Listof Xexpr])]
   [delimit ((Listof Xexpr) (Listof Xexpr) (Listof Xexpr) (Listof Xexpr) -> (Listof Xexpr))])
 
-(define-type Paper (U Conf Jour Work Diss))
+(define-type Paper (U Conf Jour Work Diss Mast))
 (define-type Jour jour-paper)
 (define-type Conf conf-paper)
 (define-type Work work-paper)
 (define-type Diss diss-paper)
+(define-type Mast mast-paper)
 (define-type Auth auth)
 (define-type Venue venue)
 
@@ -46,6 +47,12 @@
    [links : [Listof [List Symbol String]]]))
 
 (struct: diss-paper
+  ([title : String]
+   [school : String]
+   [date : String]
+   [links : [Listof [List Symbol String]]]))
+
+(struct: mast-paper
   ([title : String]
    [school : String]
    [date : String]
@@ -196,6 +203,17 @@
        
 	
 ;     #;`(span ((class "italic")) ,journal)]
+
+    [(mast-paper title school date links)
+     `(p (span ((class "paper-title")) ,title) ". "
+	 (br)
+	 "MS thesis, "
+	 ,school
+	 ", "
+	 ,date
+	 "."
+	 (br)
+	 ,@(format-links links))]
 
     [(diss-paper title school date links)
      `(p (span ((class "paper-title")) ,title) ". "
@@ -389,9 +407,18 @@
 	       "October 2007"
 	       '((ACM "http://doi.acm.org/10.1145/1291151.1291166")))
 
-   
-		 
-   
+   (mast-paper "Algorithmic Trace Effect Analysis"
+	       "University of Vermont"
+	       "May 2006"
+	       '((UVM "http://library.uvm.edu/dissertations/index.php?search_type=item&bid=1563807")))
+
+   (work-paper "A Type and Effect System for Flexible Abstract Interpretation of Java"
+	       (list skalka smith)
+	       (venue "The ACM Workshop on Abstract Interpretations of Object-Oriented Programs"
+		      "http://web.archive.org/web/20041227060438/www.polytechnique.fr/vmcai05/Aiool.html")
+	       "Paris, France"
+	       "January 2005"
+	       '((Elsevier "http://www.sciencedirect.com/science/article/pii/S1571066105002628")))		    
    ))
                       
    

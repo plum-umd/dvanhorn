@@ -3,21 +3,20 @@
 
 (require "papers.rkt")
 
-(define www "")
+(define www "www/")
 
-;; Xexpr String -> Void
-(define (write-page xexpr fn)
+;; [Listof Xexpr] String -> Void
+(define (write-page xexprs fn)
   (with-output-to-file (string-append www fn)
     #:exists 'replace
     (λ ()      
       (displayln "<!DOCTYPE html>")
       (displayln "<!--[if IE 8]>  <html class=\"no-js lt-ie9\" lang=\"en\" > <![endif]-->")
       (displayln "<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\" > <!--<![endif]-->")
-      (write-xexpr xexpr))))
+      (for-each write-xexpr xexprs))))
 
 (define (make-page title col)
-  `(html
-    (head
+  `((head
      (meta ((charset "utf-8")))
      (meta ((name "viewport")
             (content "width=device-width")))
@@ -65,6 +64,7 @@
                   (a ((href "http://www.umd.edu/")) "University of Maryland")))
           (div ((class "large-3 columns"))
                (img ((src "img/seal.png")
+		     (alt "UMD")
                      (style "align: right; padding-top: 1em; padding-bottom: 1em;")))
                #;
                (ul ((class "inline-list right subheader italic"))
@@ -102,30 +102,28 @@
                      (div ((class "large-6 columns"))
                           (p (small copy nbsp "2013 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
-                          (small
-                           (ul ((class "inline-list right"))
-                              (li (a ((href "#")) "Valid HTML"))
-                              (li "+")
-                              (li (a ((href "#")) "CSS")))))))))
+			  (ul ((class "inline-list right"))
+			      (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
+			      #;(li (a ((name "and")) (small amp)))
+			      #;(li (a ((href "#")) (small "CSS")))))))))
 
 (define index.xexpr
   (make-page 
    "Home"
    `(div ((class "row"))
          (div ((class "large-3 columns right")
-               (role "content"))
+               #;(role "content"))
               (div #;((id "scroller")) 
 		   (hr)
 		   (a ((href "http://www.cs.umd.edu/projects/PL/"))
-		      (img ((src "http://www.cs.umd.edu/projects/PL/images/PLUM.svg")
-			    (alt "Programming Languages at University of Maryland")
-			    (type "image/svg+xml")
-					;(height "100")
+                      (img ((src "img/PLUM.png")
+			    (alt "PLUM")
+			    (height "100")
 			    (width "150")
-			    (border "0"))))
+			    #;(style "0"))))
 		   (hr)
 		   (a ((href "http://nostarch.com/realmofracket.htm"))
-		      (img ((src "img/racket_cover_web.png")
+		      (img ((src "img/racket_cover_web.png")   
 			    (alt "Realm of Racket"))))
                    (hr)
                    ;(h4 ((class "bold-sc")) (a ((href "#")) "quick jumps"))
@@ -141,24 +139,26 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.ccs.neu.edu/course/cs2500f13/")) "CS 2500"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2014/cmsc631/")) "CMSC 631"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       
+                       (li (a ((href "dvanhorn.asc")) "PGP"))
                        #;(li (a ((href "#talks") (class "category")) "Talks")))
 		   (hr)))
          
          (div ((class "large-9 columns")
-               (role "content"))
+               #;(role "content"))
               ;(hr)
               (hr ((class "phat")))
-              (img ((class "left") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
+              (img ((class "left") (alt "dvanhorn") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
               (p "I work toward making the construction of reusable, trusted software "
                  "components possible and effective. "
                  "My research has spanned program analysis; semantics; "
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
-              (p "I" rsquo "m a member of the labratory for " 
+              (p "With " (a ((href "http://www.cs.umd.edu/~jfoster/")) "Jeff Foster") " and " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
+		 "I direct the labratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
                     "Programming Languages at the University of Maryland (" 
                     #;(abbr ((title "Programming Languages at University of Maryland")) "plum") 
@@ -181,7 +181,7 @@
                  (a ((href "http://www.cs.uu.nl/wiki/bin/view/TFP2014/WebHome")) "TFP") ". "
                  "I" rsquo "m the co-chair of " (a ((href "http://hopa.cs.rhul.ac.uk/")) "HOPA") " 2014, together with "
                  (a ((href "http://www.cs.ox.ac.uk/people/luke.ong/personal/")) "Luke Ong") ".")
-              (p "I co-authored the book " (span ((class "italic")) "Realm of Racket") " with " 
+              (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
                  "from Northeastern University, which introduces programming interactive video games.")
               ))))
@@ -217,8 +217,8 @@
            (dd (span ((class "italic")) ,venue)
                ", "  ,location ", " ,month " " ,year))]]
     [(talk tag title short-venue month year venue location abstract)
-     `[(dl (dt (a ((href ,(string-append "talks/" tag ".pdf")))
-                  ,title))
+     `[(dl (dt ;(a ((href ,(string-append "talks/" tag ".pdf")))
+                  ,title);)
            (dd (span ((class "italic")) ,venue)
                ", "  ,location ", " ,month " " ,year))]]))
 
@@ -230,7 +230,7 @@
     "Research"
     `(div ((class "row"))
           (div ((class "large-3 columns right")
-                (role "content"))
+                #;(role "content"))
                
                (div ((id "scroller")) 
                     (hr)
@@ -244,7 +244,7 @@
                         (li (a ((href "#talks") (class "category")) "Talks")))
                     (hr)))
           (div ((class "large-9 columns")
-                (role "content"))           
+                #;(role "content"))           
                
                ,@(projects-section projects)
                   
@@ -261,8 +261,8 @@
                    (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "
                        "Ph.D. candidate at University of Utah (Committee member)"))
                
-               (hr ((id "collaborators") (class "phat midphat")))
-               (h4 "Collaborators")
+               #;(hr ((id "collaborators") (class "phat midphat")))
+               #;(h4 "Collaborators")
                
                (hr ((id "papers") (class "phat midphat")))
                (h4 "Papers")

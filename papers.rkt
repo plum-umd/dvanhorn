@@ -245,14 +245,14 @@
                "November 2013"
                '((ACM "http://dl.acm.org/citation.cfm?doid=2516760.2516769")
 		 (arXiv "http://arxiv.org/abs/1311.4201")))
-   
+		    
    (work-paper "AnaDroid: Malware Analysis of Android with User-supplied Predicates"
                (list shuying might)
                (venue "Workshop on Tools for Automatic Program Analysis"
                       "http://pl.cs.colorado.edu/tapas2013/")
                "Seattle, Washington"
                "June 2013"
-               '((arXiv "http://arxiv.org/abs/1311.4198")))
+	       '((arXiv "http://arxiv.org/abs/1311.4198")))
    
    (work-paper "Concrete Semantics for Pushdown Analysis: The Essence of Summarization"
                (list ianj)

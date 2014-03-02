@@ -379,7 +379,8 @@
 		      "http://www.icfpconference.org/icfp2008/")
 	       "Victoria, British Columbia, Canada"
 	       "September 2008"
-	       '((ACM "http://doi.acm.org/10.1145/1411204.1411243")))
+	       '((ACM "http://doi.acm.org/10.1145/1411204.1411243")
+		 (arXiv "http://arxiv.org/abs/1311.5810")))
 
    ;; A few principles of macro design
 
@@ -389,7 +390,8 @@
 		      "http://users.dsic.upv.es/~sas2008/")
 	       "Valencia, Spain"
 	       "July 2008"
-	       '((Springer "http://dx.doi.org/10.1007/978-3-540-69166-2_17")))
+	       '((Springer "http://dx.doi.org/10.1007/978-3-540-69166-2_17")
+		 (arXiv "http://arxiv.org/abs/1311.5825")))
 
    (jour-paper "Types and Trace Effects of Higher Order Programs"
 	       (list skalka smith)

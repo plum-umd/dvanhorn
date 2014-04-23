@@ -6,6 +6,34 @@
 (define projects
   (list
    (project
+    "Trustworthy and Composable Software Systems with Contracts"
+    "PI"
+
+    '("Over the past decade, language-based security mechanisms" mdash "such
+       as type systems, model checkers, symbolic executors, and other program
+       analyses" mdash "have been successfully used to uncover or prevent many
+       important (exploitable) software vulnerabilities, such as buffer
+       overruns, side channels, unchecked inputs (leading to code injection),
+       and race conditions, among others. But despite significant advances,
+       current work makes two unrealistic assumptions: (1) the analyzed code
+       comprises a complete program (as opposed to a framework or set of
+       components), and (2) the software is written in a single programming
+       language. These assumptions ignore the reality of modern software,
+       which is composed of large sets of interacting components constructed
+       in several programming languages that provide varying degrees of
+       assurance that the components are well-behaved.
+
+       In this project, we aim to address these limitations by
+developing new static-analysis techniques based on software contracts,
+which provide a way to extend the analysis of components to reason
+about security of an entire heterogeneous system.")
+
+    @'{This collaboration with Sam Tobin-Hochstadt, Jeff Foster, and
+Michael Hicks, is supported by the National Security Agency, Science
+of Security Research Lablet program.})
+
+
+   (project
     "Behavioral Software Contract Verification"
     "Co-PI"
     @'{Behavioral software contracts express invariants and agreements 

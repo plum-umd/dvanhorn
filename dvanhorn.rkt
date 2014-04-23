@@ -83,6 +83,7 @@
                (ul ((class "inline-list right subheader italic category"))
                   (li (a ((href "index.html") (class "category")) "Home"))
                   (li (a ((href "research.html") (class "category")) "Research"))
+		  (li (a ((href "contact.html") (class "category")) "Contact"))
                   #;(li (a ((href "teaching.html") (class "category")) "Teaching"))
                   #;(li (a ((href "service.html") (class "category")) "Service"))
                   #;(li (a ((href "about.html") (class "category")) "About")))))
@@ -158,15 +159,15 @@
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
               (p "With " (a ((href "http://www.cs.umd.edu/~jfoster/")) "Jeff Foster") " and " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
-		 "I direct the labratory for " 
+		 "I direct the laboratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
                     "Programming Languages at the University of Maryland (" 
                     #;(abbr ((title "Programming Languages at University of Maryland")) "plum") 
                     "PLUM"
                     ")") ". "
 		 "Previously, I" rsquo "ve worked with the "
-                 (a ((href "http://www.ccs.neu.edu/research/prl/")) "Programming Research Labratory (" 
-                    #;(abbr ((title "Northeastern University Programming Research Labratory")) "prl")
+                 (a ((href "http://www.ccs.neu.edu/research/prl/")) "Programming Research Laboratory (" 
+                    #;(abbr ((title "Northeastern University Programming Research Laboratory")) "prl")
                     "PRL"
                     ")") " "
                  "at Northeastern University.")
@@ -225,6 +226,34 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(define contact.xexpr
+  (make-page 
+    "Contact"
+    `(div ((class "row"))    
+          (div ((class "large-3 columns right")
+                #;(role "content"))
+               
+               (div ((id "scroller")) 
+                    (hr)
+                    (h4 ((class "bold-sc")) (a ((href "#")) "contact"))
+                    (hr)))
+          (div ((class "large-9 columns")
+                #;(role "content"))           
+	       (hr ((id "contact") (class "phat")))
+	       
+	       
+	       (p "David Van Horn" (br)
+		  "3439 A.V. Williams Building" (br)
+		  "University of Maryland" (br)
+		  "College Park, MD 20742" (br)
+		  (br)
+		  "Email: (@ dvanhorn (dot cs umd edu))" )
+		  
+	       ))))
+    
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (define research.xexpr
   (make-page 
     "Research"
@@ -280,3 +309,4 @@
 
 (write-page index.xexpr "index.html")
 (write-page research.xexpr "research.html")
+(write-page contact.xexpr "contact.html")

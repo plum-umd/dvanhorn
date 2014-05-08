@@ -64,7 +64,7 @@
                   (a ((href "http://www.umd.edu/")) "University of Maryland")))
           (div ((class "large-3 columns"))
                (img ((src "img/seal.png")
-		     (alt "UMD")
+                     (alt "UMD")
                      (style "align: right; padding-top: 1em; padding-bottom: 1em;")))
                #;
                (ul ((class "inline-list right subheader italic"))
@@ -83,7 +83,7 @@
                (ul ((class "inline-list right subheader italic category"))
                   (li (a ((href "index.html") (class "category")) "Home"))
                   (li (a ((href "research.html") (class "category")) "Research"))
-		  (li (a ((href "contact.html") (class "category")) "Contact"))
+                  (li (a ((href "contact.html") (class "category")) "Contact"))
                   #;(li (a ((href "teaching.html") (class "category")) "Teaching"))
                   #;(li (a ((href "service.html") (class "category")) "Service"))
                   #;(li (a ((href "about.html") (class "category")) "About")))))
@@ -103,10 +103,10 @@
                      (div ((class "large-6 columns"))
                           (p (small copy nbsp "2013 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
-			  (ul ((class "inline-list right"))
-			      (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
-			      #;(li (a ((name "and")) (small amp)))
-			      #;(li (a ((href "#")) (small "CSS")))))))))
+                          (ul ((class "inline-list right"))
+                              (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
+                              #;(li (a ((name "and")) (small amp)))
+                              #;(li (a ((href "#")) (small "CSS")))))))))
 
 (define index.xexpr
   (make-page 
@@ -115,18 +115,18 @@
          (div ((class "large-3 columns right")
                #;(role "content"))
               (div #;((id "scroller")) 
-		   (hr)
-		   (a ((href "http://www.cs.umd.edu/projects/PL/"))
+                   (hr)
+                   (a ((href "http://www.cs.umd.edu/projects/PL/"))
                       (img ((src "img/PLUM.png")
-			    (alt "PLUM")
-			    (height "100")
-			    (width "150")
-			    #;(style "0"))))
-		   (hr)
-		   (a ((href "http://nostarch.com/realmofracket.htm"))
-		      (img ((src "img/racket_cover_web.png")   
-			    (alt "Realm of Racket"))))
-		   ;; "ACM Computing Reviews \"2013 Notable Book in Computing\""
+                            (alt "PLUM")
+                            (height "100")
+                            (width "150")
+                            #;(style "0"))))
+                   (hr)
+                   (a ((href "http://nostarch.com/realmofracket.htm"))
+                      (img ((src "img/racket_cover_web.png")   
+                            (alt "Realm of Racket"))))
+                   ;; "ACM Computing Reviews \"2013 Notable Book in Computing\""
                    (hr)
                    ;(h4 ((class "bold-sc")) (a ((href "#")) "quick jumps"))
                    ;(hr)
@@ -147,7 +147,7 @@
                        (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       
                        (li (a ((href "dvanhorn.asc")) "PGP"))
                        #;(li (a ((href "#talks") (class "category")) "Talks")))
-		   (hr)))
+                   (hr)))
          
          (div ((class "large-9 columns")
                #;(role "content"))
@@ -160,26 +160,26 @@
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
               (p "With " (a ((href "http://www.cs.umd.edu/~jfoster/")) "Jeff Foster") " and " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
-		 "I direct the laboratory for " 
+                 "I direct the laboratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
                     "Programming Languages at the University of Maryland (" 
                     #;(abbr ((title "Programming Languages at University of Maryland")) "plum") 
                     "PLUM"
                     ")") ". "
-		 "Previously, I" rsquo "ve worked with the "
+                 "Previously, I" rsquo "ve worked with the "
                  (a ((href "http://www.ccs.neu.edu/research/prl/")) "Programming Research Laboratory (" 
                     #;(abbr ((title "Northeastern University Programming Research Laboratory")) "prl")
                     "PRL"
                     ")") " "
                  "at Northeastern University.")
-		    
+                    
               (p "I currently serve as the workshop chair for " 
                  (a ((href "http://popl.mpi-sws.org/2014/")) 
                     #;(abbr ((title "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages")) "popl")
                     "POPL") 
                   " and the publicity chair for " (a ((href "http://icfpconference.org/")) "ICFP") ", "
                  "and on the program committees of " (a ((href "http://flint.cs.yale.edu/esop2014/")) "ESOP") ", "
-		 (a ((href "http://www.ist.unomaha.edu/padl2014/")) "PADL") ", and "
+                 (a ((href "http://www.ist.unomaha.edu/padl2014/")) "PADL") ", and "
                  (a ((href "http://www.cs.uu.nl/wiki/bin/view/TFP2014/WebHome")) "TFP") ". "
                  "I" rsquo "m the co-chair of " (a ((href "http://hopa.cs.rhul.ac.uk/")) "HOPA") " 2014, together with "
                  (a ((href "http://www.cs.ox.ac.uk/people/luke.ong/personal/")) "Luke Ong") ".")
@@ -240,17 +240,17 @@
                     (hr)))
           (div ((class "large-9 columns")
                 #;(role "content"))           
-	       (hr ((id "contact") (class "phat")))
-	       
-	       
-	       (p "David Van Horn" (br)
-		  "3439 A.V. Williams Building" (br)
-		  "University of Maryland" (br)
-		  "College Park, MD 20742" (br)
-		  (br)
-		  "Email: (@ dvanhorn (dot cs umd edu))" )
-		  
-	       ))))
+               (hr ((id "contact") (class "phat")))
+               
+               
+               (p "David Van Horn" (br)
+                  "3439 A.V. Williams Building" (br)
+                  "University of Maryland" (br)
+                  "College Park, MD 20742" (br)
+                  (br)
+                  "Email: (@ dvanhorn (dot cs umd edu))" )
+                  
+               ))))
     
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -289,9 +289,9 @@
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
                        "Ph.D. candidate at NEU (Committee member)")
                    (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "
-		       (em "Static Analysis of Android Applications")
+                       (em "Static Analysis of Android Applications")
                        ", Ph.D., University of Utah, 2014"
-		       " (Committee member)"))
+                       " (Committee member)"))
                
                #;(hr ((id "collaborators") (class "phat midphat")))
                #;(h4 "Collaborators")
@@ -301,7 +301,7 @@
                ,@papers-list
 #|
                (h5 "Journal articles")
-	       ,@jours
+               ,@jours
                (h5 "Conference articles")
                ,@confs
                (h5 "Workshop & other articles")

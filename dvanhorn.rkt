@@ -126,6 +126,7 @@
 		   (a ((href "http://nostarch.com/realmofracket.htm"))
 		      (img ((src "img/racket_cover_web.png")   
 			    (alt "Realm of Racket"))))
+		   ;; "ACM Computing Reviews \"2013 Notable Book in Computing\""
                    (hr)
                    ;(h4 ((class "bold-sc")) (a ((href "#")) "quick jumps"))
                    ;(hr)
@@ -279,7 +280,7 @@
                   
                (hr ((id "students") (class "phat midphat")))                   
                (h4  "Students")
-               (ul (li "Phuc C. Nguyen, "
+               (ul (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phuc C. Nguyen") ", "
                        "Ph.D. candidate at UMD")
                    (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
                        "Ph.D. candidate at NEU")
@@ -288,7 +289,9 @@
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
                        "Ph.D. candidate at NEU (Committee member)")
                    (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "
-                       "Ph.D. candidate at University of Utah (Committee member)"))
+		       (em "Static Analysis of Android Applications")
+                       ", Ph.D., University of Utah, 2014"
+		       " (Committee member)"))
                
                #;(hr ((id "collaborators") (class "phat midphat")))
                #;(h4 "Collaborators")

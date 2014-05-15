@@ -282,10 +282,13 @@
                (h4  "Students")
                (ul (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phuc C. Nguyen") ", "
                        "Ph.D. candidate at UMD")
+                   (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
+                       "Ph.D. candidate at UMD")
                    (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
                        "Ph.D. candidate at NEU")
                    (li (a ((href "http://www.ccs.neu.edu/home/stchang/")) "Stephen Chang") ", "
-                       "Ph.D. candidate at NEU (Committee member)")
+                       (em "On the Relation Between Laziness and Strictness")
+                       ", Ph.D., Northeastern University, 2014 (Committee member)")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
                        "Ph.D. candidate at NEU (Committee member)")
                    (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "

@@ -80,7 +80,7 @@
 
 (define labichn
   (auth "Nicholas Labich"
-        "http://www.ccs.neu.edu/home/labichn/"))
+        "https://www.cs.umd.edu/~labichn/"))
 
 (define shuying
   (auth "Shuying Liang"
@@ -88,7 +88,11 @@
 
 (define samth 
   (auth "Sam Tobin-Hochstadt"
-        "http://samth.github.io/"))
+        "https://samth.github.io/"))
+
+(define phil
+  (auth "Phuc C. Nguyen"
+        "https://www.cs.umd.edu/~pcn/"))
 
 (define earl
   (auth "Christopher Earl" #f))
@@ -228,6 +232,24 @@
       
 (define papers
   (list
+
+   (conf-paper "Soft Contract Verification"
+	       (list phil samth)
+	       (venue "The ACM SIGPLAN International Conference on Functional Programming"
+		      "http://icfpconference.org/icfp2014/")
+	       "Gothenburg, Sweden"
+	       "September 2014"
+	       '((arXiv "http://arxiv.org/abs/1307.6239")))
+
+   (jour-paper "Pushdown flow analysis with abstract garbage collection"
+	       (list ianj sergey earl might)
+	       jfp
+	       "24"
+	       "2-3"
+	       "May 2014"
+	       '((CUP "http://journals.cambridge.org/abstract_S0956796814000100")
+                 (arXiv "http://arxiv.org/abs/1406.5106")))
+
    (conf-paper "Optimizing Abstract Abstract Machines"
                (list ianj labichn might)
                (venue "The ACM SIGPLAN International Conference on Functional Programming"

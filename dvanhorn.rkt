@@ -83,8 +83,8 @@
                (ul ((class "inline-list right subheader italic category"))
                   (li (a ((href "index.html") (class "category")) "Home"))
                   (li (a ((href "research.html") (class "category")) "Research"))
+                  (li (a ((href "teaching.html") (class "category")) "Teaching"))
                   (li (a ((href "contact.html") (class "category")) "Contact"))
-                  #;(li (a ((href "teaching.html") (class "category")) "Teaching"))
                   #;(li (a ((href "service.html") (class "category")) "Service"))
                   #;(li (a ((href "about.html") (class "category")) "About")))))
               
@@ -141,7 +141,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/spring2014/cmsc631/")) "CMSC 631"))
+                       (li (a ((href "http://www.cs.umd.edu/class/fall2014/cmsc631/")) "CMSC 631"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       
@@ -224,6 +224,26 @@
            (dd (span ((class "italic")) ,venue)
                ", "  ,location ", " ,month " " ,year))]]))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define teaching.xexpr
+  (make-page 
+    "Teaching"
+    `(div ((class "row"))    
+          (div ((class "large-3 columns right")
+                #;(role "content"))
+               
+               (div ((id "scroller")) 
+                    (hr)
+                    (h4 ((class "bold-sc")) (a ((href "#")) "teaching"))
+                    (hr)))
+          (div ((class "large-9 columns")
+                #;(role "content"))           
+               (hr ((id "contact") (class "phat")))
+	       
+	       (p (a ((href "http://www.cs.umd.edu/course/cmsc631/fall2014/")) "Fall 2014: CMSC 631, Program Analysis and Understanding"))
+	       (p (a ((href "http://www.cs.umd.edu/course/cmsc631/spring2014/")) "Spring 2014: CMSC 631, Program Analysis and Understanding"))))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -316,3 +336,4 @@
 (write-page index.xexpr "index.html")
 (write-page research.xexpr "research.html")
 (write-page contact.xexpr "contact.html")
+(write-page teaching.xexpr "teaching.html")

@@ -84,7 +84,11 @@
 
 (define shuying
   (auth "Shuying Liang"
-        "http://www.cs.utah.edu/~liangsy/"))
+	"http://shuying.me/academic.html"))
+
+(define sun
+  (auth "Weibin Sun"
+	"http://www.cs.utah.edu/~wbsun/"))
 
 (define samth 
   (auth "Sam Tobin-Hochstadt"
@@ -103,7 +107,7 @@
 
 (define keep
   (auth "Andrew W. Keep"
-        "http://faculty.utah.edu/u0884345-ANDREW_W_KEEP/research/index.hml"))
+	"http://andykeep.com/"))
 
 (define lyde
   (auth "Steven Lyde"
@@ -233,13 +237,31 @@
 (define papers
   (list
 
+   (conf-paper "Abstracting Abstract Control"
+	       (list ianj)
+	       (venue "The 10th Dynamic Languages Symposium"
+		      "http://www.dynamic-languages-symposium.org/dls-14/")
+	       "Portland, Oregon"
+	       "October 2014"
+	       '((arXiv "http://arxiv.org/abs/1305.3163")))
+
+   #;
+   (conf-paper "Pruning, Pushdown Exception-Flow Analysis"
+               (list shuying sun might keep)
+               (venue "The 14th IEEE International Conference on Software Code Analysis and Manipulation"
+		      "http://www.ieee-scam.org/2014/")
+	       "Victoria, British Columbia"
+	       "September 2014"
+	       '())
+
    (conf-paper "Soft Contract Verification"
 	       (list phil samth)
 	       (venue "The ACM SIGPLAN International Conference on Functional Programming"
 		      "http://icfpconference.org/icfp2014/")
 	       "Gothenburg, Sweden"
 	       "September 2014"
-	       '((arXiv "http://arxiv.org/abs/1307.6239")))
+	       '((ACM "http://dl.acm.org/citation.cfm?id=2628156")
+		 (arXiv "http://arxiv.org/abs/1307.6239")))
 
    (jour-paper "Pushdown flow analysis with abstract garbage collection"
 	       (list ianj sergey earl might)

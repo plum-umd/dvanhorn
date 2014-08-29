@@ -242,8 +242,8 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
 	       
-	       (p (a ((href "http://www.cs.umd.edu/course/cmsc631/fall2014/")) "Fall 2014: CMSC 631, Program Analysis and Understanding"))
-	       (p (a ((href "http://www.cs.umd.edu/course/cmsc631/spring2014/")) "Spring 2014: CMSC 631, Program Analysis and Understanding"))))))
+	       (p (a ((href "http://www.cs.umd.edu/class/fall2014/cmsc631/")) "Fall 2014: CMSC 631, Program Analysis and Understanding"))
+	       (p (a ((href "http://www.cs.umd.edu/class/spring2014/cmsc631/")) "Spring 2014: CMSC 631, Program Analysis and Understanding"))))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

@@ -173,16 +173,17 @@
                     ")") " "
                  "at Northeastern University.")
                     
-              (p "I currently serve as the workshop chair for " 
-                 (a ((href "http://popl.mpi-sws.org/2014/")) 
+              (p "I currently " (a ((href "service.html")) "serve") " as the workshop chair for " 
+                 (a ((href "http://popl.mpi-sws.org/2015/")) 
                     #;(abbr ((title "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages")) "popl")
-                    "POPL") 
-                  " and the publicity chair for " (a ((href "http://icfpconference.org/")) "ICFP") ", "
-                 "and on the program committees of " (a ((href "http://flint.cs.yale.edu/esop2014/")) "ESOP") ", "
-                 (a ((href "http://www.ist.unomaha.edu/padl2014/")) "PADL") ", and "
-                 (a ((href "http://www.cs.uu.nl/wiki/bin/view/TFP2014/WebHome")) "TFP") ". "
-                 "I" rsquo "m the co-chair of " (a ((href "http://hopa.cs.rhul.ac.uk/")) "HOPA") " 2014, together with "
-                 (a ((href "http://www.cs.ox.ac.uk/people/luke.ong/personal/")) "Luke Ong") ".")
+                    "POPL")
+                  ", as the publicity chair for " 
+		  (a ((href "http://icfpconference.org/")) "ICFP") ", "
+                 "and as a program committee member for " 
+		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") 
+		 " and " 
+		 (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "OBT 2015") ".")
+
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
                  "from Northeastern University, which introduces programming interactive video games.")
@@ -297,7 +298,8 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011, 2010"))
+               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
+	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))
                (p (a ((href "http://flint.cs.yale.edu/esop2014/")) "European Symposium on Programming (ESOP), 2014"))
                (p (a ((href "https://www.ist.unomaha.edu/padl2014/")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2014"))
                (p (a ((href "http://www.easychair.org/smart-program/VSL2014/LOLA-index.html")) "Workshop on Syntax and Semantics of Low-Level Languages (LOLA), 2014"))
@@ -315,8 +317,8 @@
                (h4 "Reviewer")
                (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2015, 2014, 2008"))
                (p (a ((href "http://vmcai2014.di.ens.fr/")) "International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI), 2014"))
-               (p (a ((href "http://link.springer.com/book/10.1007/978-3-642-19718-5")) "European Symposium on Programming (ESOP), 2011"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2014, 2010"))
+               (p (a ((href "http://link.springer.com/book/10.1007/978-3-642-19718-5")) "European Symposium on Programming (ESOP), 2011"))
                (p (a ((href "http://www.sigplan.org/Conferences/DLS/")) "ACM SIGPLAN Symposium on Dynamic Languages (DLS), 2014, 2012"))
                (p (a ((href "http://www.sigplan.org/Conferences/SPLASH/")) "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2012"))
                (p (a ((href "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000420")) "IEEE Symposium on Logic in Computer Science (LICS), 2007"))

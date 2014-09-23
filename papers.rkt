@@ -244,15 +244,14 @@
 	       "Portland, Oregon"
 	       "October 2014"
 	       '((arXiv "http://arxiv.org/abs/1305.3163")))
-
-   #;
+  
    (conf-paper "Pruning, Pushdown Exception-Flow Analysis"
                (list shuying sun might keep)
                (venue "The 14th IEEE International Conference on Software Code Analysis and Manipulation"
 		      "http://www.ieee-scam.org/2014/")
 	       "Victoria, British Columbia"
 	       "September 2014"
-	       '())
+	       '((arXiv "http://arxiv.org/abs/1409.3108")))
 
    (conf-paper "Soft Contract Verification"
 	       (list phil samth)

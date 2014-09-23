@@ -400,7 +400,7 @@
                        ", Ph.D., Northeastern University, 2014 (Committee member)")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
                        "Ph.D. candidate at NEU (Committee member)")
-                   (li (a ((href "http://www.cs.utah.edu/~liangsy/")) "Shuying Liang") ", "
+                   (li (a ((href "http://shuying.me/academic.html")) "Shuying Liang") ", "
                        (em "Static Analysis of Android Applications")
                        ", Ph.D., University of Utah, 2014"
                        " (Committee member)"))

@@ -84,8 +84,8 @@
                   (li (a ((href "index.html") (class "category")) "Home"))
                   (li (a ((href "research.html") (class "category")) "Research"))
                   (li (a ((href "teaching.html") (class "category")) "Teaching"))
+                  (li (a ((href "service.html") (class "category")) "Service"))
                   (li (a ((href "contact.html") (class "category")) "Contact"))
-                  #;(li (a ((href "service.html") (class "category")) "Service"))
                   #;(li (a ((href "about.html") (class "category")) "About")))))
               
           
@@ -247,6 +247,93 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(define service.xexpr
+  (make-page 
+    "Service"
+    `(div ((class "row"))    
+          (div ((class "large-3 columns right")
+                #;(role "content"))
+               
+               (div ((id "scroller")) 
+                    (hr)
+                    (h4 ((class "bold-sc")) (a ((href "#")) "service"))
+                    (hr)
+                    (ul ((class "inline-list subheader italic category"))
+                        (li (a ((href "#journals") (class "category")) "Journals"))
+                        (li (a ((href "#steering-committees") (class "category")) "SCs"))
+                        (li (a ((href "#chair") (class "category")) "Chair"))
+                        (li (a ((href "#panelist") (class "category")) "Panelist"))
+                        (li (a ((href "#program-committees") (class "category")) "PCs"))
+                        (li (a ((href "#external-review-committees") (class "category")) "ERCs"))
+                        (li (a ((href "#reviewer") (class "category")) "Reviewer"))
+                        (li (a ((href "#other") (class "category")) "Other")))))
+
+
+          (div ((class "large-9 columns")
+		#;(role "content"))
+	       (hr ((id "journals") (class "phat")))
+	       (h4  "Journals refereed")	  
+	       (p (a ((href "http://csur.acm.org/")) "ACM Computing Surveys"))
+	       (p (a ((href "http://tocl.acm.org/")) "ACM Transactions on Computational Logic"))
+	       (p (a ((href "http://toplas.acm.org/")) "ACM Transactions on Programming Languages and Systems"))
+	       (p (a ((href "http://link.springer.com/journal/10990")) "Higher-Order and Symbolic Computation"))
+	       (p (a ((href "http://journals.cambridge.org/action/displayJournal?jid=JFP")) "Journal of Functional Programming"))
+	       (p (a ((href "http://www.journals.elsevier.com/science-of-computer-programming/")) "Science of Computer Programming"))
+
+	       (hr ((id "steering-committees") (class "phat")))
+	       (h4  "Steering Committees")
+	       (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2016"))
+	       (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))
+
+	       (hr ((id "chair") (class "phat")))
+	       (h4  "Chair")
+	       (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))	       
+	       (p (a ((href "http://www.nii.ac.jp/shonan/blog/2011/03/19/workshop-on-automated-techniques-for-higher-order-program-verification/")) "NII Workshop on Automated Techniques for Higher-Order Program Verification, 2011"))
+	       (p (a ((href "http://nepls.org/")) "New England Programming Languages and Systems Symposium (NEPLS), 2011"))
+
+	       (hr ((id "panelist") (class "phat")))
+	       (h4  "Panelist")
+	       (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2011, 2010"))
+
+	       (hr ((id "program-committees") (class "phat")))
+	       (h4  "Program committees")
+	       (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011, 2010"))
+	       (p (a ((href "http://flint.cs.yale.edu/esop2014/")) "European Symposium on Programming (ESOP), 2014"))
+	       (p (a ((href "https://www.ist.unomaha.edu/padl2014/")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2014"))
+	       (p (a ((href "http://www.easychair.org/smart-program/VSL2014/LOLA-index.html")) "Workshop on Syntax and Semantics of Low-Level Languages (LOLA), 2014"))
+	       (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2014, 2012"))
+	       (p (a ((href "http://www.cs.uwyo.edu/~jlc/tfpie14/")) "International Workshop on Trends in Functional Programming in Education (TFPIE), 2014"))
+	       (p (a ((href "http://lampwww.epfl.ch/~hmiller/scala2013/")) "Scala Workshop, 2013"))
+	       (p (a ((href "http://hopa.cs.rhul.ac.uk/hopa-2013/index.html")) "Workshop on Higher-Order Program Analysis (HOPA), 2013"))
+	       (p (a ((href "http://schemeworkshop.org/")) "Scheme and Functional Programming Workshop, 2011, 2009"))
+
+	       (hr ((id "external-review-committees") (class "phat")))
+	       (h4 "External review committees")
+	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013"))
+
+	       (hr ((id "reviewer") (class "phat")))
+	       (h4 "Reviewer")
+	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2015, 2014, 2008"))
+	       (p (a ((href "http://vmcai2014.di.ens.fr/")) "International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI), 2014"))
+	       (p (a ((href "http://link.springer.com/book/10.1007/978-3-642-19718-5")) "European Symposium on Programming (ESOP), 2011"))
+	       (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2014, 2010"))
+	       (p (a ((href "http://www.sigplan.org/Conferences/DLS/")) "ACM SIGPLAN Symposium on Dynamic Languages (DLS), 2014, 2012"))
+	       (p (a ((href "http://www.sigplan.org/Conferences/SPLASH/")) "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2012"))
+	       (p (a ((href "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000420")) "IEEE Symposium on Logic in Computer Science (LICS), 2007"))
+	       (p (a ((href "https://www.springer.com/computer/swe/book/978-3-540-74914-1")) "EACSL Conference on Computer Science and Logic (CSL), 2007"))
+
+	       (hr ((id "reviewer") (class "phat")))
+	       (h4 "Other")
+	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "Workshop Chair, ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013-2015"))
+	       
+	       ))))
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (define contact.xexpr
   (make-page 
     "Contact"
@@ -337,3 +424,4 @@
 (write-page research.xexpr "research.html")
 (write-page contact.xexpr "contact.html")
 (write-page teaching.xexpr "teaching.html")
+(write-page service.xexpr "service.html")

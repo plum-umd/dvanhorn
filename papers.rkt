@@ -311,7 +311,8 @@
                       "http://wwwhome.ewi.utwente.nl/~holzenspiespkf/TFPIE2013.html")
                "Provo, Utah"
                "May 2013"
-               '((arXiv "http://arxiv.org/abs/1306.4713")))
+               '((EPCTCS "http://arxiv.org/html/1312.2216v1")
+		 (arXiv "http://arxiv.org/abs/1306.4713")))
    
    (conf-paper "Higher-Order Symbolic Execution via Contracts"
                (list samth)

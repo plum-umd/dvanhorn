@@ -5,6 +5,51 @@
 
 (define talks
   (list
+   (talk
+    "icfp-2014"
+    "Soft Contract Verification"
+    "ICFP"
+    "September"
+    "2014"
+    `(a ((href "http://icfpconference.org/icfp2014/"))
+	"The ACM SIGPLAN International Conference on Functional Programming")
+    "Gothenborg, Sweden"
+    `[])
+
+   (talk
+    "dagstuhl-2014"
+    "Soft Contract Verification"
+    "Dagstuhl"
+    "July"
+    "2014"
+    `(a ((href "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=14271"))
+	"Dagstuhl Seminar on Scripting Languages and Frameworks: Analysis and Verification")
+    "Schloss Dagstuhl, Germany"
+    `[])
+
+   (talk
+    "cyber-2014"
+    "Analysis for Trustworthy Software"
+    "Cyber"
+    "June"
+    "2014"
+    `(a ((href "http://www.cyber.umd.edu/events/symposium")) "Third "
+	"Annual Maryland Cybersecurity Center Symposium")
+    "College Park, Maryland"
+    '[])
+
+   (talk
+    "nii-2014"
+    "Soft Contract Verification"
+    "NII"
+    "May"
+    "2014"
+    `(a ((href "http://www.nii.ac.jp/shonan/blog/2012/12/26/software-contracts-for-communication-monitoring-and-security/")) "NII "
+	"Workshop on Software Contracts for Communication, Monitoring, "
+	"and Security")
+    "Shonan Village, Japan"
+    `[])
+
    (talk 
     "tfpie-2013"
     "From Principles to Practice with Class"

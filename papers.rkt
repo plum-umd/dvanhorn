@@ -5,12 +5,13 @@
   [oxford ([Listof Xexpr] -> [Listof Xexpr])]
   [delimit ((Listof Xexpr) (Listof Xexpr) (Listof Xexpr) (Listof Xexpr) -> (Listof Xexpr))])
 
-(define-type Paper (U Conf Jour Work Diss Mast))
+(define-type Paper (U Conf Jour Work Diss Mast Pre))
 (define-type Jour jour-paper)
 (define-type Conf conf-paper)
 (define-type Work work-paper)
 (define-type Diss diss-paper)
 (define-type Mast mast-paper)
+(define-type Pre pre-paper)
 (define-type Auth auth)
 (define-type Venue venue)
 
@@ -21,6 +22,12 @@
           (List* Symbol (Listof (List Symbol String)) (Listof x))
           (List* Symbol (Listof x)))))
   
+(struct: pre-paper
+  ([title : String]
+   [coauthors : [Listof Auth]]
+   [date : String]
+   [links : [Listof [List Symbol String]]]))
+
 (struct: conf-paper 
   ([title : String] 
    [coauthors : [Listof Auth]] 
@@ -78,6 +85,10 @@
   (auth "Matthew Might" 
         "http://matt.might.net/"))
 
+(define darais
+  (auth "David Darais"
+	"http://david.darais.com/"))
+
 (define labichn
   (auth "Nicholas Labich"
         "https://www.cs.umd.edu/~labichn/"))
@@ -94,7 +105,7 @@
   (auth "Sam Tobin-Hochstadt"
         "https://samth.github.io/"))
 
-(define phil
+(define nguyen
   (auth "Phuc C. Nguyen"
         "https://www.cs.umd.edu/~pcn/"))
 
@@ -178,6 +189,14 @@
 (: format-paper : Paper -> Xexpr)
 (define (format-paper p)
   (match p
+    [(pre-paper title coauthors date links)
+     `(p (span ((class "paper-title")) ,title) ". "
+	 "With " ,@(oxford (map format-auth coauthors)) ". "
+	 (br)
+	 "Preprint, " ,date
+	 "."
+	 (br)
+	 ,@(format-links links))]
     [(work-paper title coauthors conf location date links)
      (format-paper (conf-paper title coauthors conf location date links))]
     [(conf-paper title coauthors conf location date links)
@@ -237,13 +256,24 @@
 (define papers
   (list
 
+   (pre-paper "Relatively Complete Counterexamples for Higher-Order Programs"
+	      (list nguyen)
+	      "November 2014"
+	      '((arXiv "http://arxiv.org/abs/1411.3967")))
+
+   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
+               (list darais might)
+               "November 2014"
+               '((arXiv "http://arxiv.org/abs/1411.3962")))
+
    (conf-paper "Abstracting Abstract Control"
 	       (list ianj)
-	       (venue "The 10th Dynamic Languages Symposium"
+	       (venue "The 10th ACM Symposium on Dynamic Languages (DLS'14)"
 		      "http://www.dynamic-languages-symposium.org/dls-14/")
 	       "Portland, Oregon"
 	       "October 2014"
-	       '((arXiv "http://arxiv.org/abs/1305.3163")))
+	       '((ACM "http://dl.acm.org/citation.cfm?id=2661098")
+		 (arXiv "http://arxiv.org/abs/1305.3163")))
   
    (conf-paper "Pruning, Pushdown Exception-Flow Analysis"
                (list shuying sun might keep)
@@ -254,8 +284,8 @@
 	       '((arXiv "http://arxiv.org/abs/1409.3108")))
 
    (conf-paper "Soft Contract Verification"
-	       (list phil samth)
-	       (venue "The ACM SIGPLAN International Conference on Functional Programming"
+	       (list nguyen samth)
+	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'14)"
 		      "http://icfpconference.org/icfp2014/")
 	       "Gothenburg, Sweden"
 	       "September 2014"
@@ -273,7 +303,7 @@
 
    (conf-paper "Optimizing Abstract Abstract Machines"
                (list ianj labichn might)
-               (venue "The ACM SIGPLAN International Conference on Functional Programming"
+               (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'13)"
                       "http://icfpconference.org/icfp2013/")               
                "Boston, Massachusetts"
                "September 2013"

@@ -76,6 +76,14 @@
   (venue "Journal of Functional Programming"
 	 "http://journals.cambridge.org/action/displayJournal?jid=JFP"))
 
+(define toronto
+  (auth "Neil Toronto"
+        "http://cs.umd.edu/~ntoronto/"))
+
+(define mccarthy
+  (auth "Jay McCarthy"
+        "https://jeapostrophe.github.io/home/"))
+
 
 (define ianj 
   (auth "J. Ian Johnson" 
@@ -265,6 +273,14 @@
                (list darais might)
                "November 2014"
                '((arXiv "http://arxiv.org/abs/1411.3962")))
+
+   (conf-paper "Running Probabilistic Programs Backwards"
+               (list toronto mccarthy)
+               (venue "The European Symposium on Programming (ESOP'15)"
+                      "http://www.etaps.org/index.php/2015/esop")
+               "London, England"
+               "April, 2015"
+               '((arXiv "http://arxiv.org/abs/1412.4053")))
 
    (conf-paper "Abstracting Abstract Control"
 	       (list ianj)

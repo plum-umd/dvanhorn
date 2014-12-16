@@ -278,7 +278,7 @@
                (list toronto mccarthy)
                (venue "The European Symposium on Programming (ESOP'15)"
                       "http://www.etaps.org/index.php/2015/esop")
-               "London, England"
+               "London, United Kingdom"
                "April, 2015"
                '((arXiv "http://arxiv.org/abs/1412.4053")))
 

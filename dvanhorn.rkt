@@ -141,7 +141,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2014/cmsc631/")) "CMSC 631"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2015/cmsc430/")) "CMSC 430"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       

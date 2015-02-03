@@ -264,15 +264,13 @@
 (define papers
   (list
 
-   (pre-paper "Relatively Complete Counterexamples for Higher-Order Programs"
+   (conf-paper "Relatively Complete Counterexamples for Higher-Order Programs"
 	      (list nguyen)
-	      "November 2014"
+	      (venue "The 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'15)"
+		     "http://conf.researchr.org/home/pldi2015")
+	      "Portland, Oregon"
+	      "June, 2015"
 	      '((arXiv "http://arxiv.org/abs/1411.3967")))
-
-   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
-               (list darais might)
-               "November 2014"
-               '((arXiv "http://arxiv.org/abs/1411.3962")))
 
    (conf-paper "Running Probabilistic Programs Backwards"
                (list toronto mccarthy)
@@ -281,6 +279,11 @@
                "London, United Kingdom"
                "April, 2015"
                '((arXiv "http://arxiv.org/abs/1412.4053")))
+
+   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
+               (list darais might)
+               "November 2014"
+               '((arXiv "http://arxiv.org/abs/1411.3962")))
 
    (conf-paper "Abstracting Abstract Control"
 	       (list ianj)

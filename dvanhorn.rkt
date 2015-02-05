@@ -43,6 +43,7 @@
                   "<script>document.write('<script src=javascripts/vendor/'
     + ('__proto__' in {} ? 'zepto' : 'jquery')
     + '.js><\\/script>');</script>")
+     (script ((src "javascripts/showhide.js")))
      (script ((src "javascripts/foundation/foundation.js")))
      (script ((src "javascripts/foundation/foundation.section.js")))
      ,(make-cdata #f #f
@@ -101,7 +102,7 @@
                 (hr)
                 (div ((class "row"))
                      (div ((class "large-6 columns"))
-                          (p (small copy nbsp "2013 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
+                          (p (small copy nbsp "2015 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
                           (ul ((class "inline-list right"))
                               (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
@@ -196,13 +197,17 @@
 (define (projects-section ps)
   `[(hr ((id "projects") (class "phat")))
     (h4 "Projects")
-    ,@(apply append (add-between (map project-section ps) '((hr))))])
+    ,@(apply append (map project-section ps))])
 
 (define (project-section p)
   (match p
     [(project name role desc collab)
-     `[(p (span ((class "bold-sc")) ,name) " (" ,role ") " ,@desc)
-       (p ,@collab)]]))
+     (define id (symbol->string (gensym)))
+     `[(p (a ((href "#")) (span ((onclick ,(format "showHide('~a'); return false;" id))) (span ((class "bold-sc")) ,name) " (" ,role ") "))
+	  (div ((id ,id) (style "display: none;")) 
+	     (p ,@desc)
+	     (p ,@collab)
+	     (hr)))]]))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -203,7 +203,7 @@
   (match p
     [(project name role desc collab)
      (define id (symbol->string (gensym)))
-     `[(p (a ((href "#")) (span ((onclick ,(format "showHide('~a'); return false;" id))) (span ((class "bold-sc")) ,name) " (" ,role ") "))
+     `[(p (a ((href "#")) (span ((onclick ,(format "showHide('~a'); return false;" id))) (span ((class "paper-title")) ,name) " (" ,role ") "))
 	  (div ((id ,id) (style "display: none;")) 
 	     (p ,@desc)
 	     (p ,@collab)

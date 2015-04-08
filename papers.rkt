@@ -76,9 +76,29 @@
   (venue "Journal of Functional Programming"
 	 "http://journals.cambridge.org/action/displayJournal?jid=JFP"))
 
+(define hammer
+  (auth "Matthew A. Hammer"
+	"http://www.cs.umd.edu/~hammer/"))
+
+(define dunfield 
+  (auth "Joshua Dunfield"
+	"http://www.cs.ubc.ca/~joshdunf/"))
+
+(define headley
+  (auth "Kyle Headley"
+	"http://www.cs.umd.edu/~kheadley/"))
+
+(define foster
+  (auth "Jeffrey S. Foster"
+	"http://www.cs.umd.edu/~jfoster/"))
+
+(define hicks
+  (auth "Michael Hicks"
+	"http://www.cs.umd.edu/~mwh/"))
+
 (define toronto
   (auth "Neil Toronto"
-        "http://cs.umd.edu/~ntoronto/"))
+        "http://www.cs.umd.edu/~ntoronto/"))
 
 (define mccarthy
   (auth "Jay McCarthy"
@@ -264,6 +284,16 @@
 (define papers
   (list
 
+   (pre-paper "Incremental Computation with Names"
+               (list hammer dunfield headley labichn foster hicks)
+               "March 2015"
+               '((arXiv "http://arxiv.org/abs/1503.07792")))
+  
+   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
+               (list darais might)
+               "March 2015"
+               '((arXiv "http://arxiv.org/abs/1411.3962")))
+
    (conf-paper "Relatively Complete Counterexamples for Higher-Order Programs"
 	      (list nguyen)
 	      (venue "The 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'15)"
@@ -279,11 +309,6 @@
                "London, United Kingdom"
                "April, 2015"
                '((arXiv "http://arxiv.org/abs/1412.4053")))
-
-   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
-               (list darais might)
-               "November 2014"
-               '((arXiv "http://arxiv.org/abs/1411.3962")))
 
    (conf-paper "Abstracting Abstract Control"
 	       (list ianj)

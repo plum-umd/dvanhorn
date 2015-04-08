@@ -174,16 +174,13 @@
                     ")") " "
                  "at Northeastern University.")
                     
-              (p "I currently " (a ((href "service.html")) "serve") " as the workshop chair for " 
-                 (a ((href "http://popl.mpi-sws.org/2015/")) 
-                    #;(abbr ((title "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages")) "popl")
-                    "POPL")
-                  ", as the publicity chair for " 
-		  (a ((href "http://icfpconference.org/")) "ICFP") ", "
-                 "and as a program committee member for " 
-		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") 
-		 " and " 
-		 (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "OBT 2015") ".")
+              (p "I currently " (a ((href "service.html")) "serve") " as a steering committee member and the " 
+		 "publicity chair for " 
+		 (a ((href "http://icfpconference.org/")) "ICFP") ", "
+		 "as a program committee member for " 
+		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") ", "
+		 "and as an external review committee member for "
+		 "POPL 2016.")	      
 
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
@@ -317,7 +314,7 @@
 
                (hr ((id "external-review-committees") (class "phat")))
                (h4 "External review committees")
-               (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013"))
+               (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2016, 2013"))
 
                (hr ((id "reviewer") (class "phat")))
                (h4 "Reviewer")
@@ -395,17 +392,22 @@
                   
                (hr ((id "students") (class "phat midphat")))                   
                (h4  "Students")
-               (ul (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phuc C. Nguyen") ", "
-                       "Ph.D. candidate at UMD")
+               (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
+                       "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
-                       "Ph.D. candidate at UMD")
+                       "Ph.D. student at UMD")
+                   (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phuc C. Nguyen") ", "
+                       "Ph.D. student at UMD")
                    (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
                        "Ph.D. candidate at NEU")
+                   (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
+                       "Ph.D. candidate at NEU (Committee member)")
+		   (li (a ((href "http://www.cs.umd.edu/~piotrm/")) "Piotr Mardziel") ", "
+		       (em "Modeling, Measuring, and Limiting Adversary Knowledge")
+		       ", Ph.D., University of Maryland, 2015 (Committee member)")
                    (li (a ((href "http://www.ccs.neu.edu/home/stchang/")) "Stephen Chang") ", "
                        (em "On the Relation Between Laziness and Strictness")
                        ", Ph.D., Northeastern University, 2014 (Committee member)")
-                   (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
-                       "Ph.D. candidate at NEU (Committee member)")
                    (li (a ((href "http://shuying.me/academic.html")) "Shuying Liang") ", "
                        (em "Static Analysis of Android Applications")
                        ", Ph.D., University of Utah, 2014"

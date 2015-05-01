@@ -178,7 +178,11 @@
 		 "publicity chair for " 
 		 (a ((href "http://icfpconference.org/")) "ICFP") ", "
 		 "as a program committee member for " 
-		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") ", "
+		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") 
+		 " and " 
+		 (a ((href "http://andykeep.com/SchemeWorkshop2015/"))
+		    "Scheme 2015")
+		 ", "
 		 "and as an external review committee member for "
 		 "POPL 2016.")	      
 

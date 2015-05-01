@@ -314,7 +314,7 @@
                (p (a ((href "http://www.cs.uwyo.edu/~jlc/tfpie14/")) "International Workshop on Trends in Functional Programming in Education (TFPIE), 2014"))
                (p (a ((href "http://lampwww.epfl.ch/~hmiller/scala2013/")) "Scala Workshop, 2013"))
                (p (a ((href "http://hopa.cs.rhul.ac.uk/hopa-2013/index.html")) "Workshop on Higher-Order Program Analysis (HOPA), 2013"))
-               (p (a ((href "http://schemeworkshop.org/")) "Scheme and Functional Programming Workshop, 2011, 2009"))
+               (p (a ((href "http://schemeworkshop.org/")) "Scheme and Functional Programming Workshop, 2011, 2009, 2015"))
 
                (hr ((id "external-review-committees") (class "phat")))
                (h4 "External review committees")
@@ -402,12 +402,13 @@
                        "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
                        "Ph.D. student at UMD")
-                   (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phuc C. Nguyen") ", "
+                   (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phúc C. Nguyễn") ", "
                        "Ph.D. student at UMD")
                    (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
-                       "Ph.D. candidate at NEU")
+		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
+		       ", Ph.D., Northeastern University, 2015")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
-                       "Ph.D. candidate at NEU (Committee member)")
+                       "Ph.D., Northeastern University, 2015 (Committee member)")
 		   (li (a ((href "http://www.cs.umd.edu/~piotrm/")) "Piotr Mardziel") ", "
 		       (em "Modeling, Measuring, and Limiting Adversary Knowledge")
 		       ", Ph.D., University of Maryland, 2015 (Committee member)")

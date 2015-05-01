@@ -391,8 +391,10 @@
                ,@(projects-section projects)
                   
                (hr ((id "students") (class "phat midphat")))                   
-               (h4  "Students")
-               (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
+               (h4  "Students")	       
+               (ul (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
+		       "post-doc at UMD")
+		   (li (a ((href "http://david.darais.com/")) "David Darais") ", "
                        "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
                        "Ph.D. student at UMD")

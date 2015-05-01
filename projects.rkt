@@ -22,8 +22,8 @@
       "analyst in to the iterative refinement loop of the system to quickly "
       "confirm, dismiss, and focus hypotheses about resource usage.")
 
-    @'{This collaboration with  is supported by the DARPA Information Innovation Office,
-      Space/Time Analysis for Cybersecurity program.})
+    '("This collaboration with  is supported by the DARPA Information Innovation"
+      "Office, Space/Time Analysis for Cybersecurity program."))
 
 
    (project
@@ -84,9 +84,9 @@ of Security Research Lablet program.})
        enable sound, secure, automatic program analysis for the elimination 
        of security vulnerabilities in mobile applications in high-level 
        programming languages.}
-    @'{This collaboration with Matthew Might is supported by the DARPA 
-       Information Innovation Office, Automated Program Analysis for 
-       Cybersecurity program.})
+    '("This collaboration with Matthew Might is supported by the DARPA "
+      "Information Innovation Office, Automated Program Analysis for "
+      "Cybersecurity program.  Read " (a ((href "apac.pdf")) "more") "."))
    
    (project
     "Raising the level of discourse with GnoSys"

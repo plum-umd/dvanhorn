@@ -6,6 +6,27 @@
 (define projects
   (list
    (project
+    "Sound Over- and Under-Approximation of Complexity and Information Security"
+    "Co-PI"
+    '("Our primary goal is to enable sound, highly automated program analysis "
+      "for the elimination of complexity and side-channel vulnerabilities in "
+      "applications for which only bytecode source is available."
+      
+      "Toward this goal, we envision orders-of-magnitude improvements in scale, "
+      "precision, and speed of algorithmic resource usage vulnerability analysis. "
+      "The central thesis of our work is that these breakthroughs are achievable "
+      "through an interplay of techniques to (1) quantify and compartmentalize "
+      "adversary influence, (2) simultaneously box in resource usage analysis "
+      "of a program from above using sound static analysis and below using "
+      "dynamic analysis and symbolic exe- cution, and (3) integrate a human "
+      "analyst in to the iterative refinement loop of the system to quickly "
+      "confirm, dismiss, and focus hypotheses about resource usage.")
+
+    @'{This collaboration with  is supported by the DARPA Information Innovation Office,
+      Space/Time Analysis for Cybersecurity program.})
+
+
+   (project
     "Trustworthy and Composable Software Systems with Contracts"
     "PI"
 

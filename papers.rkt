@@ -325,7 +325,7 @@
 		      "http://www.ieee-scam.org/2014/")
 	       "Victoria, British Columbia"
 	       "September 2014"
-	       '((IEEE "http://ieeexplore.ieee.org/xpl/login.jsp?arnumber=6975660")
+	       '((IEEE "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6975660")
 		 (arXiv "http://arxiv.org/abs/1409.3108")))
 
    (conf-paper "Soft Contract Verification"

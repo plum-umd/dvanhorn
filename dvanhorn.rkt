@@ -408,6 +408,9 @@
 		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
 		       ", Ph.D., Northeastern University, 2015")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
+		       (a ((href "http://www.ccs.neu.edu/home/stamourv/papers/dissertation.pdf")) 
+			  (em "How to Generate Actionable Advice about Performance Problems"))
+		       ", "
                        "Ph.D., Northeastern University, 2015 (Committee member)")
 		   (li (a ((href "http://www.cs.umd.edu/~piotrm/")) "Piotr Mardziel") ", "
 		       (em "Modeling, Measuring, and Limiting Adversary Knowledge")

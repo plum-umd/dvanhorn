@@ -179,9 +179,11 @@
 		 (a ((href "http://icfpconference.org/")) "ICFP") ", "
 		 "as a program committee member for " 
 		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") 
-		 " and " 
+		 ", " 
 		 (a ((href "http://andykeep.com/SchemeWorkshop2015/"))
 		    "Scheme 2015")
+		 ", and "
+		 (a ((href "http://ecoop.org/")) "ECOOP 2016")
 		 ", "
 		 "and as an external review committee member for "
 		 "POPL 2016.")	      
@@ -305,6 +307,7 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
+	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
 	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))
                (p (a ((href "http://flint.cs.yale.edu/esop2014/")) "European Symposium on Programming (ESOP), 2014"))

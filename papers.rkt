@@ -300,7 +300,8 @@
 		     "http://conf.researchr.org/home/pldi2015")
 	      "Portland, Oregon"
 	      "June, 2015"
-	      '((arXiv "http://arxiv.org/abs/1411.3967")))
+	      '((ACM "https://dl.acm.org/citation.cfm?id=2737971")
+               (arXiv "http://arxiv.org/abs/1411.3967")))
 
    (conf-paper "Running Probabilistic Programs Backwards"
                (list toronto mccarthy)
@@ -308,7 +309,8 @@
                       "http://www.etaps.org/index.php/2015/esop")
                "London, United Kingdom"
                "April, 2015"
-               '((arXiv "http://arxiv.org/abs/1412.4053")))
+               '((Springer "http://link.springer.com/chapter/10.1007%2F978-3-662-46669-8_3")
+                 (arXiv "http://arxiv.org/abs/1412.4053")))
 
    (conf-paper "Abstracting Abstract Control"
 	       (list ianj)

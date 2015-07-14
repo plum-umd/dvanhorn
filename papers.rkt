@@ -148,6 +148,10 @@
   (auth "Andrew W. Keep"
 	"http://andykeep.com/"))
 
+(define adams
+  (auth "Michael D. Adams"
+	"https://michaeldadams.org/"))
+
 (define lyde
   (auth "Steven Lyde"
         "https://faculty.utah.edu/u0286788-STEVEN_VAL_LYDE/research/index.hml"))
@@ -283,6 +287,16 @@
       
 (define papers
   (list
+
+   (pre-paper "Mechanically Verified Calculational Abstract Interpretation"
+	      (list darais)
+	      "July 2015"
+	      '((arXiv "http://arxiv.org/abs/1507.03559")))
+
+   (pre-paper "Pushdown Control-Flow Analysis for Free"
+	      (list gilray lyde adams might)
+	      "July 2015"
+	      '((arXiv "http://arxiv.org/abs/1507.03137")))
 
    (pre-paper "Incremental Computation with Names"
                (list hammer dunfield headley labichn foster hicks)

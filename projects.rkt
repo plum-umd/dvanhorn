@@ -6,6 +6,43 @@
 (define projects
   (list
    (project
+    "The Science and Applications of Crypto-Currency"
+    "Co-PI"
+
+    '("Crypto-currencies and smart contracts are a new wave of "
+      "disruptive technology that will shape the future of money and "
+      "financial transactions. Today, crypto-currencies are a "
+      "billion-dollar market, and hundreds of companies are entering "
+      "this space, promising exciting new markets and "
+      "eco-systems. Unfortunately, usage of crypto-currencies "
+      "outstrips our understanding. Currently most crypto currencies "
+      "rely on heuristic designs without a solid appreciation of the "
+      "necessary security properties, or any formal basis upon which "
+      "strong assurance of such properties might be achieved."
+
+      
+      "This work aims to establish a rigorous scientific foundation "
+      "for crypto-currencies. To achieve this, this work blends cryptography, "
+      "game theory, programming languages, and systems security "
+      "techniques. Expected outcomes include new crypto-currency "
+      "designs with provable security properties, financially "
+      "enforceable cryptographic protocols whose security properties "
+      "are backed by enforceable payments in case of a breach, smart "
+      "contract systems that are easy to program and formally "
+      "verifiable, as well as high-assurance systems for storing and "
+      "handling high-value crypto-currencies and transactions. The "
+      "project will provide solutions to some of the most difficult "
+      "and important technical questions surrounding the current "
+      "digital-money revolution. The investigators will organize a "
+      "crypto-currency speaker series that will bring together technologists, "
+      "economists, social scientists, and policy-makers to foster "
+      "collaborations that will shape the future of digital currencies.")
+
+    '("This collaboration with Elaine Shi, Emin Sirer, Jonathan Katz, "
+      "Dawn Song, and Michael Hicks is supported by the National Science Foundation "
+      "Secure " amp " Trustworthy Cyberspace program."))
+
+   (project
     "Sound Over- and Under-Approximation of Complexity and Information Security"
     "Co-PI"
     '("Our primary goal is to enable sound, highly automated program analysis "
@@ -22,7 +59,8 @@
       "analyst in to the iterative refinement loop of the system to quickly "
       "confirm, dismiss, and focus hypotheses about resource usage.")
 
-    '("This collaboration with  is supported by the DARPA Information Innovation"
+    '("This collaboration with Eric Koskinen, Dawn Song, and Michael "
+      "Hicks is supported by the DARPA Information Innovation"
       "Office, Space/Time Analysis for Cybersecurity program."))
 
 

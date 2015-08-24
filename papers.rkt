@@ -298,14 +298,20 @@
 	      "July 2015"
 	      '((arXiv "http://arxiv.org/abs/1507.03137")))
 
-   (pre-paper "Incremental Computation with Names"
+   (conf-paper "Incremental Computation with Names"
                (list hammer dunfield headley labichn foster hicks)
-               "March 2015"
+	       (venue "The ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA'15)"
+		      "http://2015.splashcon.org/")
+	       "Pittsburgh, Pennsylvania"
+               "October 2015"
                '((arXiv "http://arxiv.org/abs/1503.07792")))
   
-   (pre-paper "Galois Transformers and Modular Abstract Interpreters"
+   (conf-paper "Galois Transformers and Modular Abstract Interpreters"
                (list darais might)
-               "March 2015"
+	       (venue "The ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA'15)" 
+		      "http://2015.splashcon.org/")
+	       "Pittsburgh, Pennsylvania"
+               "October 2015"
                '((arXiv "http://arxiv.org/abs/1411.3962")))
 
    (conf-paper "Relatively Complete Counterexamples for Higher-Order Programs"

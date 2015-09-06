@@ -293,7 +293,7 @@
 
                (hr ((id "steering-committees") (class "phat")))
                (h4  "Steering Committees")
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2016"))
+               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2015"))
                (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))
 
                (hr ((id "chair") (class "phat")))

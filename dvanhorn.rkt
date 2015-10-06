@@ -191,7 +191,26 @@
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
                  "from Northeastern University, which introduces programming interactive video games.")
-              ))))
+              
+	      (h4 "News")
+	      (ul (li "The paper " 
+		      (a ((href "http://arxiv.org/abs/1507.03137")) 
+			 (em "Pushdown Control-Flow Analysis for Free"))
+		      " will appear at POPL'16 in January.")
+		  (li "The tutorial " 
+		      (a ((href "https://dvanhorn.github.io/redex-aam-tutorial/")) 
+			 (em "An Introduction to Redex with Abstracting Abstract Machines"))
+		      " will appear at POPL'16 in January.")
+		  (li "The paper " 
+		      (a ((href "http://arxiv.org/abs/1503.07792"))
+			 (em "Incremental Computation with Names"))
+		      " will appear at OOPSLA'15 in October.")
+		  (li "The paper " 
+		      (a ((href "http://arxiv.org/abs/1411.3962")) 
+			 (em "Galois Transformers and Modular Abstract Interpreters"))
+		      " will appear at OOPSLA'15 in October."))))))
+		  
+		   
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -327,7 +346,7 @@
                (hr ((id "reviewer") (class "phat")))
                (h4 "Reviewer")
                (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2015, 2014, 2008"))
-               (p (a ((href "http://vmcai2014.di.ens.fr/")) "International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI), 2014"))
+               (p (a ((href "http://conf.researchr.org/home/VMCAI-2016"))"International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI),  2016") ", " (a ((href "http://vmcai2014.di.ens.fr/")) "2014"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2014, 2010"))
                (p (a ((href "http://link.springer.com/book/10.1007/978-3-642-19718-5")) "European Symposium on Programming (ESOP), 2011"))
                (p (a ((href "http://www.sigplan.org/Conferences/DLS/")) "ACM SIGPLAN Symposium on Dynamic Languages (DLS), 2014, 2012"))

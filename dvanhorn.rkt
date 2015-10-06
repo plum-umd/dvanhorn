@@ -337,6 +337,7 @@
 
                (hr ((id "reviewer") (class "phat")))
                (h4 "Other")
+  	       (p (a ((href "http://icfpconference.org/icfp-2015/")) "Student Research Competition committee, ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015"))
                (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "Workshop Chair, ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013-2015"))
                
                ))))

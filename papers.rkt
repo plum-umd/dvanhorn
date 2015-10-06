@@ -293,10 +293,13 @@
 	      "July 2015"
 	      '((arXiv "http://arxiv.org/abs/1507.03559")))
 
-   (pre-paper "Pushdown Control-Flow Analysis for Free"
-	      (list gilray lyde adams might)
-	      "July 2015"
-	      '((arXiv "http://arxiv.org/abs/1507.03137")))
+   (conf-paper "Pushdown Control-Flow Analysis for Free"
+	       (list gilray lyde adams might)
+               (venue "The 43rd ACM SIGPLAN-SIGACT Symposium on Principles in Programming Languages (POPL'16)"
+                      "http://conf.researchr.org/home/POPL-2016")
+               "St. Petersburg, Florida"
+	       "January 2016"
+	       '((arXiv "http://arxiv.org/abs/1507.03137")))
 
    (conf-paper "Incremental Computation with Names"
                (list hammer dunfield headley labichn foster hicks)

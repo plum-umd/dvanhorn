@@ -193,19 +193,23 @@
                  "from Northeastern University, which introduces programming interactive video games.")
               
 	      (h4 "News")
-	      (ul (li "The paper " 
+	      (ul (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
+		      (a ((href "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=16131")) "Dagstuhl Seminar on Language Based Verification Tools for Functional Programs") ", both in March.")
+	          (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1507.03137")) 
 			 (em "Pushdown Control-Flow Analysis for Free"))
 		      " will appear at POPL'16 in January.")
-		  (li "The tutorial " 
+		  (li "New tutorial: " 
 		      (a ((href "https://dvanhorn.github.io/redex-aam-tutorial/")) 
 			 (em "An Introduction to Redex with Abstracting Abstract Machines"))
 		      " will appear at POPL'16 in January.")
-		  (li "The paper " 
+		  (li "New preprint: "
+		      (em (a ((href "http://arxiv.org/abs/1507.03559")) "Mechanically Verified Calculational Abstract Interpretation")))
+		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1503.07792"))
 			 (em "Incremental Computation with Names"))
 		      " will appear at OOPSLA'15 in October.")
-		  (li "The paper " 
+		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1411.3962")) 
 			 (em "Galois Transformers and Modular Abstract Interpreters"))
 		      " will appear at OOPSLA'15 in October."))))))

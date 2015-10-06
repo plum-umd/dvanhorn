@@ -145,7 +145,7 @@
                        (li (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "CMSC 631"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
-                       (li (a ((href "https://zimbra.ccs.neu.edu/home/dvanhorn@zimbra.ccs.neu.edu/Calendar.html")) "Calendar"))                       
+                       (li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
                        (li (a ((href "dvanhorn.asc")) "PGP"))
                        #;(li (a ((href "#talks") (class "category")) "Talks")))
                    (hr)))
@@ -293,7 +293,7 @@
 
                (hr ((id "steering-committees") (class "phat")))
                (h4  "Steering Committees")
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2016"))
+               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2015"))
                (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))
 
                (hr ((id "chair") (class "phat")))
@@ -367,6 +367,7 @@
                (p "David Van Horn" (br)
                   "3439 A.V. Williams Building" (br)
                   "University of Maryland" (br)
+		  "8223 Paint Branch Drive" (br)
                   "College Park, MD 20742" (br)
                   (br)
                   "Email: (@ dvanhorn (dot cs umd edu))" )

@@ -193,9 +193,10 @@
                  "from Northeastern University, which introduces programming interactive video games.")
               
 	      (h4 "News")
-		  (li "New preprint: "
-		      (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")))
-	      (ul (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
+	      (ul 
+	       (li "New preprint: "
+		   (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")))
+	       (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
 		      (a ((href "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=16131")) "Dagstuhl Seminar on Language Based Verification Tools for Functional Programs") ", both in March.")
 	          (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1507.03137")) 

@@ -288,10 +288,10 @@
 (define papers
   (list
 
-   (pre-paper "Mechanically Verified Calculational Abstract Interpretation"
+   (pre-paper "Constructive Galois Connections"
 	      (list darais)
-	      "July 2015"
-	      '((arXiv "http://arxiv.org/abs/1507.03559")))
+	      "November 2015"
+	      '((arXiv "http://arxiv.org/abs/1511.06965")))
 
    (conf-paper "Pushdown Control-Flow Analysis for Free"
 	       (list gilray lyde adams might)

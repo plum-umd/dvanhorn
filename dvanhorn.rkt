@@ -174,19 +174,13 @@
                     ")") " "
                  "at Northeastern University.")
                     
-              (p "I currently " (a ((href "service.html")) "serve") " as a steering committee member and the " 
-		 "publicity chair for " 
-		 (a ((href "http://icfpconference.org/")) "ICFP") ", "
+              (p "I currently " (a ((href "service.html")) "serve") " "
 		 "as a program committee member for " 
-		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015") 
-		 ", " 
-		 (a ((href "http://andykeep.com/SchemeWorkshop2015/"))
-		    "Scheme 2015")
-		 ", and "
 		 (a ((href "http://ecoop.org/")) "ECOOP 2016")
-		 ", "
-		 "and as an external review committee member for "
-		 "POPL 2016.")	      
+		 " and "
+		 (a ((href "http://www.sigplan.org/Conferences/POPL/")) "POPL 2017") 
+		 ".")
+
 
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
@@ -332,6 +326,7 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
+	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2017"))
 	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
 	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))

@@ -218,12 +218,18 @@
 	   '(nbsp "]")))
 
 
+(: with : (Listof Auth) -> (Listof Xexpr))
+(define (with coauthors)
+  (if (empty? coauthors)
+      empty
+      `("With " ,@(oxford (map format-auth coauthors)) ". ")))
+
 (: format-paper : Paper -> Xexpr)
 (define (format-paper p)
   (match p
     [(pre-paper title coauthors date links)
      `(p (span ((class "paper-title")) ,title) ". "
-	 "With " ,@(oxford (map format-auth coauthors)) ". "
+         ,@(with coauthors)
 	 (br)
 	 "Preprint, " ,date
 	 "."
@@ -233,7 +239,7 @@
      (format-paper (conf-paper title coauthors conf location date links))]
     [(conf-paper title coauthors conf location date links)
      `(p (span ((class "paper-title")) ,title) ". "
-	 "With " ,@(oxford (map format-auth coauthors)) ". "
+         ,@(with coauthors)
 	 (br)
 	 (span ((class "italic")) ,(format-venue conf))
 	 ", "
@@ -247,18 +253,18 @@
 
     [(jour-paper title coauthors journal vol number date links)
      `(p (span ((class "paper-title")) ,title) ". "
-      "With " ,@(oxford (map format-auth coauthors)) ". "
-      (br)
-      (span ((class "italic")) ,(format-venue journal))
-      ", "
-      ,vol
-      "("
-      ,number
-      "), "
-      ,date
-      "."
-      (br)
-      ,@(format-links links))]
+         ,@(with coauthors)
+	 (br)
+	 (span ((class "italic")) ,(format-venue journal))
+	 ", "
+	 ,vol
+	 "("
+	 ,number
+	 "), "
+	 ,date
+	 "."
+	 (br)
+	 ,@(format-links links))]
        
 	
 ;     #;`(span ((class "italic")) ,journal)]
@@ -300,6 +306,16 @@
                "St. Petersburg, Florida"
 	       "January 2016"
 	       '((arXiv "http://arxiv.org/abs/1507.03137")))
+
+   (conf-paper "Tutorial: An Introduction to Redex with Abstracting
+                Abstract Machines"
+		(list)
+		(venue "Tutorials at The 43rd ACM SIGPLAN-SIGACT Symposium on Principles in Programming Languages (POPL'16)"
+                      "http://conf.researchr.org/home/POPL-2016")
+               "St. Petersburg, Florida"
+	       "January 2016"
+	       '((HTML "https://dvanhorn.github.io/redex-aam-tutorial/")
+		 (PDF "https://www.cs.umd.edu/~dvanhorn/redex-aam.pdf")))
 
    (conf-paper "Incremental Computation with Names"
                (list hammer dunfield headley labichn foster hicks)

@@ -102,7 +102,7 @@
                 (hr)
                 (div ((class "row"))
                      (div ((class "large-6 columns"))
-                          (p (small copy nbsp "2015 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
+                          (p (small copy nbsp "2016 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
                           (ul ((class "inline-list right"))
                               (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
@@ -124,6 +124,9 @@
                             (width "150")
                             #;(style "0"))))
                    (hr)
+		   (center (a ((href "http://tfp2016.org/")) 
+			      (h1 "TFP 2016")))
+		   (hr)
                    (a ((href "http://nostarch.com/realmofracket.htm"))
                       (img ((src "img/racket_cover_web.png")   
                             (alt "Realm of Racket"))))
@@ -142,7 +145,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "CMSC 631"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "CMSC 430"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -175,10 +178,17 @@
                  "at Northeastern University.")
                     
               (p "I currently " (a ((href "service.html")) "serve") " "
+		 "as the PC chair for "
+		 (a ((href "http://tfp2016.org")) "TFP 2016") ", "
 		 "as a program committee member for " 
 		 (a ((href "http://ecoop.org/")) "ECOOP 2016")
 		 " and "
 		 (a ((href "http://www.sigplan.org/Conferences/POPL/")) "POPL 2017") 
+		 ", "
+		 "and as co-editor of the "
+		 (a ((href "http://journals.cambridge.org/action/displayJournal?jid=JFP")) "Journal of Functional Programming")
+		 " special issue for "
+		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015")
 		 ".")
 
 
@@ -269,6 +279,7 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
  
+	       (p (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "Spring 2016: CMSC 430, Introduction to Compilers"))
                (p (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "Fall 2015: CMSC 631, Program Analysis and Understanding"))	       
                (p (a ((href "http://www.cs.umd.edu/class/spring2015/cmsc430/")) "Spring 2015: CMSC 430, Introduction to Compilers"))
                (p (a ((href "http://www.cs.umd.edu/class/fall2014/cmsc631/")) "Fall 2014: CMSC 631, Program Analysis and Understanding"))
@@ -316,6 +327,7 @@
 
                (hr ((id "chair") (class "phat")))
                (h4  "Chair")
+	       (p (a ((href "http://tfp2016.org/")) "Symposium on Trends in Functional Programming (TFP), 2016"))
                (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))          
                (p (a ((href "http://www.nii.ac.jp/shonan/blog/2011/03/19/workshop-on-automated-techniques-for-higher-order-program-verification/")) "NII Workshop on Automated Techniques for Higher-Order Program Verification, 2011"))
                (p (a ((href "http://nepls.org/")) "New England Programming Languages and Systems Symposium (NEPLS), 2011"))

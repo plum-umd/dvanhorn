@@ -198,6 +198,8 @@
               
 	      (h4 "News")
 	      (ul 
+               (li "New preprint: "
+                   (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation")))
 	       (li "New preprint: "
 		   (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")))
 	       (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
@@ -205,19 +207,19 @@
 	          (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1507.03137")) 
 			 (em "Pushdown Control-Flow Analysis for Free"))
-		      " will appear at POPL'16 in January.")
+		      " published at POPL'16 in January.")
 		  (li "New tutorial: " 
 		      (a ((href "https://dvanhorn.github.io/redex-aam-tutorial/")) 
 			 (em "An Introduction to Redex with Abstracting Abstract Machines"))
-		      " will appear at POPL'16 in January.")
+		      " presented at POPL'16 in January.")
 		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1503.07792"))
 			 (em "Incremental Computation with Names"))
-		      " will appear at OOPSLA'15 in October.")
+		      " published at OOPSLA'15 in October.")
 		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1411.3962")) 
 			 (em "Galois Transformers and Modular Abstract Interpreters"))
-		      " will appear at OOPSLA'15 in October."))))))
+		      " published at OOPSLA'15 in October."))))))
 		  
 		   
 

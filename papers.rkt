@@ -294,6 +294,10 @@
 (define papers
   (list
 
+   (pre-paper "Higher-order symbolic execution for contract verification and refutation"
+              (list nguyen samth)
+	      "March 2016"
+	      '((arXiv "http://arxiv.org/abs/1507.04817")))
    (pre-paper "Constructive Galois Connections"
 	      (list darais)
 	      "November 2015"

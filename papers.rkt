@@ -305,7 +305,8 @@
                       "http://conf.researchr.org/home/POPL-2016")
                "St. Petersburg, Florida"
 	       "January 2016"
-	       '((arXiv "http://arxiv.org/abs/1507.03137")))
+	       '((ACM "https://dl.acm.org/citation.cfm?id=2837631")
+                 (arXiv "http://arxiv.org/abs/1507.03137")))
 
    (conf-paper "Tutorial: An Introduction to Redex with Abstracting
                 Abstract Machines"
@@ -323,7 +324,8 @@
 		      "http://2015.splashcon.org/")
 	       "Pittsburgh, Pennsylvania"
                "October 2015"
-               '((arXiv "http://arxiv.org/abs/1503.07792")))
+               '((ACM "https://dl.acm.org/citation.cfm?id=2814305")
+                 (arXiv "http://arxiv.org/abs/1503.07792")))
   
    (conf-paper "Galois Transformers and Modular Abstract Interpreters"
                (list darais might)
@@ -331,7 +333,8 @@
 		      "http://2015.splashcon.org/")
 	       "Pittsburgh, Pennsylvania"
                "October 2015"
-               '((arXiv "http://arxiv.org/abs/1411.3962")))
+               '((ACM "https://dl.acm.org/citation.cfm?id=2814308")
+                 (arXiv "http://arxiv.org/abs/1411.3962")))
 
    (conf-paper "Relatively Complete Counterexamples for Higher-Order Programs"
 	      (list nguyen)

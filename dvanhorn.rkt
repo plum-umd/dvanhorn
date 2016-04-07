@@ -197,7 +197,8 @@
                  "from Northeastern University, which introduces programming interactive video games.")
               
 	      (h4 "News")
-	      (ul 
+	      (ul
+	       (li "I'm attending the " (a ((href "http://www.dagstuhl.de/16402/")) "Dagstuhl Seminar on Programming Language Techniques for Incremental and Reactive Computing") " in October 2016.")
                (li "New preprint: "
                    (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation")))
 	       (li "New preprint: "

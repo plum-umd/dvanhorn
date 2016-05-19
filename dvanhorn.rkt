@@ -198,6 +198,10 @@
               
 	      (h4 "News")
 	      (ul
+	       (li "New grant: " (a ((href "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1618756")) (em "Online Verification-Validation"))
+	       ", funded by the National Science Foundation, Software and Hardware Foundations program.  This collaborative project is with Matthew Hammer and Bor-Yuh (Evan) Chang at the University of Colorado at Boulder.")
+
+	       (li (a ((href "http://tfp2016.org/")) "Trends in Functional Programming") " will be hosted at the University of Maryland, June 2016." )
 	       (li "I'm attending the " (a ((href "http://www.dagstuhl.de/16402/")) "Dagstuhl Seminar on Programming Language Techniques for Incremental and Reactive Computing") " in October 2016.")
                (li "New preprint: "
                    (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation")))

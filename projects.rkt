@@ -6,6 +6,16 @@
 (define projects
   (list
    (project
+    "Online Verification-Validation"
+    "PI"
+    '("Increasingly, modern software on the web is richly extensible, accelerating its evolution and dramatically reducing the time between development and deployment. The intellectual merit of this research consists of challenging the false choice between creating software that is extensible (easy to reuse and extend) and software that is correct (meets its specifications). The new approach advanced by this work, Incremental Verification-Validation, enables programmers to bring domain-specific safely disciplines to extensible systems, by providing a framework where these disciplines are communicated both precisely and usefully, as executable code. The project's broader significance and importance consist in changing the way programmers approach building correct extensible software for the web. "
+
+   "Incremental Verification-Validation encourages programmers to co-design their systems with executable specifications that check these systems dynamically, as they execute. Moreover, unlike typical assertions, which execute dynamically and non-incrementally, the proposed are subject to novel patterns that enhance their performance: In regressive validation, verification partially discharges some checks, dynamically rewriting the program with residual versions; in progressive verification, online verification occurs in passes that each cache and reuse work, to avoid from-scratch verification of facts that still hold from earlier passes. Finally, to avoid forcing analysis programmers to reason about incremental changes explicitly in each analysis that they create, the meta layer expresses incremental computations implicitly, using an implicitly-incremental meta language whose abstractions hide reasoning on a per-change basis.")
+
+'("This collaboration with Matthew Hammer and Bor-Yuh (Evan) Chang is
+supported by the National Science Foundation  Software and Hardware Foundations program"))
+
+   (project
     "The Science and Applications of Crypto-Currency"
     "Co-PI"
 

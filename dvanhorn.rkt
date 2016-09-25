@@ -198,15 +198,17 @@
               
 	      (h4 "News")
 	      (ul
+	       (li (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou") " and " (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") " have joined the PLUM lab as the inaugural " (a ((href "https://www.cs.umd.edu/article/2016/07/new-basili-fellows-named")) "Basili Post-doctoral Fellows") ".")
+	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1608.06012")) "A Vision for Online Verification-Validation")) " published at GPCE'16 in November.")
+       	       (li "New paper: "
+		   (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")) " published at ICFP'16 in September.")
 	       (li "New grant: " (a ((href "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1618756")) (em "Online Verification-Validation"))
 	       ", funded by the National Science Foundation, Software and Hardware Foundations program.  This collaborative project is with Matthew Hammer and Bor-Yuh (Evan) Chang at the University of Colorado at Boulder.")
 
 	       (li (a ((href "http://tfp2016.org/")) "Trends in Functional Programming") " will be hosted at the University of Maryland, June 2016." )
-	       (li "I'm attending the " (a ((href "http://www.dagstuhl.de/16402/")) "Dagstuhl Seminar on Programming Language Techniques for Incremental and Reactive Computing") " in October 2016.")
+#;	       (li "I'm attending the " (a ((href "http://www.dagstuhl.de/16402/")) "Dagstuhl Seminar on Programming Language Techniques for Incremental and Reactive Computing") " in October 2016.")
                (li "New preprint: "
                    (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation")))
-	       (li "New preprint: "
-		   (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")))
 	       (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
 		      (a ((href "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=16131")) "Dagstuhl Seminar on Language Based Verification Tools for Functional Programs") ", both in March.")
 	          (li "New paper: " 
@@ -217,11 +219,11 @@
 		      (a ((href "https://dvanhorn.github.io/redex-aam-tutorial/")) 
 			 (em "An Introduction to Redex with Abstracting Abstract Machines"))
 		      " presented at POPL'16 in January.")
-		  (li "New paper: " 
+#;		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1503.07792"))
 			 (em "Incremental Computation with Names"))
 		      " published at OOPSLA'15 in October.")
-		  (li "New paper: " 
+#;		  (li "New paper: " 
 		      (a ((href "http://arxiv.org/abs/1411.3962")) 
 			 (em "Galois Transformers and Modular Abstract Interpreters"))
 		      " published at OOPSLA'15 in October."))))))

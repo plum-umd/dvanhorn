@@ -164,6 +164,10 @@
   (auth "Petey Aldous"
         "http://eng.utah.edu/~paldous/about.html"))
 
+(define echang
+  (auth "Bor-Yuh Evan Chang"
+        "http://www.cs.colorado.edu/~bec/"))
+	
 (define chang
   (auth "Stephen Chang"
 	"http://www.ccs.neu.edu/home/stchang/"))
@@ -294,14 +298,26 @@
 (define papers
   (list
 
+   (conf-paper "A Vision for Online Verification-Validation"
+               (list hammer echang)
+	       (venue "The 15th International Conference on Generative Programming: Concepts & Experience (GPCE'16)"
+	              "http://conf.researchr.org/home/gpce-2016")
+	       "Amsterdam, Netherlands"
+     	       "November 2016"
+	       '((arxiv "https://arxiv.org/abs/1608.06012")))
+	       
    (pre-paper "Higher-order symbolic execution for contract verification and refutation"
               (list nguyen samth)
 	      "March 2016"
 	      '((arXiv "http://arxiv.org/abs/1507.04817")))
-   (pre-paper "Constructive Galois Connections"
-	      (list darais)
-	      "November 2015"
-	      '((arXiv "http://arxiv.org/abs/1511.06965")))
+   (conf-paper "Constructive Galois Connections"
+	       (list darais)
+	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'16)"
+	              "http://conf.researchr.org/home/icfp-2016")
+	       "Nara, Japan"
+	       "September 2016"
+	      '((ACM "https://dl.acm.org/citation.cfm?id=2951934")
+	        (arXiv "http://arxiv.org/abs/1511.06965")))
 
    (conf-paper "Pushdown Control-Flow Analysis for Free"
 	       (list gilray lyde adams might)

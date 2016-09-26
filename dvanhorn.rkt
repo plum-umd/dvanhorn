@@ -347,6 +347,7 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
+	       (p (a ((href "http://staticanalysis.org/")) "Static Analysis Symposium (SAS), 2017"))
 	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2017"))
 	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
@@ -377,6 +378,8 @@
 
                (hr ((id "reviewer") (class "phat")))
                (h4 "Other")
+ 	       (p (a ((href "http://conf.researchr.org/info/icfp-2016/student-research-competition")) "Student Research Competition chair, ACM SIGPLAN International Conference on Functional Programming (ICFP), 2016"))
+
   	       (p (a ((href "http://icfpconference.org/icfp-2015/")) "Student Research Competition committee, ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015"))
                (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "Workshop Chair, ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013-2015"))
                

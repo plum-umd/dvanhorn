@@ -145,7 +145,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "CMSC 430"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "CMSC 430"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -198,6 +198,8 @@
               
 	      (h4 "News")
 	      (ul
+	       (li "I'll be lecturing at the " (a ((href "https://www.cs.uoregon.edu/research/summerschool/")) "Oregon Programming Languages Summer School") " at the University of Oregon in late June, early July, 2017.")
+	       
 	       (li (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou") " and " (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") " have joined the PLUM lab as the inaugural " (a ((href "https://www.cs.umd.edu/article/2016/07/new-basili-fellows-named")) "Basili Post-doctoral Fellows") ".")
 	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1608.06012")) "A Vision for Online Verification-Validation")) " published at GPCE'16 in November.")
        	       (li "New paper: "
@@ -287,7 +289,8 @@
           (div ((class "large-9 columns")
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
- 
+
+               (p (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "Spring 2017: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "Spring 2016: CMSC 430, Introduction to Compilers"))
                (p (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "Fall 2015: CMSC 631, Program Analysis and Understanding"))	       
                (p (a ((href "http://www.cs.umd.edu/class/spring2015/cmsc430/")) "Spring 2015: CMSC 430, Introduction to Compilers"))

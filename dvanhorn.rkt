@@ -449,16 +449,23 @@
                ,@(projects-section projects)
                   
                (hr ((id "students") (class "phat midphat")))                   
-               (h4  "Students")	       
-               (ul (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
-		       "post-doc at UMD")
-		   (li (a ((href "http://david.darais.com/")) "David Darais") ", "
-                       "Ph.D. student at UMD")
+               (h4  "Students")
+	       (h5 "Current")
+               (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
+		       "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
                        "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phúc C. Nguyễn") ", "
                        "Ph.D. student at UMD")
-                   (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
+		   (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
+		       "Post-doc at UMD")
+		   (li (a ((href "https://nikivazou.github.io/")) "Niki Vazou") ", "
+		       "Post-doc at UMD"))
+                   
+	       (h5 "Past")
+	       (ul (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
+		       "post-doc at UMD, now at MSR, Cambridge")
+		   (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
 		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
 		       ", Ph.D., Northeastern University, 2015")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "

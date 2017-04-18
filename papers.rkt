@@ -297,7 +297,15 @@
       
 (define papers
   (list
-
+   (jour-paper "Higher-order symbolic execution for contract verification and refutation"
+               (list nguyen samth)
+	       jfp
+	       "27"
+	       "3"
+	       "January 2017"
+	       '((CUP "https://doi.org/10.1017/S0956796816000216")
+		 (arXiv "http://arxiv.org/abs/1507.04817")))
+   
    (conf-paper "A Vision for Online Verification-Validation"
                (list hammer echang)
 	       (venue "The 15th International Conference on Generative Programming: Concepts & Experience (GPCE'16)"
@@ -306,10 +314,6 @@
      	       "November 2016"
 	       '((arxiv "https://arxiv.org/abs/1608.06012")))
 	       
-   (pre-paper "Higher-order symbolic execution for contract verification and refutation"
-              (list nguyen samth)
-	      "March 2016"
-	      '((arXiv "http://arxiv.org/abs/1507.04817")))
    (conf-paper "Constructive Galois Connections"
 	       (list darais)
 	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'16)"

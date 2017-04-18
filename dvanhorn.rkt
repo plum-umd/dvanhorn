@@ -198,6 +198,8 @@
               
 	      (h4 "News")
 	      (ul
+	       (li "My PhD student, " (a ((href "http://david.darais.com/")) "David Darais") ", will be joining the faculty "
+	           "of the " (a ((href "https://www.uvm.edu/cems/cs")) "Computer Science department") " at the " (a ((href "http://www.uvm.edu/")) "University of Vermont") " in January 2018!")
 	       (li "I'll be lecturing at the " (a ((href "https://www.cs.uoregon.edu/research/summerschool/")) "Oregon Programming Languages Summer School") " at the University of Oregon in late June, early July, 2017.")
 	       
 	       (li (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou") " and " (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") " have joined the PLUM lab as the inaugural " (a ((href "https://www.cs.umd.edu/article/2016/07/new-basili-fellows-named")) "Basili Post-doctoral Fellows") ".")

@@ -201,7 +201,11 @@
 	       (li "I'll be lecturing at the " (a ((href "https://www.cs.uoregon.edu/research/summerschool/")) "Oregon Programming Languages Summer School") " at the University of Oregon in late June, early July, 2017.")
 	       
 	       (li (a ((href "http://goto.ucsd.edu/~nvazou/")) "Niki Vazou") " and " (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") " have joined the PLUM lab as the inaugural " (a ((href "https://www.cs.umd.edu/article/2016/07/new-basili-fellows-named")) "Basili Post-doctoral Fellows") ".")
-	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1608.06012")) "A Vision for Online Verification-Validation")) " published at GPCE'16 in November.")
+	       (li "New paper: "
+		   (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation"))
+		   " published in JFP in January.")
+	       (li "New paper: "
+	       (em (a ((href "https://arxiv.org/abs/1608.06012")) "A Vision for Online Verification-Validation")) " published at GPCE'16 in November.")
        	       (li "New paper: "
 		   (em (a ((href "http://arxiv.org/abs/1511.06965")) "Constructive Galois Connections")) " published at ICFP'16 in September.")
 	       (li "New grant: " (a ((href "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1618756")) (em "Online Verification-Validation"))
@@ -209,8 +213,6 @@
 
 	       (li (a ((href "http://tfp2016.org/")) "Trends in Functional Programming") " will be hosted at the University of Maryland, June 2016." )
 #;	       (li "I'm attending the " (a ((href "http://www.dagstuhl.de/16402/")) "Dagstuhl Seminar on Programming Language Techniques for Incremental and Reactive Computing") " in October 2016.")
-               (li "New preprint: "
-                   (em (a ((href "http://arxiv.org/abs/1507.04817")) "Higher-order symbolic execution for contract verification and refutation")))
 	       (li "I'm attending the " (a ((href "http://shonan.nii.ac.jp/shonan/blog/2015/04/05/higher-order-model-checking/")) "NII Shonan Village Seminar on Higher-Order Model Checking") " and the "
 		      (a ((href "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=16131")) "Dagstuhl Seminar on Language Based Verification Tools for Functional Programs") ", both in March.")
 	          (li "New paper: " 

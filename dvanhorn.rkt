@@ -124,9 +124,6 @@
                             (width "150")
                             #;(style "0"))))
                    (hr)
-		   (center (a ((href "http://tfp2016.org/")) 
-			      (h1 "TFP 2016")))
-		   (hr)
                    (a ((href "http://nostarch.com/realmofracket.htm"))
                       (img ((src "img/racket_cover_web.png")   
                             (alt "Realm of Racket"))))
@@ -145,7 +142,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "CMSC 430"))
+                       (li (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "CMSC 131"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -294,6 +291,7 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
 
+	       (p (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "Fall 2017: CMSC 131A, Systematic Program Design I"))
                (p (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "Spring 2017: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "Spring 2016: CMSC 430, Introduction to Compilers"))
                (p (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "Fall 2015: CMSC 631, Program Analysis and Understanding"))	       

@@ -297,6 +297,13 @@
       
 (define papers
   (list
+   (conf-paper "Abstracting Definitional Interpreters"
+               (list darais nguyen labichn)
+	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'17)"
+	       	      "http://icfp17.sigplan.org/")
+	       "Oxford, UK"
+	       "September 2017"
+	       '())
    (jour-paper "Higher-order symbolic execution for contract verification and refutation"
                (list nguyen samth)
 	       jfp

@@ -319,7 +319,8 @@
 	              "http://conf.researchr.org/home/gpce-2016")
 	       "Amsterdam, Netherlands"
      	       "November 2016"
-	       '((arxiv "https://arxiv.org/abs/1608.06012")))
+	       '((ACM "https://dl.acm.org/citation.cfm?doid=2993236.2993255")
+                 (arxiv "https://arxiv.org/abs/1608.06012")))
 	       
    (conf-paper "Constructive Galois Connections"
 	       (list darais)

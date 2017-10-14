@@ -297,13 +297,21 @@
       
 (define papers
   (list
+   (conf-paper "Soft Contract Verification for Higher-order Stateful Programs"
+               (list nguyen gilray samth)
+	       (venue "The 45th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'18)"
+	              "https://popl18.sigplan.org/")
+	       "Los Angeles, USA"
+	       "January 2018"
+	       '())
    (conf-paper "Abstracting Definitional Interpreters"
                (list darais nguyen labichn)
 	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'17)"
 	       	      "http://icfp17.sigplan.org/")
 	       "Oxford, UK"
 	       "September 2017"
-	       '())
+	       '((ACM "https://dl.acm.org/citation.cfm?id=3136534.3110256")
+	         (arXiv "https://arxiv.org/abs/1707.04755")))
    (jour-paper "Higher-order symbolic execution for contract verification and refutation"
                (list nguyen samth)
 	       jfp

@@ -158,7 +158,7 @@
 
 (define gilray 
   (auth "Thomas Gilray"
-        "http://faculty.utah.edu/u0706517-THOMAS_EVAN_GILRAY/contact/index.hml"))
+        "https://thomas.gilray.org/"))
 
 (define aldous
   (auth "Petey Aldous"

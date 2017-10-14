@@ -5,6 +5,7 @@
 
 (define www "www/")
 
+
 ;; [Listof Xexpr] String -> Void
 (define (write-page xexprs fn)
   (with-output-to-file (string-append www fn)
@@ -195,6 +196,7 @@
               
 	      (h4 "News")
 	      (ul
+	       (li "New paper: " (em (a ((href "")) "Abstracting Definitional Interpreters")) " published at ICFP'17 in Oxford, UK.")
 	       (li "My PhD student, " (a ((href "http://david.darais.com/")) "David Darais") ", will be joining the faculty "
 	           "of the " (a ((href "https://www.uvm.edu/cems/cs")) "Computer Science department") " at the " (a ((href "http://www.uvm.edu/")) "University of Vermont") " in January 2018!")
 	       (li "I'll be lecturing at the " (a ((href "https://www.cs.uoregon.edu/research/summerschool/")) "Oregon Programming Languages Summer School") " at the University of Oregon in late June, early July, 2017.")

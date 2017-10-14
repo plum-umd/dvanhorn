@@ -134,7 +134,7 @@
         "https://samth.github.io/"))
 
 (define nguyen
-  (auth "Phuc C. Nguyen"
+  (auth "Phúc C. Nguyễn"
         "https://www.cs.umd.edu/~pcn/"))
 
 (define earl

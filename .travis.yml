@@ -1,20 +1,37 @@
 language: racket
 sudo: false
 dist: trusty
+
 env:
   global:
-    - RACKET_DIR=~/racket
+  - RACKET_DIR=~/racket
   matrix:
-    - RACKET_VERSION=HEAD
+  - RACKET_VERSION=HEAD
 
 before_install:
- - git clone https://github.com/greghendershott/travis-racket.git
- - cat travis-racket/install-racket.sh | bash
- - export PATH="${RACKET_DIR}/bin:${PATH}"
+  - git clone https://github.com/greghendershott/travis-racket.git
+  - cat travis-racket/install-racket.sh | bash
+  - export PATH="${RACKET_DIR}/bin:${PATH}"
 
-install:
+addons:
+  ssh_known_hosts: junkfood.cs.umd.edu
 
-before_script:
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_71c99aa46c45_key -iv $encrypted_71c99aa46c45_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_rsa
+  - ssh-add /tmp/deploy_rsa
+
+
+install: 
+before_script: 
 
 script:
- - make
+  - make
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/www/ dvanhorn@junkfood.cs.umd.edu:www/tmpwww/
+  on:
+    branch: master

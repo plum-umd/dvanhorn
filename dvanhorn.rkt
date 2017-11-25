@@ -107,6 +107,7 @@
                      (div ((class "large-6 columns"))
                           (ul ((class "inline-list right"))
                               (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
+			      (li (a ((href "https://github.com/plum-umd/dvanhorn")) (small "github")))
                               #;(li (a ((name "and")) (small amp)))
                               #;(li (a ((href "#")) (small "CSS")))))))))
 

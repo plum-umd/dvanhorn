@@ -33,6 +33,6 @@ script:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/www/ dvanhorn@junkfood.cs.umd.edu:www/; racket -e '(require "racket-tweet/tweet.rkt") (tweet! "I'm tweeting from Racket from Travis CI, triggered by a push to Github. https://github.com/plum-umd/dvanhorn")'
+    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/www/ dvanhorn@junkfood.cs.umd.edu:www/; racket -e "(require \"racket-tweet/tweet.rkt\") (tweet! \"I\'m tweeting from Racket from Travis CI, triggered by a push to Github. https://github.com/plum-umd/dvanhorn\")"
     on:
       branch: master

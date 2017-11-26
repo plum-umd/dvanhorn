@@ -38,6 +38,6 @@ deploy:
       branch: master
   - provider: script
     skip_cleanup: true
-    script: 
-    on: racket -e '(require "racket-tweet/tweet.rkt") (tweet! "I'm tweeting from Racket from Travis CI, triggered by a push to Github. https://github.com/plum-umd/dvanhorn")'
+    script: racket -e '(require "racket-tweet/tweet.rkt") (tweet! "I'm tweeting from Racket from Travis CI, triggered by a push to Github. https://github.com/plum-umd/dvanhorn")'
+    on: 
       branch: master

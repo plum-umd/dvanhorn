@@ -21,6 +21,7 @@ before_deploy:
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
   - ssh-add /tmp/deploy_rsa
+  - git clone https://gist.github.com/815bdda5cfcdee18d480cb6a5d1119f3.git racket-tweet
 
 
 install: 
@@ -30,8 +31,13 @@ script:
   - make
 
 deploy:
-  provider: script
-  skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/www/ dvanhorn@junkfood.cs.umd.edu:www/
-  on:
-    branch: master
+  - provider: script
+    skip_cleanup: true
+    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/www/ dvanhorn@junkfood.cs.umd.edu:www/
+    on:
+      branch: master
+  - provider: script
+    skip_cleanup: true
+    script: 
+    on: racket -e '(require "racket-tweet/tweet.rkt") (tweet! "I'm tweeting from Racket from Travis CI, triggered by a push to Github. https://github.com/plum-umd/dvanhorn")'
+      branch: master

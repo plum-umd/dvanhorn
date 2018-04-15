@@ -367,6 +367,7 @@
 
                (hr ((id "external-review-committees") (class "phat")))
                (h4 "External review committees")
+               (p (a ((href "http://www.sigplan.org/Conferences/ICFP/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2018"))
                (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2016, 2013"))
 
                (hr ((id "reviewer") (class "phat")))

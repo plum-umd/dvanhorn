@@ -144,7 +144,7 @@
                        
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "CMSC 131"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2018/cmsc131A/")) "CMSC 132"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        (li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -296,6 +296,7 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
 
+	       (p (a ((href "http://www.cs.umd.edu/class/spring2018/cmsc132A/")) "Spring 2018: CMSC 132A, Systematic Program Design II"))
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "Fall 2017: CMSC 131A, Systematic Program Design I"))
                (p (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "Spring 2017: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "Spring 2016: CMSC 430, Introduction to Compilers"))

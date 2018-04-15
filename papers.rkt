@@ -304,7 +304,7 @@
 	       "Los Angeles, USA"
 	       "January 2018"
 	       '((ACM "https://dl.acm.org/citation.cfm?doid=3177123.3158139")
-                 (arXiv "https://arxiv.org/abs/1711.03620"))
+                 (arXiv "https://arxiv.org/abs/1711.03620")))
    (conf-paper "Abstracting Definitional Interpreters"
                (list darais nguyen labichn)
 	       (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'17)"

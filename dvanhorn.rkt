@@ -174,22 +174,7 @@
                     #;(abbr ((title "Northeastern University Programming Research Laboratory")) "prl")
                     "PRL"
                     ")") " "
-                 "at Northeastern University.")
-                    
-              (p "I currently " (a ((href "service.html")) "serve") " "
-		 "as the PC chair for "
-		 (a ((href "http://tfp2016.org")) "TFP 2016") ", "
-		 "as a program committee member for " 
-		 (a ((href "http://ecoop.org/")) "ECOOP 2016")
-		 " and "
-		 (a ((href "http://www.sigplan.org/Conferences/POPL/")) "POPL 2017") 
-		 ", "
-		 "and as co-editor of the "
-		 (a ((href "http://journals.cambridge.org/action/displayJournal?jid=JFP")) "Journal of Functional Programming")
-		 " special issue for "
-		 (a ((href "http://icfpconference.org/icfp2015/")) "ICFP 2015")
-		 ".")
-
+                 "at Northeastern University.")                   
 
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
@@ -197,6 +182,13 @@
               
 	      (h4 "News")
 	      (ul
+	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2018")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
+                   "with " (a ((href "https://icfp18.sigplan.org/")) "ICFP 2018") " in St. Louis, MO.")
+               (li "I'm serving on the Selection Committee for the Student Research Competition at both "
+                   (a ((href "https://pldi18.sigplan.org/track/pldi-2018-src")) "PLDI") " and " (a ((href "https://icfp18.sigplan.org/track/icfp-2018-Student-Research-Competition")) "ICFP") " 2018.")
+               (li "My post-doc, " (a ((href "https://thomas.gilray.org/")) "Thomas Gilray") ", will be joining the faculty of the "
+                   (a ((href "https://www.uab.edu/cas/computerscience/")) "Computer Science department") " at the "
+                   (a ((href "https://www.uab.edu/home/")) "University of Alabama at Birmingham") ".")
 	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1711.03620")) "Soft Contract Verification for Higher-order Stateful Programs"))
 	           " published at POPL'18 in Los Angeles, USA.")
 	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1707.04755")) "Abstracting Definitional Interpreters")) " published at ICFP'17 in Oxford, UK.")
@@ -458,9 +450,7 @@
                (hr ((id "students") (class "phat midphat")))                   
                (h4  "Students")
 	       (h5 "Current")
-               (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
-		       "Ph.D. student at UMD")
-                   (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
+               (ul (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
                        "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phúc C. Nguyễn") ", "
                        "Ph.D. student at UMD")
@@ -470,18 +460,24 @@
 		       "Post-doc at UMD"))
                    
 	       (h5 "Past")
-	       (ul (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
-		       "post-doc at UMD, now at MSR, Cambridge")
+	       (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
+                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/19989")) "Mechanizing Abstract Interpretation"))
+		       ", Ph.D., UMD, 2017; now an asst. prof. at University of Vermont")
+                   (li (a ((href "http://kmicinski.com/")) "Kristopher Micinski") ", "
+                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/16470")) "Interaction-based Security for Mobile Apps"))
+                       ", Ph.D., UMD, 2018 (Committee member); now a visiting asst. prof. at Haverford College")
+                   (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
+		       "post-doc at UMD; now at MSR, Cambridge")
 		   (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
 		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
-		       ", Ph.D., Northeastern University, 2015")
+		       ", Ph.D., Northeastern University, 2015; now at Google")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
 		       (a ((href "http://www.ccs.neu.edu/home/stamourv/papers/dissertation.pdf")) 
 			  (em "How to Generate Actionable Advice about Performance Problems"))
 		       ", "
                        "Ph.D., Northeastern University, 2015 (Committee member)")
 		   (li (a ((href "http://www.cs.umd.edu/~piotrm/")) "Piotr Mardziel") ", "
-		       (em "Modeling, Measuring, and Limiting Adversary Knowledge")
+		       (em (a ((href "https://drum.lib.umd.edu/handle/1903/16470")) "Modeling, Measuring, and Limiting Adversary Knowledge"))
 		       ", Ph.D., University of Maryland, 2015 (Committee member)")
                    (li (a ((href "http://www.ccs.neu.edu/home/stchang/")) "Stephen Chang") ", "
                        (em "On the Relation Between Laziness and Strictness")
@@ -513,3 +509,5 @@
 (write-page contact.xexpr "contact.html")
 (write-page teaching.xexpr "teaching.html")
 (write-page service.xexpr "service.html")
+
+

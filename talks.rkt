@@ -6,6 +6,127 @@
 (define talks
   (list
    (talk
+    "ucla-compilers-2018"
+    "Symbolic Execution for Higher-Order Program Verification"
+    "UCLA Compilers"
+    "April"
+    "2018"
+    "University of Washington, UCLA Compilers Colloquium"
+    "Los Angeles, California"
+    `[])
+
+   (talk
+    "uw-plse-2018"
+    "Symbolic Execution for Higher-Order Program Verification"
+    "UW PLSE"
+    "April"
+    "2018"
+    "University of Washington, PLSE Colloquium"
+    "Seattle, Washington"
+    `[])
+
+  (talk
+    "oplss"
+    "Redex, Abstract Machines, and Abstract Interpretation"
+     "OPLSS"
+     "July"
+     "2017"
+    "Oregon Programming Languages Summer School (OPLSS), University of Oregon"
+    "Eugene, Oregon"
+    `[])
+
+  (talk
+    "popl-redex-aam-tutorial"
+    "Tutorial: Introduction to Redex with Abstracting Abstract Machines"
+    "POPL Tutorials"
+    "January"
+    "2016"
+    `(a ((href "https://popl16.sigplan.org/event/popl-2016-tutorials-an-introduction-to-redex-with-abstracting-abstract-machines")) 
+      "Tutorials at the ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)")
+    "St. Petersburg, Florida"
+    `[])
+
+  (talk
+    "pleaid-contracts"
+    "Verification and Refutation of Behavioral Contracts with Higher-Order Symbolic Execution"
+    "PLEAID Seminar"
+    "January"
+    "2016"
+    "University of Chile, PLEAID Seminar"
+    "Santiago, Chile"
+    `[])
+
+  (talk
+    "pleaid-aam"
+    "Tutorial: Introduction to Redex with Abstracting Abstract Machines"
+    "PLEAID Seminar"
+    "January"
+    "2016"
+    "University of Chile, PLEAID Seminar"
+    "Santiago, Chile"
+    `[])
+    
+  (talk
+    "contracts-hopkins"
+    "Verification and Refutation of Behavioral Contracts with Higher-Order Symbolic Execution"
+    "JHU"
+    "October"
+    "2015"
+    "Johns Hopkins University, PL Seminar"
+    "Baltimore, Maryland"
+    `[])
+
+  (talk
+    "plmw-young-researchers"
+    "Young Researcher Panel"
+    "PLMW"
+    "August"
+    "2015"
+    "ACM SIGPLAN Programming Languages Mentoring Workshop at ICFP"
+    "Vancouver, British Columbia"
+    `[])
+
+  (talk
+    "plt-redex-school"
+    "Abstracting Abstract Machines"
+    "PLT RSS"
+    "July" 
+    "2015"
+    `(a ((href "https://redex.racket-lang.org/summer-school.html")) "PLT Redex Summer School, University of Utah")
+    "Salt Lake City, Utah"
+    `[])
+
+   (talk
+     "iu-pl-wonks"
+     "Verification and Refutation of Behavioral Contracts with Higher-Order Symbolic Execution"
+     "IU PL Wonks"
+     "January"
+     "2015"     
+     "PL Wonks Seminar, Indiana University"
+     "Bloomington, Indiana"
+     `[])
+
+   (talk
+     "synthesis-contracts"
+     "Synthesis from Contracts"
+     "DARPA"
+     "March"
+     "2014"
+     "Defense Advanced Research Projects Agency"
+     "Arlington, Virginia"     
+     `[])
+
+   (talk
+     "lts-trust"
+     "Program Analysis for Trustworthy Software"
+     "LTS"
+     "March"
+     "2014"
+     "Laboratory for Telecommunication Sciences"
+     "College Park, Maryland"
+     `[])
+
+   (talk
     "icfp-2014"
     "Soft Contract Verification"
     "ICFP"

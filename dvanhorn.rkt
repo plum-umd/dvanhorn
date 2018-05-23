@@ -469,7 +469,7 @@
                        ", Ph.D., UMD, 2018 (Committee member); now a visiting asst. prof. at Haverford College")
                    (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
 		       "post-doc at UMD; now at MSR, Cambridge")
-		   (li (a ((href "http://www.ccs.neu.edu/home/ianj/")) "J. Ian Johnson") ", "
+		   (li (a ((href "https://deeglaze.github.io/")) "Dionna Amalie Glaze") ", "
 		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
 		       ", Ph.D., Northeastern University, 2015; now at Google")
                    (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "

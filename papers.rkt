@@ -105,9 +105,9 @@
         "https://jeapostrophe.github.io/home/"))
 
 
-(define ianj 
-  (auth "J. Ian Johnson" 
-        "http://www.ccs.neu.edu/home/ianj/"))
+(define glaze
+  (auth "Dionna Amalie Glaze"
+        "https://deeglaze.github.io/"))
 
 (define might
   (auth "Matthew Might" 
@@ -396,7 +396,7 @@
                  (arXiv "http://arxiv.org/abs/1412.4053")))
 
    (conf-paper "Abstracting Abstract Control"
-	       (list ianj)
+	       (list glaze)
 	       (venue "The 10th ACM Symposium on Dynamic Languages (DLS'14)"
 		      "http://www.dynamic-languages-symposium.org/dls-14/")
 	       "Portland, Oregon"
@@ -423,7 +423,7 @@
 		 (arXiv "http://arxiv.org/abs/1307.6239")))
 
    (jour-paper "Pushdown flow analysis with abstract garbage collection"
-	       (list ianj sergey earl might)
+	       (list glaze sergey earl might)
 	       jfp
 	       "24"
 	       "2-3"
@@ -432,7 +432,7 @@
                  (arXiv "http://arxiv.org/abs/1406.5106")))
 
    (conf-paper "Optimizing Abstract Abstract Machines"
-               (list ianj labichn might)
+               (list glaze labichn might)
                (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'13)"
                       "http://icfpconference.org/icfp2013/")               
                "Boston, Massachusetts"
@@ -458,7 +458,7 @@
 	       '((arXiv "http://arxiv.org/abs/1311.4198")))
    
    (work-paper "Concrete Semantics for Pushdown Analysis: The Essence of Summarization"
-               (list ianj)
+               (list glaze)
                (venue "Workshop on Higher-Order Program Analysis"
                       "http://hopa.cs.rhul.ac.uk/")
                "New Orleans, Louisiana"

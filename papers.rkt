@@ -80,6 +80,17 @@
   (auth "Niki Vazou"
         "https://nikivazou.github.io/"))
 
+(define breitner
+  (auth "Joachim Breitner"
+        "https://www.cis.upenn.edu/~joachim/"))
+
+(define kunkel
+  (auth "William Kunkel" #f))
+
+(define hutton
+  (auth "Graham Hutton"
+        "http://www.cs.nott.ac.uk/~pszgmh/"))
+
 (define tanter
   (auth "Éric Tanter"
         "https://pleiad.cl/people/etanter"))
@@ -312,6 +323,10 @@
                "Boston, USA"
                "October 2018"
                '((arXiv "https://arxiv.org/abs/1807.02132")))
+   (pre-paper "Functional Pearl: Theorem Proving for All (Equational Reasoning in Liquid Haskell)"
+              (list vazou breitner kunkel hutton)
+              "June 2018"
+              '((arXiv "https://arxiv.org/abs/1806.03541")))
    (conf-paper "Soft Contract Verification for Higher-order Stateful Programs"
                (list nguyen gilray samth)
 	       (venue "The 45th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'18)"

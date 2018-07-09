@@ -157,7 +157,7 @@
               ;(hr)
               (hr ((class "phat")))
               (img ((class "left") (alt "dvanhorn") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
-              (p "I work toward making the construction of reusable, trusted software "
+              (p "I " (a ((href "statement.pdf")) "work toward") " making the construction of reusable, trusted software "
                  "components possible and effective. "
                  "My research has spanned program analysis; semantics; "
                  "verification and model-checking; security; logic; "
@@ -182,6 +182,8 @@
               
 	      (h4 "News")
 	      (ul
+               (li "I'm serving on the OOPSLA 2019 Review Committee.")
+               (li "New paper: " (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " to appear at OOPSLA'18 in Boston")
 	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2018")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
                    "with " (a ((href "https://icfp18.sigplan.org/")) "ICFP 2018") " in St. Louis, MO.")
                (li "I'm serving on the Selection Committee for the Student Research Competition at both "
@@ -350,6 +352,7 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
+               (p "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2018")
 	       (p (a ((href "http://popl18.sigplan.org/track/PADL-2018")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2018") ", "
 	       (a ((href "https://www.ist.unomaha.edu/padl2014/")) "2014"))
                (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2017, 2014, 2012"))

@@ -76,6 +76,14 @@
   (venue "Journal of Functional Programming"
 	 "http://journals.cambridge.org/action/displayJournal?jid=JFP"))
 
+(define vazou
+  (auth "Niki Vazou"
+        "https://nikivazou.github.io/"))
+
+(define tanter
+  (auth "Éric Tanter"
+        "https://pleiad.cl/people/etanter"))
+
 (define hammer
   (auth "Matthew A. Hammer"
 	"http://www.cs.umd.edu/~hammer/"))
@@ -297,6 +305,13 @@
       
 (define papers
   (list
+   (conf-paper "Gradual Liquid Type Inference"
+               (list vazou tanter)
+               (venue "The ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA'18)"
+                      "https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA")
+               "Boston, USA"
+               "October 2018"
+               '((arXiv "https://arxiv.org/abs/1807.02132")))
    (conf-paper "Soft Contract Verification for Higher-order Stateful Programs"
                (list nguyen gilray samth)
 	       (venue "The 45th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'18)"

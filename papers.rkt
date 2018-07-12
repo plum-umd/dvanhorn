@@ -323,7 +323,7 @@
                "Boston, USA"
                "October 2018"
                '((arXiv "https://arxiv.org/abs/1807.02132")))
-   (pre-paper "Functional Pearl: Theorem Proving for All (Equational Reasoning in Liquid Haskell)"
+   (pre-paper "Theorem Proving for All: Equational Reasoning in Liquid Haskell"
               (list vazou breitner kunkel hutton)
               "June 2018"
               '((arXiv "https://arxiv.org/abs/1806.03541")))

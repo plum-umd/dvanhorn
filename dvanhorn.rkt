@@ -162,7 +162,7 @@
                  "My research has spanned program analysis; semantics; "
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
-              (p "With " (a ((href "http://www.cs.umd.edu/~jfoster/")) "Jeff Foster") " and " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
+              (p "Together with " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
                  "I direct the laboratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
                     "Programming Languages at the University of Maryland (" 

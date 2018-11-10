@@ -182,9 +182,12 @@
               
 	      (h4 "News")
 	      (ul
+               (li "New draft: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) ".")
+               (li "New draft: " (em "Type-Level Computations for Ruby Libraries") ".")
+               (li (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " won a " (b "Distinguished Paper") " award at OOPSLA 2018!")
                (li "I'm serving on the OOPSLA 2019 Review Committee.")
                (li "New paper: " (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " to appear at OOPSLA'18 in Boston.")
-               (li "New draft: " (em (a ((href "https://arxiv.org/abs/1806.03541")) "Theorem Proving for All")) ".")
+               (li "New paper: " (em (a ((href "https://arxiv.org/abs/1806.03541")) "Theorem Proving for All")) " to appear at Haskell 2018 in St. Louis, MO.")
                (li "I served on the thesis committee Quentin Stiévenart's dissertation, " (em (a ((href "stievenart2018phd.pdf")) "Scalable Designs for "
                    "Abstract Interpretation of Concurrent Programs: Application to Actors and Shared-Memory Multi-Threading")) ".")
 	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2018")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "

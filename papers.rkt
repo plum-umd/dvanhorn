@@ -29,7 +29,7 @@
    [links : [Listof [List Symbol String]]]))
 
 (struct: conf-paper 
-  ([title : String] 
+  ([title : Xexpr] 
    [coauthors : [Listof Auth]] 
    [conf : Venue]
    [location : String]
@@ -155,6 +155,13 @@
 (define nguyen
   (auth "Phúc C. Nguyễn"
         "https://www.cs.umd.edu/~pcn/"))
+
+(define sankha
+  (auth "Sankha Guria" "https://sankhs.com/"))
+
+(define milod
+  (auth "Milod Kazerounian"
+        #f))
 
 (define earl
   (auth "Christopher Earl" #f))
@@ -315,18 +322,29 @@
 	 ,@(format-links links))]))
       
 (define papers
-  (list
-   (conf-paper "Gradual Liquid Type Inference"
+  (list  
+   (pre-paper "Size-Change Termination as a Contract"
+               (list nguyen gilray samth)
+               "August 2018"
+               '((arXiv "https://arxiv.org/abs/1808.02101")))
+   (pre-paper "Type-Level Computations for Ruby Libraries"
+               (list milod sankha vazou foster)
+               "August 2018"
+               '((arXiV "")))
+   (conf-paper '(span "Gradual Liquid Type Inference " (b "(Distinguished Paper)"))
                (list vazou tanter)
                (venue "The ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA'18)"
                       "https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA")
                "Boston, USA"
                "October 2018"
-               '((arXiv "https://arxiv.org/abs/1807.02132")))
-   (pre-paper "Theorem Proving for All: Equational Reasoning in Liquid Haskell"
-              (list vazou breitner kunkel hutton)
-              "June 2018"
-              '((arXiv "https://arxiv.org/abs/1806.03541")))
+               '((ACM "https://dl.acm.org/citation.cfm?id=3276502") (arXiv "https://arxiv.org/abs/1807.02132")))
+   (conf-paper "Theorem Proving for All: Equational Reasoning in Liquid Haskell"
+               (list vazou breitner kunkel hutton)
+               (venue "The ACM SIGPLAN International Symposium on Haskell (Haskell'18)"
+                      "https://www.haskell.org/haskell-symposium/2018/")
+               "St. Louis, Missouri"
+               "September 2018"
+               '((ACM "https://dl.acm.org/citation.cfm?id=3242756") (arXiv "https://arxiv.org/abs/1806.03541")))
    (conf-paper "Soft Contract Verification for Higher-order Stateful Programs"
                (list nguyen gilray samth)
 	       (venue "The 45th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'18)"

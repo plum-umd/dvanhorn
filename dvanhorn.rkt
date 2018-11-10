@@ -359,7 +359,7 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
-               (p "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2018")
+               (p "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2019")
 	       (p (a ((href "http://popl18.sigplan.org/track/PADL-2018")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2018") ", "
 	       (a ((href "https://www.ist.unomaha.edu/padl2014/")) "2014"))
                (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2017, 2014, 2012"))

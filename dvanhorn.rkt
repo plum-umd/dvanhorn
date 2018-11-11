@@ -137,11 +137,8 @@
                        
                        (li (a ((href "http://twitter.com/lambda_calculus")) 
                               (i ((class "foundicon-twitter")))))
-                       (li (a ((href "https://plus.google.com/104289846854054723827/posts"))
-                              (i ((class "foundicon-google-plus")))))
                        (li (a ((href "https://github.com/dvanhorn/"))
-                              (i ((class "foundicon-github")))))
-                       
+                              (i ((class "foundicon-github")))))                       
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
                        (li (a ((href "http://www.cs.umd.edu/class/fall2018/cmsc131A/")) "CMSC 131"))

@@ -293,6 +293,8 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
 
+	       (p (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "Summer 2019: CMSC 198Q, Making Your Own Video Games: An Introduction to Programming and Computing"))
+	       (p (a ((href "http://www.cs.umd.edu/class/spring2019/cmsc132A/")) "Spring 2019: CMSC 132A, Systematic Program Design II"))
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2018/cmsc131A/")) "Fall 2018: CMSC 131A, Systematic Program Design I"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2018/cmsc132A/")) "Spring 2018: CMSC 132A, Systematic Program Design II"))
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "Fall 2017: CMSC 131A, Systematic Program Design I"))

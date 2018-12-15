@@ -6,6 +6,14 @@
 (define projects
   (list
    (project
+     "Gradual Verification: From Scripting to Proving"
+     "PI"
+     '("Programmers are rapidly adopting expressive, dynamically typed, higher-order functional and object-oriented programming languages for their everyday development tasks. Over time, these programs are often fortified with static type checking by migrating programs using gradual types, a technique first developed in the research community, but now widely used by the largest industrial software development companies. Unfortunately, there are limits both to what properties gradual types can validate and the help they can provide programs as they engage in the migration process. In parallel, researchers have developed sophisticated next generation programming languages with integrated verification features. These languages are able to validate much stronger claims about the correctness of software, but their industrial adoption has lagged far behind gradual typing. Consequently, verification is not being integrated in the everyday lives of programmers and the quality and reliability of software suffers because of it. This represents a tremendous missed opportunity considering the rapid advancement of automated verification techniques."
+       "This project aims to provide foundational theories, pragmatic tools, and a pedagogical framework for closing the expressivity gap between the everyday languages of programmers and these verification-integrated languages, enabling pathways to verified programming at every point along the spectrum scripting languages to theorem proving languages.")
+
+    '("This project is supported by the National Science Foundation CAREER program."))
+
+   (project
     "Online Verification-Validation"
     "PI"
     '("Increasingly, modern software on the web is richly extensible, accelerating its evolution and dramatically reducing the time between development and deployment. The intellectual merit of this research consists of challenging the false choice between creating software that is extensible (easy to reuse and extend) and software that is correct (meets its specifications). The new approach advanced by this work, Incremental Verification-Validation, enables programmers to bring domain-specific safely disciplines to extensible systems, by providing a framework where these disciplines are communicated both precisely and usefully, as executable code. The project's broader significance and importance consist in changing the way programmers approach building correct extensible software for the web. "
@@ -13,7 +21,7 @@
    "Incremental Verification-Validation encourages programmers to co-design their systems with executable specifications that check these systems dynamically, as they execute. Moreover, unlike typical assertions, which execute dynamically and non-incrementally, the proposed are subject to novel patterns that enhance their performance: In regressive validation, verification partially discharges some checks, dynamically rewriting the program with residual versions; in progressive verification, online verification occurs in passes that each cache and reuse work, to avoid from-scratch verification of facts that still hold from earlier passes. Finally, to avoid forcing analysis programmers to reason about incremental changes explicitly in each analysis that they create, the meta layer expresses incremental computations implicitly, using an implicitly-incremental meta language whose abstractions hide reasoning on a per-change basis.")
 
 '("This collaboration with Matthew Hammer and Bor-Yuh (Evan) Chang is
-supported by the National Science Foundation  Software and Hardware Foundations program"))
+supported by the National Science Foundation  Software and Hardware Foundations program."))
 
    (project
     "The Science and Applications of Crypto-Currency"

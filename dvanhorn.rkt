@@ -179,6 +179,7 @@
               
 	      (h4 "News")
 	      (ul
+               (li "I received a 2019 " (b "NSF CAREER Award") " for " (em "Gradual Verification: From Scripting to Proving") ".")
                (li "New draft: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) ".")
                (li "New draft: " (em "Type-Level Computations for Ruby Libraries") ".")
                (li (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " won a " (b "Distinguished Paper") " award at OOPSLA 2018!")

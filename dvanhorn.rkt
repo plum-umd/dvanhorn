@@ -180,6 +180,9 @@
 	      (h4 "News")
 	      (ul
                (li "I received a 2019 " (b "NSF CAREER Award") " for " (em "Gradual Verification: From Scripting to Proving") ".")
+               (li "I'm teaching a new " (a ((href "https://oes.umd.edu/middle-high-school-students/terp-young-scholars")) "Terps Young Scholar") " course in Summer 2019: " (em "Make Your Own Video Games: An Introduction to Programming and Computing") ".")
+	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2019")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
+                   "with " (a ((href "https://icfp19.sigplan.org/")) "ICFP 2019") " in Berlin, Germany.")
                (li "New draft: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) ".")
                (li "New draft: " (em "Type-Level Computations for Ruby Libraries") ".")
                (li (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " won a " (b "Distinguished Paper") " award at OOPSLA 2018!")

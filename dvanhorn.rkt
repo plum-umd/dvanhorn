@@ -186,7 +186,7 @@
               
 	      (h4 "News")
 	      (ul
-               (li "I received a 2019 " (b "NSF CAREER Award") " for " (em "Gradual Verification: From Scripting to Proving") ".")
+               (li "I received a 2019 " (b "NSF CAREER Award") " for " (a ((href "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846350")) (em "Gradual Verification: From Scripting to Proving")) ".")
                (li "I'm teaching a new " (a ((href "https://oes.umd.edu/middle-high-school-students/terp-young-scholars")) "Terps Young Scholar") " course in Summer 2019: " (em "Make Your Own Video Games: An Introduction to Programming and Computing") ".")
 	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2019")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
                    "with " (a ((href "https://icfp19.sigplan.org/")) "ICFP 2019") " in Berlin, Germany.")

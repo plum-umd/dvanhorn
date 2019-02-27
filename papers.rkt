@@ -323,14 +323,20 @@
       
 (define papers
   (list  
-   (pre-paper "Size-Change Termination as a Contract"
+   (conf-paper "Size-Change Termination as a Contract"
                (list nguyen gilray samth)
-               "August 2018"
+               (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"
+                      "https://conf.researchr.org/home/pldi-2019")
+	       "Phoenix, Arizona"
+               "June 2019"
                '((arXiv "https://arxiv.org/abs/1808.02101")))
-   (pre-paper "Type-Level Computations for Ruby Libraries"
+   (conf-paper "Type-Level Computations for Ruby Libraries"
                (list milod sankha vazou foster)
-               "August 2018"
-               '((arXiV "")))
+               (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"
+                      "https://conf.researchr.org/home/pldi-2019")
+               "Phoenix, Arizona"
+               "June 2019"
+               '((arXiv "")))
    (conf-paper '(span "Gradual Liquid Type Inference " (b "(Distinguished Paper)"))
                (list vazou tanter)
                (venue "The ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA'18)"

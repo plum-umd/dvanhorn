@@ -160,7 +160,7 @@
                #;(role "content"))
               ;(hr)
               (hr ((class "phat")))
-              (img ((class "left") (alt "dvanhorn") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
+              (img ((class "left") (alt "Photo by BK Adams.") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
               (p "I " (a ((href "statement.pdf")) "work toward") " making the construction of reusable, trusted software "
                  "components possible and effective. "
                  "My research has spanned program analysis; semantics; "

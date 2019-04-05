@@ -396,9 +396,9 @@
                
                
                (p "David Van Horn" (br)
-                  "3439 A.V. Williams Building" (br)
+                  "5250 Iribe Center for Computer Science and Engineering" (br)
                   "University of Maryland" (br)
-		  "8223 Paint Branch Drive" (br)
+		  "8125 Paint Branch Drive" (br)
                   "College Park, MD 20742" (br)
                   (br)
                   "Email: (@ dvanhorn (dot cs umd edu))" )

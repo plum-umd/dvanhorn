@@ -434,17 +434,19 @@
                (hr ((id "students") (class "phat midphat")))                   
                (h4  "Students")
 	       (h5 "Current")
-               (ul (li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
-                       "Ph.D. student at UMD")
+	       (ul
+		   (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", " "Ph.D. student at UMD")
                    (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phúc C. Nguyễn") ", "
-                       "Ph.D. student at UMD")
-		   (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
-		       "Post-doc at UMD")
-		   (li (a ((href "https://nikivazou.github.io/")) "Niki Vazou") ", "
-		       "Post-doc at UMD"))
+                       "Ph.D. student at UMD"))
                    
 	       (h5 "Past")
-	       (ul (li (a ((href "http://david.darais.com/")) "David Darais") ", "
+	       (ul (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
+		       "Post-doc at UMD; now asst. prof. at University of Alabama, Birmingham")
+		   (li (a ((href "https://nikivazou.github.io/")) "Niki Vazou") ", "
+		       "Post-doc at UMD; now asst. prof. at IMDEA")
+(li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
+                       "M.S., UMD, 2018")
+(li (a ((href "http://david.darais.com/")) "David Darais") ", "
                        (em (a ((href "https://drum.lib.umd.edu/handle/1903/19989")) "Mechanizing Abstract Interpretation"))
 		       ", Ph.D., UMD, 2017; now an asst. prof. at University of Vermont")
                    (li (a ((href "http://kmicinski.com/")) "Kristopher Micinski") ", "

@@ -336,7 +336,7 @@
                       "https://conf.researchr.org/home/pldi-2019")
                "Phoenix, Arizona"
                "June 2019"
-               '((arXiv "")))
+               '((arXiv "https://arxiv.org/pdf/1904.03521/")))
    (conf-paper '(span "Gradual Liquid Type Inference " (b "(Distinguished Paper)"))
                (list vazou tanter)
                (venue "The ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA'18)"

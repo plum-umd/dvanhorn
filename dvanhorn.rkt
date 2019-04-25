@@ -187,7 +187,7 @@
 	      (h4 "News")
 	      (ul
                (li "New paper: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) " to appear at PLDI'19.")
-               (li "New paper: " (em "Type-Level Computations for Ruby Libraries") " to appear at PLDI'19.")
+               (li "New paper: " (em (a ((href "https://arxiv.org/pdf/1904.03521/")) "Type-Level Computations for Ruby Libraries")) " to appear at PLDI'19.")
                (li "I received a 2019 " (b "NSF CAREER Award") " for " (a ((href "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846350")) (em "Gradual Verification: From Scripting to Proving")) ".")
                (li (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " won a " (b "Distinguished Paper") " award at OOPSLA 2018!")
                (li "I'm teaching a new " (a ((href "https://oes.umd.edu/middle-high-school-students/terp-young-scholars")) "Terps Young Scholar") " course in Summer 2019: " (em "Make Your Own Video Games: An Introduction to Programming and Computing") ".")

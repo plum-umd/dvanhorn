@@ -138,7 +138,7 @@
                    (ul ((class "inline-list subheader italic category"))
                        #;(li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/spring2019/cmsc132A/")) "CMSC 132"))
+                       (li (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "CMSC 198"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       

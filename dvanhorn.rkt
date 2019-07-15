@@ -186,6 +186,7 @@
               
 	      (h4 "News")
 	      (ul
+               (li "I'm serving as a faculty advisor to " (a ((href "https://gotechnica.org/")) "Technica") ", the world's largest all-women and non-binary hackathon.")
                (li "New paper: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) " to appear at PLDI'19.")
                (li "New paper: " (em (a ((href "https://arxiv.org/pdf/1904.03521/")) "Type-Level Computations for Ruby Libraries")) " to appear at PLDI'19.")
                (li "I received a 2019 " (b "NSF CAREER Award") " for " (a ((href "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846350")) (em "Gradual Verification: From Scripting to Proving")) ".")

@@ -56,7 +56,7 @@
      (div ((class "row"))
           (div ((class "large-9 columns"))
                (h1 "David Van Horn")
-               (p "Assistant Professor" 
+               (p "Associate Professor" 
                   (br)
                   (a ((href "http://www.cs.umd.edu/")) "Department of Computer Science")
                   (br)

@@ -138,7 +138,7 @@
                    (ul ((class "inline-list subheader italic category"))
                        #;(li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "CMSC 198"))
+                       (li (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "CMSC 430"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -268,6 +268,7 @@
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
 
+	       (p (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "Fall 2019: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "Summer 2019: CMSC 198Q, Making Your Own Video Games: An Introduction to Programming and Computing"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2019/cmsc132A/")) "Spring 2019: CMSC 132A, Systematic Program Design II"))
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2018/cmsc131A/")) "Fall 2018: CMSC 131A, Systematic Program Design I"))

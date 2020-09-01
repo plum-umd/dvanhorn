@@ -138,7 +138,7 @@
                    (ul ((class "inline-list subheader italic category"))
                        #;(li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "CMSC 430"))
+                       (li (a ((href "http://www.cs.umd.edu/class/fall2020/cmsc330")) "CMSC 330"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -186,6 +186,19 @@
               
 	      (h4 "News")
 	      (ul
+               (li (em (a ((href "")) "Abstracting Abstract Machines"))
+                   ", which appeared at ICFP 2010, has won "
+                   (a ((href "http://sigplan.org/Awards/ICFP/")) "The ICFP Most Influential Paper")
+                   " award at ICFP 2020.")                   
+               (li "I'm speaking at "
+                   (a ((href "https://icfp20.sigplan.org/home/PLMW-icfp-2020?track=PLMW%20%40%20ICFP%20"))
+                      "The Programming Languages Mentoring Workshop @ ICFP 2020")
+                   ".")
+               (li "I'm lecturing at "
+                   (a ((href "https://cmmrs.mpi-sws.org/"))
+                      "The Cornell, Maryland, Max Planck Pre-doctoral Research School 2020")
+                   ".")
+
                (li "I'm serving as a faculty advisor to " (a ((href "https://gotechnica.org/")) "Technica") ", the world's largest all-women and non-binary hackathon.")
                (li "New paper: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) " to appear at PLDI'19.")
                (li "New paper: " (em (a ((href "https://arxiv.org/pdf/1904.03521/")) "Type-Level Computations for Ruby Libraries")) " to appear at PLDI'19.")
@@ -267,7 +280,8 @@
           (div ((class "large-9 columns")
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
-
+               (p (a ((href "https://www.cs.umd.edu/class/fall2020/cmsc330/")) "Spring 2020: CMSC 330, Organization of Programming Languages"))
+               (p "Spring 2020: CMSC 838, Advanced Compilers")
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "Fall 2019: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "Summer 2019: CMSC 198Q, Making Your Own Video Games: An Introduction to Programming and Computing"))
 	       (p (a ((href "http://www.cs.umd.edu/class/spring2019/cmsc132A/")) "Spring 2019: CMSC 132A, Systematic Program Design II"))
@@ -334,12 +348,12 @@
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
-               (p "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2019")
+	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2020, 2017"))               
+               (p (a ((href "http://www.sigplan.org/Conferences/OOPSLA/")) "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2019"))
 	       (p (a ((href "http://popl18.sigplan.org/track/PADL-2018")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2018") ", "
 	       (a ((href "https://www.ist.unomaha.edu/padl2014/")) "2014"))
                (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2017, 2014, 2012"))
 	       (p (a ((href "http://staticanalysis.org/")) "Static Analysis Symposium (SAS), 2017"))	       
-	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2017"))
 	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
                (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
 	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))
@@ -437,12 +451,15 @@
                (h4  "Students")
 	       (h5 "Current")
 	       (ul
-		   (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", " "Ph.D. student at UMD")
-                   (li (a ((href "https://www.cs.umd.edu/~pcn/")) "Phúc C. Nguyễn") ", "
-                       "Ph.D. student at UMD"))
+                (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", " "Ph.D. student at UMD")
+                (li (a ((href "https://www.cs.umd.edu/people/dpostol")) "Deena Postol") ", " "Ph.D. student at UMD")
+                (li (a ((href "https://www.cs.umd.edu/people/jprinz")) "Jacob Prinz") ", " "Ph.D. student at UMD"))
                    
 	       (h5 "Past")
-	       (ul (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
+	       (ul (li (a ((href "https://philnguyen.github.io/")) "Phúc C. Nguyễn") ", "
+                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/25444")) "Higher-order Symbolic Execution"))
+                       ", Ph.D., UMD, 2019; now at Google")
+                   (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
 		       "Post-doc at UMD; now asst. prof. at University of Alabama, Birmingham")
 		   (li (a ((href "https://nikivazou.github.io/")) "Niki Vazou") ", "
 		       "Post-doc at UMD; now asst. prof. at IMDEA")

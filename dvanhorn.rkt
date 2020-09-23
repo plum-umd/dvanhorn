@@ -188,7 +188,7 @@
 	      (ul
                (li (em (a ((href "")) "Abstracting Abstract Machines"))
                    ", which appeared at ICFP 2010, has won "
-                   (a ((href "http://sigplan.org/Awards/ICFP/")) "The ICFP Most Influential Paper")
+                   (a ((href "http://sigplan.org/Awards/ICFP/")) (b "The ICFP Most Influential Paper"))
                    " award at ICFP 2020.")                   
                (li "I'm speaking at "
                    (a ((href "https://icfp20.sigplan.org/home/PLMW-icfp-2020?track=PLMW%20%40%20ICFP%20"))

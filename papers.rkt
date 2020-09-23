@@ -85,7 +85,7 @@
         "https://www.cis.upenn.edu/~joachim/"))
 
 (define kunkel
-  (auth "William Kunkel" #f))
+  (auth "Rose Kunkel" #f))
 
 (define hutton
   (auth "Graham Hutton"

@@ -156,6 +156,10 @@
   (auth "Phúc C. Nguyễn"
         "https://www.cs.umd.edu/~pcn/"))
 
+(define moy
+  (auth "Cameron Moy"
+        "http://camoy.name/"))
+
 (define sankha
   (auth "Sankha Guria" "https://sankhs.com/"))
 
@@ -322,7 +326,14 @@
 	 ,@(format-links links))]))
       
 (define papers
-  (list  
+  (list
+   (conf-paper "Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification"
+               (list moy nguyen samth)
+	       (venue "The 48th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'21)"
+	       	      "https://popl21.sigplan.org/")
+               "Online"
+	       "January 2021"
+	       '((arXiv "https://arxiv.org/abs/2007.12630")))
    (conf-paper "Size-Change Termination as a Contract"
                (list nguyen gilray samth)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"

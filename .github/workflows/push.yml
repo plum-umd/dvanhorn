@@ -15,3 +15,13 @@ jobs:
         version: '7.9'
     - name: Run Tests
       run: raco test .
+    - name: Deploy to sandbox via rsync
+      uses: plum-umd/github-actions-rsync@master
+      with:
+        RSYNC_OPTIONS: -r --delete-after --quiet
+        RSYNC_TARGET: www/
+        RSYNC_SOURCE: www/
+      env:
+        SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+        SSH_USERNAME: ${{secrets.SSH_USERNAME}}
+        SSH_HOSTNAME: ${{secrets.SSH_HOSTNAME}}

@@ -2,7 +2,7 @@ on:
   - push
 
 jobs:
-  test:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -15,7 +15,7 @@ jobs:
         version: '7.9'
     - name: Run Tests
       run: raco test .
-    - name: Deploy to sandbox via rsync
+    - name: Deploy to web
       uses: plum-umd/github-actions-rsync@master
       with:
         RSYNC_OPTIONS: -r --delete-after --quiet

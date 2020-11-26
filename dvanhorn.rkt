@@ -186,7 +186,6 @@
               
 	      (h4 "News")
 	      (ul
-	       (li "Website deployed via Github actions!")
 	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/2007.12630")) "Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification")) " to appear at POPL'21.")
                (li (em (a ((href "")) "Abstracting Abstract Machines"))
                    ", which appeared at ICFP 2010, has won "

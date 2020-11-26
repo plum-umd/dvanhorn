@@ -1,1 +1,3 @@
-[![Build Status](https://travis-ci.org/plum-umd/dvanhorn.png?branch=master)](https://travis-ci.org/plum-umd/dvanhorn)
+Repository for building DVH's webpage.
+
+Push to main to deploy on cs.umd.edu.

@@ -2,7 +2,7 @@ on:
   - push
 
 jobs:
-  build-and-deploy:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -15,6 +15,11 @@ jobs:
         version: '7.9'
     - name: Run Tests
       run: raco test .
+  deploy:
+    needs: build-and-test    
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
     - name: Deploy to web
       uses: plum-umd/github-actions-rsync@master
       with:

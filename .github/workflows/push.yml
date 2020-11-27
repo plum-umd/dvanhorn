@@ -15,11 +15,20 @@ jobs:
         version: '7.9'
     - name: Run Tests
       run: raco test .
+    - name: Archive www
+        uses: actions/upload-artifact@v2
+        with:
+          name: www
+          path: www
   deploy:
     needs: build-and-test    
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
+    - name: Download www
+      uses: actions/download-artifact@v2
+      with:
+        name: www
     - name: Deploy to web
       uses: plum-umd/github-actions-rsync@master
       with:

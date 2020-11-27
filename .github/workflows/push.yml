@@ -16,10 +16,10 @@ jobs:
     - name: Run Tests
       run: raco test .
     - name: Archive www
-        uses: actions/upload-artifact@v2
-        with:
-          name: www
-          path: www
+      uses: actions/upload-artifact@v2
+      with:
+        name: www
+        path: www
   deploy:
     needs: build-and-test    
     runs-on: ubuntu-latest

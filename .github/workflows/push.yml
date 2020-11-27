@@ -29,6 +29,8 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: www
+    - name: Show
+      run: echo `ls`
     - name: Deploy to web
       uses: plum-umd/github-actions-rsync@master
       with:

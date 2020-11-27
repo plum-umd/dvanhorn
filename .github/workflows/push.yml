@@ -14,7 +14,9 @@ jobs:
         distribution: 'full'
         version: '7.9'
     - name: Run Tests
-      run: raco test .
+      run: |
+        echo `pwd`
+        raco test .
     - name: Archive www
       uses: actions/upload-artifact@v2
       with:
@@ -30,7 +32,9 @@ jobs:
       with:
         name: www
     - name: Show
-      run: echo `ls`
+      run: |
+        echo `pwd`
+        echo `ls`
     - name: Deploy to web
       uses: plum-umd/github-actions-rsync@master
       with:

@@ -138,7 +138,7 @@
                    (ul ((class "inline-list subheader italic category"))
                        #;(li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2020/cmsc330")) "CMSC 330"))
+                       (li (a ((href "http://www.cs.umd.edu/class/spring2021/cmsc838E")) "CMSC 838"))
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
@@ -166,7 +166,8 @@
                  "My research has spanned program analysis; semantics; "
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
-              (p "Together with " (a ((href "http://www.cs.umd.edu/~mwh/")) "Mike Hicks") ", "
+              (p "Together with " (a ((href "https://www.cs.umd.edu/~mwh/")) "Mike Hicks") " and "
+                 (a ((href "https://lemonidas.github.io/")) "Leo Lampropoulos") ", "
                  "I direct the laboratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
                     "Programming Languages at the University of Maryland (" 
@@ -281,7 +282,9 @@
           (div ((class "large-9 columns")
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
-               (p (a ((href "https://www.cs.umd.edu/class/fall2020/cmsc330/")) "Spring 2020: CMSC 330, Organization of Programming Languages"))
+               (p (a ((href "https://www.cs.umd.edu/class/spring2021/cmsc838E/")) "Spring 2021: CMSC 838E, Advanced Compilers"))
+               (p (a ((href "https://www.cs.umd.edu/class/winter2021/cmsc388Q/")) "Winter 2021: CMSC 383Q, Functional Programming in Racket"))
+               (p (a ((href "https://www.cs.umd.edu/class/fall2020/cmsc330/")) "Fall 2020: CMSC 330, Organization of Programming Languages"))
                (p "Spring 2020: CMSC 838, Advanced Compilers")
 	       (p (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "Fall 2019: CMSC 430, Introduction to Compilers"))
 	       (p (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "Summer 2019: CMSC 198Q, Making Your Own Video Games: An Introduction to Programming and Computing"))

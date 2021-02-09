@@ -348,7 +348,7 @@
 
                (hr ((id "panelist") (class "phat")))
                (h4  "Panelist")
-               (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2011, 2010"))
+               (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2021, 2020, 2011, 2010"))
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")

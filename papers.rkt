@@ -327,6 +327,13 @@
       
 (define papers
   (list
+   (conf-paper "RbSyn: Type- and Effect-Guided Program Synthesis"
+               (list sankha foster)
+               (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'21)"
+                      "https://conf.researchr.org/home/pldi-2021")
+               "Online"
+               "June 2021"
+               '((arXiv "https://arxiv.org/abs/2102.13183")))
    (conf-paper "Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification"
                (list moy nguyen samth)
 	       (venue "The 48th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'21)"

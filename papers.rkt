@@ -341,6 +341,14 @@
                "Online"
 	       "January 2021"
 	       '((arXiv "https://arxiv.org/abs/2007.12630")))
+   (jour-paper "Constructive Galois Connections"
+               (list darais)
+	       jfp
+	       "29"
+	       "11"
+	       "July 2019"
+	       '((CUP "https://doi.org/10.1017/S0956796819000066")
+		 (arXiv "https://arxiv.org/abs/1807.08711")))
    (conf-paper "Size-Change Termination as a Contract"
                (list nguyen gilray samth)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"

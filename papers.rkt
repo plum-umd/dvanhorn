@@ -100,8 +100,8 @@
 	"http://www.cs.umd.edu/~hammer/"))
 
 (define dunfield 
-  (auth "Joshua Dunfield"
-	"http://www.cs.ubc.ca/~joshdunf/"))
+  (auth "Jana Dunfield"
+	"https://research.cs.queensu.ca/home/jana/"))
 
 (define headley
   (auth "Kyle Headley"

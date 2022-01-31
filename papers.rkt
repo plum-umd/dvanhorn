@@ -333,14 +333,18 @@
                       "https://conf.researchr.org/home/pldi-2021")
                "Online"
                "June 2021"
-               '((arXiv "https://arxiv.org/abs/2102.13183")))
+               '((ACM "https://dl.acm.org/doi/abs/10.1145/3453483.3454048")
+                 (arXiv "https://arxiv.org/abs/2102.13183")))
+                 
    (conf-paper "Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification"
                (list moy nguyen samth)
 	       (venue "The 48th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'21)"
 	       	      "https://popl21.sigplan.org/")
                "Online"
 	       "January 2021"
-	       '((arXiv "https://arxiv.org/abs/2007.12630")))
+	       '((ACM "https://dl.acm.org/doi/10.1145/3434334")
+                 (arXiv "https://arxiv.org/abs/2007.12630")))
+   
    (jour-paper "Constructive Galois Connections"
                (list darais)
 	       jfp
@@ -349,20 +353,25 @@
 	       "July 2019"
 	       '((CUP "https://doi.org/10.1017/S0956796819000066")
 		 (arXiv "https://arxiv.org/abs/1807.08711")))
+   
    (conf-paper "Size-Change Termination as a Contract"
                (list nguyen gilray samth)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"
                       "https://conf.researchr.org/home/pldi-2019")
 	       "Phoenix, Arizona"
                "June 2019"
-               '((arXiv "https://arxiv.org/abs/1808.02101")))
+               '((ACM "https://dl.acm.org/doi/10.1145/3314221.3314643")
+                 (arXiv "https://arxiv.org/abs/1808.02101")))
+   
    (conf-paper "Type-Level Computations for Ruby Libraries"
                (list milod sankha vazou foster)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)"
                       "https://conf.researchr.org/home/pldi-2019")
                "Phoenix, Arizona"
                "June 2019"
-               '((arXiv "https://arxiv.org/pdf/1904.03521/")))
+               '((ACM "https://dl.acm.org/doi/10.1145/3314221.3314630")
+                 (arXiv "https://arxiv.org/pdf/1904.03521/")))
+   
    (conf-paper '(span "Gradual Liquid Type Inference " (b "(Distinguished Paper)"))
                (list vazou tanter)
                (venue "The ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA'18)"

@@ -119,7 +119,7 @@
                #;(role "content"))
               (div #;((id "scroller")) 
                    (hr)
-                   (a ((href "http://www.cs.umd.edu/projects/PL/"))
+                   (a ((href "https://plum-umd.github.io/"))
                       (img ((src "img/PLUM.png")
                             (alt "PLUM")
                             (height "100")

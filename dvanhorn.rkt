@@ -187,6 +187,10 @@
               
 	      (h4 "News")
 	      (ul
+               (li "New paper: "
+                   (em (a ((href "https://arxiv.org/abs/2201.13394"))
+                          "A Formal Model of Checked C"))
+                   " to appear at CSF'22.")
                (li "I'm serving on the PLDI 2022 Program Committee.")
                (li "I'm serving on the Advisory Board of the " (a ((href "https://www.sigplan.org/LongTermMentoring/")) "SIGPLAN Long-Term Mentoring Committee (SIGPLAN-M)") ".")
                (li "New paper: " (em (a ((href "https://arxiv.org/abs/2102.13183")) "RbSyn: Type- and Effect-Guided Program Synthesis")) " to appear at PLDI'21.")

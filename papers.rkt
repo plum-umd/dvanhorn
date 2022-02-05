@@ -76,6 +76,20 @@
   (venue "Journal of Functional Programming"
 	 "http://journals.cambridge.org/action/displayJournal?jid=JFP"))
 
+(define li
+  (auth "Liyi Li"
+        "https://www.cs.umd.edu/~liyili2/"))
+
+(define liu
+  (auth "Yiyun Liu" #f))
+
+(define postol
+  (auth "Deena Postol" #f))
+
+(define lampropoulos
+  (auth "Leonidas Lampropoulos"
+        "https://lemonidas.github.io/"))
+
 (define vazou
   (auth "Niki Vazou"
         "https://nikivazou.github.io/"))
@@ -327,6 +341,13 @@
       
 (define papers
   (list
+   (conf-paper "A Formal Model of Checked C"
+               (list li liu postol lampropoulos hicks)
+               (venue "IEEE Computer Security Foundations Symposium"
+                      "https://www.ieee-security.org/TC/CSF2022/")
+               "Haifa, Israel"
+               "August 2022"
+               '((arXiv "https://arxiv.org/abs/2201.13394")))               
    (conf-paper "RbSyn: Type- and Effect-Guided Program Synthesis"
                (list sankha foster)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'21)"

@@ -126,6 +126,14 @@
                             (width "150")
                             #;(style "0"))))
                    (hr)
+                   (a ((href "https://www.gotechnica.org/"))
+                      (img ((src "img/technica.png")
+                            (alt "Technica"))))
+                   (hr)
+                   (a ((href "https://www.sigplan.org/LongTermMentoring/"))
+                      (img ((src "img/sigplan-m-logo.png")
+                            (alt "SIGPLAN-M"))))
+                   (hr)
                    (a ((href "http://nostarch.com/realmofracket.htm"))
                       (img ((src "img/racket_cover_web.png")   
                             (alt "Realm of Racket"))))
@@ -181,7 +189,8 @@
                     "PRL"
                     ")") " "
                  "at Northeastern University.")                   
-
+              (p "I currently serve as the faculty advisor to " (a ((href "https://www.gotechnica.org/")) "Technica") ", the largest hackathon for
+underrepresented genders in the world, and as an Advisory Board member for the " (a ((href "https://www.sigplan.org/LongTermMentoring/")) "SIGPLAN Long-Term Mentoring Committee (SIGPLAN-M)") ", an international long-term mentoring program for programming languages researchers.")
               (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
                   (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
                  "from Northeastern University, which introduces programming interactive video games.")

@@ -347,7 +347,8 @@
                       "https://www.ieee-security.org/TC/CSF2022/")
                "Haifa, Israel"
                "August 2022"
-               '((arXiv "https://arxiv.org/abs/2201.13394")))               
+               '((IEEE "https://www.computer.org/csdl/proceedings-article/csf/2022/841700a049/1F9Ql2amtQ4")
+                 (arXiv "https://arxiv.org/abs/2201.13394")))
    (conf-paper "RbSyn: Type- and Effect-Guided Program Synthesis"
                (list sankha foster)
                (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'21)"

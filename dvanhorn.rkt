@@ -103,7 +103,7 @@
                 (hr)
                 (div ((class "row"))
                      (div ((class "large-6 columns"))
-                          (p (small copy nbsp "2016 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
+                          (p (small copy nbsp "2014" mdash "2024 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
                           (ul ((class "inline-list right"))
                               (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
@@ -151,15 +151,15 @@
                        ;(li (a ((href "#books")) "Realm of Racket"))
                        (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
                        #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
-                       (li (a ((href "dvanhorn.asc")) "PGP")))
+                       #;(li (a ((href "dvanhorn.asc")) "PGP")))
                    (ul ((class "inline-list subheader italic category"))
                        (li (a ((href "http://twitter.com/lambda_calculus")) 
                               (i ((class "foundicon-twitter")))))
                        (li (a ((href "https://github.com/dvanhorn/"))
                               (i ((class "foundicon-github")))))
                        #;(li (a ((href "#talks") (class "category")) "Talks")))
-                   (hr)
-                   (ul ((class "inline-list subheader italic category"))
+                   #;(hr)
+                   #;(ul ((class "inline-list subheader italic category"))
                        (li (a ((href "cv.pdf")) "CV"))
                        (li (a ((href "research.pdf")) "Research Statement"))
                        (li (a ((href "teaching.pdf")) "Teaching Statement")))
@@ -175,7 +175,7 @@
                  "My research has spanned program analysis; semantics; "
                  "verification and model-checking; security; logic; "
                  "complexity; and algorithms.")
-              (p "Together with " (a ((href "https://www.cs.umd.edu/~mwh/")) "Mike Hicks") " and "
+              (p "Together with " (a ((href "https://msurbatovich.github.io/")) "Milijiana Surbatovich") " and "
                  (a ((href "https://lemonidas.github.io/")) "Leo Lampropoulos") ", "
                  "I direct the laboratory for " 
                  (a ((href "http://www.cs.umd.edu/projects/PL/")) 
@@ -197,6 +197,13 @@ underrepresented genders in the world, and as an Advisory Board member for the "
               
 	      (h4 "News")
 	      (ul
+               (li "I'm serving on the ICFP 2024 Program Committee.")
+               (li "New paper: "
+                   (em (a ((href "https://arxiv.org/abs/2302.13145")) "Absynthe: Abstract Interpretation-Guided Synthesis")) " to appear at PLDI'23.")
+               (li "New paper: "
+                   (em (a ((href "https://content.iospress.com/articles/journal-of-computer-security/jcs230040")) "A formal model of Checked C"))
+                   " published in the Journal of Computer Security.")
+               (li "I'm serving on the PLDI 2023 Program Committee.")
                (li "New paper: "
                    (em (a ((href "https://arxiv.org/abs/2201.13394"))
                           "A Formal Model of Checked C"))
@@ -299,6 +306,10 @@ underrepresented genders in the world, and as an Advisory Board member for the "
           (div ((class "large-9 columns")
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
+               (p (a ((href "https://www.cs.umd.edu/class/spring2024/cmsc430/")) "Spring 2024: CMSC 430, Introduction to Compilers"))
+               (p (a ((href "https://www.cs.umd.edu/class/fall2023/cmsc430/")) "Fall 2023: CMSC 430, Introduction to Compilers"))
+               (p (a ((href "https://www.cs.umd.edu/class/summer2023/cmsc430/")) "Summer 2023: CMSC 430, Introduction to Compilers"))
+               (p (a ((href "https://www.cs.umd.edu/class/spring2023/cmsc838E/")) "Spring 2023: CMSC 838E, Advanced Compilers"))
                (p (a ((href "https://www.cs.umd.edu/class/fall2022/cmsc430/")) "Fall 2022: CMSC 430, Introduction to Compilers"))
                (p (a ((href "https://www.cs.umd.edu/class/spring2022/cmsc330/")) "Spring 2022: CMSC 330, Organization of Programming Languages"))
                (p (a ((href "https://www.cs.umd.edu/class/spring2022/cmsc838E/")) "Spring 2022: CMSC 838E, Advanced Compilers"))               
@@ -369,11 +380,12 @@ underrepresented genders in the world, and as an Advisory Board member for the "
 
                (hr ((id "panelist") (class "phat")))
                (h4  "Panelist")
-               (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2021, 2020, 2011, 2010"))
+               (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2024, 2021, 2020, 2011, 2010"))
 
                (hr ((id "program-committees") (class "phat")))
                (h4  "Program committees")
-	       (p (a ((href "http://www.sigplan.org/Conferences/PLDI/")) "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), 2022"))                              
+               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2024, 2015, 2011"))
+	       (p (a ((href "http://www.sigplan.org/Conferences/PLDI/")) "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), 2023, 2022"))                              
 	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN Symposium on Principles of Programming Languages (POPL), 2021, 2017"))               
                (p (a ((href "http://www.sigplan.org/Conferences/OOPSLA/")) "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2019"))
 	       (p (a ((href "http://popl18.sigplan.org/track/PADL-2018")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2018") ", "
@@ -381,7 +393,6 @@ underrepresented genders in the world, and as an Advisory Board member for the "
                (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2017, 2014, 2012"))
 	       (p (a ((href "http://staticanalysis.org/")) "Static Analysis Symposium (SAS), 2017"))	       
 	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015, 2011"))
 	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))
                (p (a ((href "http://flint.cs.yale.edu/esop2014/")) "European Symposium on Programming (ESOP), 2014"))
                (p (a ((href "http://www.easychair.org/smart-program/VSL2014/LOLA-index.html")) "Workshop on Syntax and Semantics of Low-Level Languages (LOLA), 2014"))
@@ -477,12 +488,17 @@ underrepresented genders in the world, and as an Advisory Board member for the "
                (h4  "Students")
 	       (h5 "Current")
 	       (ul
-                (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", " "Ph.D. student at UMD")
                 (li (a ((href "https://www.cs.umd.edu/people/dpostol")) "Deena Postol") ", " "Ph.D. student at UMD")
-                (li (a ((href "https://www.cs.umd.edu/people/jprinz")) "Jacob Prinz") ", " "Ph.D. student at UMD"))
+                (li (a ((href "https://pdarragh.github.io/")) "Pierce Darragh") ", " "Ph.D. student at UMD")
+                (li (a ((href "https://www.cs.umd.edu/people/bquiring")) "Ben Quiring") ", " "Ph.D. student at UMD")
+                (li (a ((href "https://www.cs.umd.edu/people/jpfrank")) "Justin Frank") ", " "Ph.D. student at UMD")
+                #;(li (a ((href "https://www.cs.umd.edu/people/jprinz")) "Jacob Prinz") ", " "Ph.D. student at UMD"))
                    
 	       (h5 "Past")
-	       (ul (li (a ((href "https://philnguyen.github.io/")) "Phúc C. Nguyễn") ", "
+	       (ul (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", "
+                       (em (a ((href "https://doi.org/10.13016/dspace/txaj-5df6")) "Program Synthesis with Lightweight Abstractions"))
+                       ", Ph.D., UMD, 2023; now asst. prof. at University of Kansas")                   
+                   (li (a ((href "https://philnguyen.github.io/")) "Phúc C. Nguyễn") ", "
                        (em (a ((href "https://drum.lib.umd.edu/handle/1903/25444")) "Higher-order Symbolic Execution"))
                        ", Ph.D., UMD, 2019; now at Google")
                    (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "

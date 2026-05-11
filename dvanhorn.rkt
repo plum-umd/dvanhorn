@@ -197,6 +197,7 @@ underrepresented genders in the world, and as an Advisory Board member for the "
               
 	      (h4 "News")
 	      (ul
+               (li "I'm serving on the PLDI 2026 Review Committee.")
                (li "I'm serving on the POPL 2026 Program Committee.")
                (li "New paper: "
                    (em (a ((href "asdf")) "Webs and Flow-Directed Well-Typedness Preserving Program Transformations"))

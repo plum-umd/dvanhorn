@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v6
     - name: Install Racket
-      uses: Bogdanp/setup-racket@v0.10
+      uses: Bogdanp/setup-racket@v1.15
       with:
         architecture: 'x64'
         distribution: 'full'
@@ -16,7 +16,7 @@ jobs:
     - name: Run Tests
       run: raco test .
     - name: Archive www
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: www
         path: www
@@ -26,7 +26,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
     - name: Download www
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: www
         path: www

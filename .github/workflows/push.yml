@@ -20,23 +20,3 @@ jobs:
       with:
         name: www
         path: www
-  deploy:
-    needs: build-and-test    
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-    - name: Download www
-      uses: actions/download-artifact@v4
-      with:
-        name: www
-        path: www
-    - name: Deploy to web
-      uses: plum-umd/github-actions-rsync@master
-      with:
-        RSYNC_OPTIONS: -r --delete-after --quiet
-        RSYNC_TARGET: www/
-        RSYNC_SOURCE: www/
-      env:
-        SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-        SSH_USERNAME: ${{secrets.SSH_USERNAME}}
-        SSH_HOSTNAME: ${{secrets.SSH_HOSTNAME}}

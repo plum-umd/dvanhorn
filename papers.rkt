@@ -236,6 +236,18 @@
   (auth "Scott F. Smith"
 	"http://www.cs.jhu.edu/~smith/"))
 
+(define bquiring
+  (auth "Benjamin Quiring"
+        "https://www.cs.umd.edu/people/bquiring"))
+
+(define reppy
+  (auth "John Reppy"
+        "https://people.cs.uchicago.edu/~jhr/"))
+
+(define shivers
+  (auth "Olin Shivers"
+        "https://www.ccs.neu.edu/home/shivers/"))
+
 
 (: format-venue : Venue -> Xexpr)
 (define (format-venue v)
@@ -341,6 +353,20 @@
       
 (define papers
   (list
+   (conf-paper "Webs and Flow-Directed Well-Typedness Preserving Program Transformations"
+               (list bquiring reppy shivers)
+               (venue "The ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'25)"
+                      "https://conf.researchr.org/home/pldi-2025")
+               "Seoul, South Korea"
+               "June 2025"
+               '((ACM "https://dl.acm.org/doi/abs/10.1145/3729280")))
+   (conf-paper "Deriving with Derivatives: Optimizing Incremental Fixpoints for Higher-Order Flow Analysis"
+               (list bquiring)
+               (venue "The ACM SIGPLAN International Conference on Functional Programming (ICFP'24)"
+                      "https://icfp24.sigplan.org/")
+               "Milan, Italy"
+               "September 2024"
+               '((ACM "https://dl.acm.org/doi/full/10.1145/3674650")))
    (conf-paper "A Formal Model of Checked C"
                (list li liu postol lampropoulos hicks)
                (venue "IEEE Computer Security Foundations Symposium"

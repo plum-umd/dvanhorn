@@ -31,13 +31,7 @@
             (href "stylesheets/app.css")))
      (link ((rel "stylesheet")
             (href "stylesheets/social_foundicons.css")))
-     
-     (style "#scroller { position: relative; background-color: white; z-index: 2; }")
-     
-     (style ".phat { color: black; background-color: black; height: 2em; }")
-     (style ".midphat { margin-top: 7em; }")
-     
-     
+
      (script ((src "javascripts/vendor/custom.modernizr.js"))))
     (body
      ,(make-cdata #f #f 
@@ -47,14 +41,9 @@
      (script ((src "javascripts/showhide.js")))
      (script ((src "javascripts/foundation/foundation.js")))
      (script ((src "javascripts/foundation/foundation.section.js")))
-     ,(make-cdata #f #f
-                  "<script>$(window).scroll(function () { $('#scroller').css('top', $(window).scrollTop()); });</script>")
-     
-   
-     
-    
-     (div ((class "row"))
-          (div ((class "large-9 columns"))
+
+     (div ((class "site-header row"))
+          (div ((class "site-title large-9 columns"))
                (h1 "David Van Horn")
                (p "Associate Professor" 
                   (br)
@@ -64,7 +53,7 @@
                   (a ((href "http://www.umiacs.umd.edu/")) "UMIACS")
                   (br)
                   (a ((href "http://www.umd.edu/")) "University of Maryland")))
-          (div ((class "large-3 columns"))
+          (div ((class "site-badge large-3 columns"))
                (img ((src "img/seal.png")
                      (alt "UMD")
                      (style "align: right; padding-top: 1em; padding-bottom: 1em;")))
@@ -77,16 +66,14 @@
                   (li "Contact"))))
      
     
-     (div ((class "row"))
-          (div ((class "large-5 columns"))
+     (div ((class "site-nav row"))
+          (div ((class "site-tagline large-5 columns"))
                (p ((class "subheader")) (span ((class "italic")) "Structures don" rsquo "t march in the streets.")))
      
-          (div ((class "large-7 columns"))
+          (div ((class "site-menu large-7 columns"))
                (ul ((class "inline-list right subheader italic category"))
                   (li (a ((href "index.html") (class "category")) "Home"))
-                  (li (a ((href "research.html") (class "category")) "Research"))
-                  (li (a ((href "teaching.html") (class "category")) "Teaching"))
-                  (li (a ((href "service.html") (class "category")) "Service"))
+                  (li (a ((href "papers.html") (class "category")) "Publications"))
                   (li (a ((href "contact.html") (class "category")) "Contact"))
                   #;(li (a ((href "about.html") (class "category")) "About")))))
               
@@ -98,12 +85,12 @@
 
 
 (define footer
-  `(footer ((class "row"))
+  `(footer ((class "site-footer row"))
            (div ((class "large-12 columns"))
                 (hr)
-                (div ((class "row"))
+                (div ((class "footer-meta row"))
                      (div ((class "large-6 columns"))
-                          (p (small copy nbsp "2014" mdash "2024 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
+                          (p (small copy nbsp "2014" mdash "2026 " (a ((href "http://www.cs.umd.edu/~dvanhorn/")) "David Van Horn"))))
                      (div ((class "large-6 columns"))
                           (ul ((class "inline-list right"))
                               (li (a ((href "http://validator.w3.org/check?uri=http%3A%2F%2Fwww.cs.umd.edu%2F~dvanhorn%2F")) (small "Valid HTML")))
@@ -114,329 +101,62 @@
 (define index.xexpr
   (make-page 
    "Home"
-   `(div ((class "row"))
-         (div ((class "large-3 columns right")
-               #;(role "content"))
-              (div #;((id "scroller")) 
-                   (hr)
-                   (a ((href "https://plum-umd.github.io/"))
-                      (img ((src "img/PLUM.png")
-                            (alt "PLUM")
-                            (height "100")
-                            (width "150")
-                            #;(style "0"))))
-                   (hr)
-                   (a ((href "https://www.gotechnica.org/"))
-                      (img ((src "img/technica.png")
-                            (alt "Technica"))))
-                   (hr)
-                   (a ((href "https://www.sigplan.org/LongTermMentoring/"))
-                      (img ((src "img/sigplan-m-logo.png")
-                            (alt "SIGPLAN-M"))))
-                   (hr)
-                   (a ((href "http://nostarch.com/realmofracket.htm"))
-                      (img ((src "img/racket_cover_web.png")   
-                            (alt "Realm of Racket"))))
-                   ;; "ACM Computing Reviews \"2013 Notable Book in Computing\""
-                   (hr)
-                   ;(h4 ((class "bold-sc")) (a ((href "#")) "quick jumps"))
+   `(div ((class "page-shell row"))
+         (div ((class "home-layout"))
+              (aside ((class "home-rail"))
+                     (div ((class "home-rail-card"))
+                          (p ((class "home-rail-label")) "Affiliations")
+                          (ul ((class "home-rail-links"))
+                              (li (a ((href "https://plum-umd.github.io/")) "PLUM"))
+                              (li (a ((href "https://cyber.umd.edu/")) "MC2"))))
+                     (div ((class "home-rail-card"))
+                          (p ((class "home-rail-label")) "Teaching")
+                          (ul ((class "home-rail-links"))
+                              (li (a ((href "https://www.cs.umd.edu/class/fall2025/cmsc430/")) "CMSC 430")))))
+              (div ((class "page-content home-main")
+                    #;(role "content"))
                    ;(hr)
-                   #;(ul ((class "inline-list subheader italic category")))                       
-                   #;(hr)
-                   (ul ((class "inline-list subheader italic category"))
-                       #;(li (a ((href "cv.pdf")) "CV"))
-                       (li (a ((href "research.html#papers")) "Papers"))
-                       (li (a ((href "http://www.cs.umd.edu/class/fall2022/cmsc430")) "CMSC 430"))
-                       #;(li (a ((href "http://www.cs.umd.edu/class/spring2022/cmsc838E")) "CMSC 838"))
-                       ;(li (a ((href "#books")) "Realm of Racket"))
-                       (li (a ((href "http://arxiv.org/a/vanhorn_d_1")) "arXiv"))
-                       #;(li (a ((href "https://www.google.com/calendar/embed?src=david.a.vanhorn%40gmail.com&ctz=America/New_York")) "Calendar"))                       
-                       #;(li (a ((href "dvanhorn.asc")) "PGP")))
-                   (ul ((class "inline-list subheader italic category"))
-                       (li (a ((href "http://twitter.com/lambda_calculus")) 
-                              (i ((class "foundicon-twitter")))))
-                       (li (a ((href "https://github.com/dvanhorn/"))
-                              (i ((class "foundicon-github")))))
-                       #;(li (a ((href "#talks") (class "category")) "Talks")))
-                   #;(hr)
-                   #;(ul ((class "inline-list subheader italic category"))
-                       (li (a ((href "cv.pdf")) "CV"))
-                       (li (a ((href "research.pdf")) "Research Statement"))
-                       (li (a ((href "teaching.pdf")) "Teaching Statement")))
-                   (hr)))
-         
-         (div ((class "large-9 columns")
-               #;(role "content"))
-              ;(hr)
-              (hr ((class "phat")))
-              (img ((class "left") (alt "Photo by BK Adams.") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
-              (p "I " (a ((href "statement.pdf")) "work toward") " making the construction of reusable, trusted software "
-                 "components possible and effective. "
-                 "My research has spanned program analysis; semantics; "
-                 "verification and model-checking; security; logic; "
-                 "complexity; and algorithms.")
-              (p "Together with " (a ((href "https://msurbatovich.github.io/")) "Milijiana Surbatovich") " and "
-                 (a ((href "https://lemonidas.github.io/")) "Leo Lampropoulos") ", "
-                 "I direct the laboratory for " 
-                 (a ((href "http://www.cs.umd.edu/projects/PL/")) 
-                    "Programming Languages at the University of Maryland (" 
-                    #;(abbr ((title "Programming Languages at University of Maryland")) "plum") 
-                    "PLUM"
-                    ")") ". "
-                 "Previously, I" rsquo "ve worked with the "
-                 (a ((href "http://www.ccs.neu.edu/research/prl/")) "Programming Research Laboratory (" 
-                    #;(abbr ((title "Northeastern University Programming Research Laboratory")) "prl")
-                    "PRL"
-                    ")") " "
-                 "at Northeastern University.")                   
-              (p "I currently serve as the faculty advisor to " (a ((href "https://www.gotechnica.org/")) "Technica") ", the largest hackathon for
-underrepresented genders in the world, and as an Advisory Board member for the " (a ((href "https://www.sigplan.org/LongTermMentoring/")) "SIGPLAN Long-Term Mentoring Committee (SIGPLAN-M)") ", an international long-term mentoring program for programming languages researchers.")
-              (p "I co-authored the book " (a ((href "http://nostarch.com/realmofracket.htm")) (span ((class "italic")) "Realm of Racket")) " with " 
-                  (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen") " and undergraduates "
-                 "from Northeastern University, which introduces programming interactive video games.")
-              
-	      (h4 "News")
-	      (ul
-               (li "I'm serving on the PLDI 2026 Review Committee.")
-               (li "I'm serving on the POPL 2026 Program Committee.")
-               (li "New paper: "
-                   (em (a ((href "asdf")) "Webs and Flow-Directed Well-Typedness Preserving Program Transformations"))
-                   " to appear at PLDI'25.")
-               (li "New paper: "
-                   (em (a ((href "asdf")) "Deriving with Derivatives: Optimizing Incremental Fixpoints for Higher-Order Flow Analysis"))
-                   " to appear at ICFP'24.")
-               (li "I'm serving on the ICFP 2024 Program Committee.")
-               (li "New paper: "
-                   (em (a ((href "https://arxiv.org/abs/2302.13145")) "Absynthe: Abstract Interpretation-Guided Synthesis")) " to appear at PLDI'23.")
-               (li "New paper: "
-                   (em (a ((href "https://content.iospress.com/articles/journal-of-computer-security/jcs230040")) "A formal model of Checked C"))
-                   " published in the Journal of Computer Security.")
-               (li "I'm serving on the PLDI 2023 Program Committee.")
-               (li "New paper: "
-                   (em (a ((href "https://arxiv.org/abs/2201.13394"))
-                          "A Formal Model of Checked C"))
-                   " to appear at CSF'22.")
-               (li "I'm serving on the WGT 2022 Program Committee.")
-               (li "I'm serving on the PLDI 2022 Program Committee.")
-               (li "I'm serving on the Advisory Board of the " (a ((href "https://www.sigplan.org/LongTermMentoring/")) "SIGPLAN Long-Term Mentoring Committee (SIGPLAN-M)") ".")
-               (li "New paper: " (em (a ((href "https://arxiv.org/abs/2102.13183")) "RbSyn: Type- and Effect-Guided Program Synthesis")) " to appear at PLDI'21.")
-	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/2007.12630")) "Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification")) " to appear at POPL'21.")
-               (li (em (a ((href "")) "Abstracting Abstract Machines"))
-                   ", which appeared at ICFP 2010, has won "
-                   (a ((href "http://sigplan.org/Awards/ICFP/")) (b "The ICFP Most Influential Paper"))
-                   " award at ICFP 2020.")                   
-               (li "I'm speaking at "
-                   (a ((href "https://icfp20.sigplan.org/home/PLMW-icfp-2020?track=PLMW%20%40%20ICFP%20"))
-                      "The Programming Languages Mentoring Workshop @ ICFP 2020")
-                   ".")
-               (li "I'm lecturing at "
-                   (a ((href "https://cmmrs.mpi-sws.org/"))
-                      "The Cornell, Maryland, Max Planck Pre-doctoral Research School 2020")
-                   ".")
-
-               (li "I'm serving as a faculty advisor to " (a ((href "https://gotechnica.org/")) "Technica") ", the world's largest all-women and non-binary hackathon.")
-               (li "New paper: " (em (a ((href "https://arxiv.org/abs/1808.02101")) "Size-Change Termination as a Contract")) " to appear at PLDI'19.")
-               (li "New paper: " (em (a ((href "https://arxiv.org/pdf/1904.03521/")) "Type-Level Computations for Ruby Libraries")) " to appear at PLDI'19.")
-               (li "I received a 2019 " (b "NSF CAREER Award") " for " (a ((href "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846350")) (em "Gradual Verification: From Scripting to Proving")) ".")
-               (li (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " won a " (b "Distinguished Paper") " award at OOPSLA 2018!")
-               (li "I'm teaching a new " (a ((href "https://oes.umd.edu/middle-high-school-students/terp-young-scholars")) "Terps Young Scholar") " course in Summer 2019: " (em "Make Your Own Video Games: An Introduction to Programming and Computing") ".")
-	       (li "I'm co-organizing " (a ((href "https://icfp19.sigplan.org/home/PLMW-ICFP-2019")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
-                   "with " (a ((href "https://icfp19.sigplan.org/")) "ICFP 2019") " in Berlin, Germany.")
-               (li "I'm serving on the OOPSLA 2019 Review Committee.")
-               (li "New paper: " (em (a ((href "https://arxiv.org/abs/1807.02132")) "Gradual Liquid Type Inference")) " to appear at OOPSLA'18 in Boston.")
-               (li "New paper: " (em (a ((href "https://arxiv.org/abs/1806.03541")) "Theorem Proving for All")) " to appear at Haskell 2018 in St. Louis, MO.")
-               (li "I served on the thesis committee Quentin Stiévenart's dissertation, " (em (a ((href "stievenart2018phd.pdf")) "Scalable Designs for "
-                   "Abstract Interpretation of Concurrent Programs: Application to Actors and Shared-Memory Multi-Threading")) ".")
-	       (li "I'm co-organizing " (a ((href "https://icfp18.sigplan.org/track/PLMW-ICFP-2018")) "PLMW @ ICFP") ", the Programming Languages Mentoring Workshop, co-located "
-                   "with " (a ((href "https://icfp18.sigplan.org/")) "ICFP 2018") " in St. Louis, MO.")
-               (li "I'm serving on the Selection Committee for the Student Research Competition at both "
-                   (a ((href "https://pldi18.sigplan.org/track/pldi-2018-src")) "PLDI") " and " (a ((href "https://icfp18.sigplan.org/track/icfp-2018-Student-Research-Competition")) "ICFP") " 2018.")
-               (li "My post-doc, " (a ((href "https://thomas.gilray.org/")) "Thomas Gilray") ", will be joining the faculty of the "
-                   (a ((href "https://www.uab.edu/cas/computerscience/")) "Computer Science department") " at the "
-                   (a ((href "https://www.uab.edu/home/")) "University of Alabama at Birmingham") ".")
-	       (li "New paper: " (em (a ((href "https://arxiv.org/abs/1711.03620")) "Soft Contract Verification for Higher-order Stateful Programs"))
-	           " published at POPL'18 in Los Angeles, USA.")
-)))))		   
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require "projects.rkt")
-
-(define (projects-section ps)
-  `[(hr ((id "projects") (class "phat")))
-    (h4 "Projects")
-    ,@(apply append (map project-section ps))])
-
-(define (project-section p)
-  (match p
-    [(project name role desc collab)
-     (define id (symbol->string (gensym)))
-     `[(p (a ((href "#")) (span ((onclick ,(format "showHide('~a'); return false;" id))) (span ((class "paper-title")) ,name) " (" ,role ") "))
-	  (div ((id ,id) (style "display: none;")) 
-	     (p ,@desc)
-	     (p ,@collab)
-	     (hr)))]]))
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require "talks.rkt")
-
-(define (talks-section ts)
-  `[(hr ((id "talks") (class "phat midphat")))
-    (h4 "Talks")
-    ,@(apply append (map talk-section ts))])
-
-(define (talk-section t)
-  (match t
-    [(talk #f title short-venue month year venue location abstract)
-     `[(dl (dt ,title)
-           (dd (span ((class "italic")) ,venue)
-               ", "  ,location ", " ,month " " ,year))]]
-    [(talk tag title short-venue month year venue location abstract)
-     `[(dl (dt ;(a ((href ,(string-append "talks/" tag ".pdf")))
-                  ,title);)
-           (dd (span ((class "italic")) ,venue)
-               ", "  ,location ", " ,month " " ,year))]]))
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(define teaching.xexpr
-  (make-page 
-    "Teaching"
-    `(div ((class "row"))    
-          (div ((class "large-3 columns right")
-                #;(role "content"))
-               
-               (div ((id "scroller")) 
-                    (hr)
-                    (h4 ((class "bold-sc")) (a ((href "#")) "teaching"))
-                    (hr)))
-          (div ((class "large-9 columns")
-                #;(role "content"))           
-               (hr ((id "contact") (class "phat")))
-               (p (a ((href "https://www.cs.umd.edu/class/spring2024/cmsc430/")) "Spring 2024: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/fall2023/cmsc430/")) "Fall 2023: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/summer2023/cmsc430/")) "Summer 2023: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/spring2023/cmsc838E/")) "Spring 2023: CMSC 838E, Advanced Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/fall2022/cmsc430/")) "Fall 2022: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/spring2022/cmsc330/")) "Spring 2022: CMSC 330, Organization of Programming Languages"))
-               (p (a ((href "https://www.cs.umd.edu/class/spring2022/cmsc838E/")) "Spring 2022: CMSC 838E, Advanced Compilers"))               
-               (p (a ((href "https://www.cs.umd.edu/class/fall2021/cmsc430/")) "Fall 2021: CMSC 430, Introduction to Compilers"))               
-               (p (a ((href "https://www.cs.umd.edu/class/spring2021/cmsc838E/")) "Spring 2021: CMSC 838E, Advanced Compilers"))
-               (p (a ((href "https://www.cs.umd.edu/class/winter2021/cmsc388Q/")) "Winter 2021: CMSC 383Q, Functional Programming in Racket"))
-               (p (a ((href "https://www.cs.umd.edu/class/fall2020/cmsc330/")) "Fall 2020: CMSC 330, Organization of Programming Languages"))
-               (p "Spring 2020: CMSC 838, Advanced Compilers")
-	       (p (a ((href "http://www.cs.umd.edu/class/fall2019/cmsc430")) "Fall 2019: CMSC 430, Introduction to Compilers"))
-	       (p (a ((href "http://www.cs.umd.edu/class/summer2019/cmsc198Q/")) "Summer 2019: CMSC 198Q, Making Your Own Video Games: An Introduction to Programming and Computing"))
-	       (p (a ((href "http://www.cs.umd.edu/class/spring2019/cmsc132A/")) "Spring 2019: CMSC 132A, Systematic Program Design II"))
-	       (p (a ((href "http://www.cs.umd.edu/class/fall2018/cmsc131A/")) "Fall 2018: CMSC 131A, Systematic Program Design I"))
-	       (p (a ((href "http://www.cs.umd.edu/class/spring2018/cmsc132A/")) "Spring 2018: CMSC 132A, Systematic Program Design II"))
-	       (p (a ((href "http://www.cs.umd.edu/class/fall2017/cmsc131A/")) "Fall 2017: CMSC 131A, Systematic Program Design I"))
-               (p (a ((href "http://www.cs.umd.edu/class/spring2017/cmsc430/")) "Spring 2017: CMSC 430, Introduction to Compilers"))
-	       (p (a ((href "http://www.cs.umd.edu/class/spring2016/cmsc430/")) "Spring 2016: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "http://www.cs.umd.edu/class/fall2015/cmsc631/")) "Fall 2015: CMSC 631, Program Analysis and Understanding"))	       
-               (p (a ((href "http://www.cs.umd.edu/class/spring2015/cmsc430/")) "Spring 2015: CMSC 430, Introduction to Compilers"))
-               (p (a ((href "http://www.cs.umd.edu/class/fall2014/cmsc631/")) "Fall 2014: CMSC 631, Program Analysis and Understanding"))
-               (p (a ((href "http://www.cs.umd.edu/class/spring2014/cmsc631/")) "Spring 2014: CMSC 631, Program Analysis and Understanding"))))))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(define service.xexpr
-  (make-page 
-    "Service"
-    `(div ((class "row"))    
-          (div ((class "large-3 columns right")
-                #;(role "content"))
-               
-               (div ((id "scroller")) 
-                    (hr)
-                    (h4 ((class "bold-sc")) (a ((href "#")) "service"))
-                    (hr)
-                    (ul ((class "inline-list subheader italic category"))
-                        (li (a ((href "#journals") (class "category")) "Journals"))
-                        (li (a ((href "#steering-committees") (class "category")) "SCs"))
-                        (li (a ((href "#chair") (class "category")) "Chair"))
-                        (li (a ((href "#panelist") (class "category")) "Panelist"))
-                        (li (a ((href "#program-committees") (class "category")) "PCs"))
-                        (li (a ((href "#external-review-committees") (class "category")) "ERCs"))
-                        (li (a ((href "#reviewer") (class "category")) "Reviewer"))
-                        (li (a ((href "#other") (class "category")) "Other")))))
-
-
-          (div ((class "large-9 columns")
-                #;(role "content"))
-               (hr ((id "journals") (class "phat")))
-               (h4  "Journals refereed")          
-               (p (a ((href "http://csur.acm.org/")) "ACM Computing Surveys"))
-               (p (a ((href "http://tocl.acm.org/")) "ACM Transactions on Computational Logic"))
-               (p (a ((href "http://toplas.acm.org/")) "ACM Transactions on Programming Languages and Systems"))
-               (p (a ((href "http://link.springer.com/journal/10990")) "Higher-Order and Symbolic Computation"))
-               (p (a ((href "http://journals.cambridge.org/action/displayJournal?jid=JFP")) "Journal of Functional Programming"))
-               (p (a ((href "http://www.journals.elsevier.com/science-of-computer-programming/")) "Science of Computer Programming"))
-
-               (hr ((id "steering-committees") (class "phat")))
-               (h4  "Steering Committees")
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2013-2015"))
-               (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))
-
-               (hr ((id "chair") (class "phat")))
-               (h4  "Chair")
-	       (p (a ((href "http://tfp2016.org/")) "Symposium on Trends in Functional Programming (TFP), 2016"))
-               (p (a ((href "http://hopa.cs.rhul.ac.uk/")) "Workshop on Higher-Order Program Analysis (HOPA), 2014"))          
-               (p (a ((href "http://www.nii.ac.jp/shonan/blog/2011/03/19/workshop-on-automated-techniques-for-higher-order-program-verification/")) "NII Workshop on Automated Techniques for Higher-Order Program Verification, 2011"))
-               (p (a ((href "http://nepls.org/")) "New England Programming Languages and Systems Symposium (NEPLS), 2011"))
-
-               (hr ((id "panelist") (class "phat")))
-               (h4  "Panelist")
-               (p (a ((href "https://www.nsf.gov/dir/index.jsp?org=CISE")) "NSF Directorate for Computer & Information Science & Engineering (CISE), 2024, 2021, 2020, 2011, 2010"))
-
-               (hr ((id "program-committees") (class "phat")))
-               (h4  "Program committees")
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2024, 2015, 2011"))
-	       (p (a ((href "http://www.sigplan.org/Conferences/PLDI/")) "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), 2023, 2022"))                              
-	       (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN Symposium on Principles of Programming Languages (POPL), 2021, 2017"))               
-               (p (a ((href "http://www.sigplan.org/Conferences/OOPSLA/")) "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA), 2019"))
-	       (p (a ((href "http://popl18.sigplan.org/track/PADL-2018")) "International Symposium on Practical Aspects of Declarative Languages (PADL), 2018") ", "
-	       (a ((href "https://www.ist.unomaha.edu/padl2014/")) "2014"))
-               (p (a ((href "http://tifp.org/")) "Symposium on Trends in Functional Programming (TFP), 2017, 2014, 2012"))
-	       (p (a ((href "http://staticanalysis.org/")) "Static Analysis Symposium (SAS), 2017"))	       
-	       (p (a ((href "http://ecoop.org/")) "European Conference on Object-Oriented Programming (ECOOP), 2016"))
-	       (p (a ((href "http://www.cs.rice.edu/~sc40/obt15/")) "Off the Beaten Track: New Frontiers for Programming Languages Research, 2015"))
-               (p (a ((href "http://flint.cs.yale.edu/esop2014/")) "European Symposium on Programming (ESOP), 2014"))
-               (p (a ((href "http://www.easychair.org/smart-program/VSL2014/LOLA-index.html")) "Workshop on Syntax and Semantics of Low-Level Languages (LOLA), 2014"))
-               (p (a ((href "http://www.cs.uwyo.edu/~jlc/tfpie14/")) "International Workshop on Trends in Functional Programming in Education (TFPIE), 2014"))
-               (p (a ((href "http://lampwww.epfl.ch/~hmiller/scala2013/")) "Scala Workshop, 2013"))
-               (p (a ((href "http://hopa.cs.rhul.ac.uk/hopa-2013/index.html")) "Workshop on Higher-Order Program Analysis (HOPA), 2013"))
-               (p (a ((href "http://schemeworkshop.org/")) "Scheme and Functional Programming Workshop, 2011, 2009, 2015"))
-
-               (hr ((id "external-review-committees") (class "phat")))
-               (h4 "External review committees")
-               (p (a ((href "http://www.sigplan.org/Conferences/ICFP/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2018"))
-               (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2016, 2013"))
-
-               (hr ((id "reviewer") (class "phat")))
-               (h4 "Reviewer")
-               (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2015, 2014, 2008"))
-               (p (a ((href "http://conf.researchr.org/home/VMCAI-2016"))"International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI),  2016") ", " (a ((href "http://vmcai2014.di.ens.fr/")) "2014"))
-               (p (a ((href "http://icfpconference.org/")) "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2014, 2010"))
-               (p (a ((href "http://link.springer.com/book/10.1007/978-3-642-19718-5")) "European Symposium on Programming (ESOP), 2011"))
-               (p (a ((href "http://www.sigplan.org/Conferences/DLS/")) "ACM SIGPLAN Symposium on Dynamic Languages (DLS), 2014, 2012"))
-               (p (a ((href "http://www.sigplan.org/Conferences/SPLASH/")) "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2012"))
-               (p (a ((href "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000420")) "IEEE Symposium on Logic in Computer Science (LICS), 2007"))
-               (p (a ((href "https://www.springer.com/computer/swe/book/978-3-540-74914-1")) "EACSL Conference on Computer Science and Logic (CSL), 2007"))
-
-               (hr ((id "reviewer") (class "phat")))
-               (h4 "Other")
- 	       (p (a ((href "http://conf.researchr.org/info/icfp-2016/student-research-competition")) "Student Research Competition chair, ACM SIGPLAN International Conference on Functional Programming (ICFP), 2016"))
-
-  	       (p (a ((href "http://icfpconference.org/icfp-2015/")) "Student Research Competition committee, ACM SIGPLAN International Conference on Functional Programming (ICFP), 2015"))
-               (p (a ((href "http://www.sigplan.org/Conferences/POPL/")) "Workshop Chair, ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL), 2013-2015"))
-               
-               ))))
-
-
-
+                   (hr ((class "phat")))
+                   (img ((class "left") (alt "Photo by BK Adams.") (src "img/dvanhorn.jpg") (style "margin-right: 1em; margin-bottom: 1em;")))              
+                   (p "My research interests are in programming languages, where I work toward making the construction of reusable, trusted software "
+                      "components possible and effective. "
+                      "My research has spanned program analysis; semantics; "
+                      "verification and model-checking; security; logic; "
+                      "complexity; and algorithms.")
+                   (p "Together with " (a ((href "https://msurbatovich.github.io/")) "Milijiana Surbatovich") " and "
+                      (a ((href "https://lemonidas.github.io/")) "Leo Lampropoulos") ", "
+                      "I direct the laboratory for " 
+                   (a ((href "http://www.cs.umd.edu/projects/PL/")) 
+                      "Programming Languages at the University of Maryland (" 
+                      #;(abbr ((title "Programming Languages at University of Maryland")) "plum") 
+                      "PLUM"
+                      ")") ".")                   
+                   (p "I currently serve as the faculty advisor to " (a ((href "https://www.gotechnica.org/")) "Technica") ", the largest hackathon for
+underrepresented genders in the world.")
+	           (h4 "News")
+	           (ul
+                (li "I'm giving a talk on "
+                    (em "Principal Gradual Type Inference")
+                    " at "
+                    (a ((href "https://njpls.org/may2026.html")) "NJPLS")
+                    " on May 22, 2026.")
+                (li "I'll be presenting lectures on "
+                    (em "A Gradual Introduction to Programming Language Research")
+                    " at the "
+                    (a ((href "https://cmmrs.mpi-sws.org/")) "Cornell, Maryland, Max Planck Pre-doctoral Research School")
+                    ", August 3" ndash ndash "7, 2026.")
+                (li "I'm serving on the PLDI 2026 Review Committee.")
+                (li "I'm serving on the POPL 2026 Program Committee.")
+                (li "New paper: "
+                    (em (a ((href "asdf")) "Webs and Flow-Directed Well-Typedness Preserving Program Transformations"))
+                    " to appear at PLDI'25.")
+                (li "New paper: "
+                    (em (a ((href "asdf")) "Deriving with Derivatives: Optimizing Incremental Fixpoints for Higher-Order Flow Analysis"))
+                    " to appear at ICFP'24.")
+                (li "I'm serving on the ICFP 2024 Program Committee.")
+                (li "New paper: "
+                    (em (a ((href "https://arxiv.org/abs/2302.13145")) "Absynthe: Abstract Interpretation-Guided Synthesis")) " to appear at PLDI'23.")
+))))))		   
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -444,126 +164,43 @@ underrepresented genders in the world, and as an Advisory Board member for the "
 (define contact.xexpr
   (make-page 
     "Contact"
-    `(div ((class "row"))    
-          (div ((class "large-3 columns right")
-                #;(role "content"))
-               
-               (div ((id "scroller")) 
-                    (hr)
-                    (h4 ((class "bold-sc")) (a ((href "#")) "contact"))
-                    (hr)))
-          (div ((class "large-9 columns")
+    `(div ((class "page-shell row"))    
+          (div ((class "page-content")
                 #;(role "content"))           
                (hr ((id "contact") (class "phat")))
                
                
-               (p "David Van Horn" (br)
-                  "5250 Iribe Center for Computer Science and Engineering" (br)
+               (p "Office: 5250 Iribe" (br)
+                  "Iribe Center for Computer Science and Engineering" (br)
                   "University of Maryland" (br)
 		  "8125 Paint Branch Drive" (br)
                   "College Park, MD 20742" (br)
                   (br)
-                  "Email: (@ dvanhorn (dot cs umd edu))" )
+                  "Email: dvanhorn@cs.umd.edu" )
                   
                ))))
     
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(define research.xexpr
+(define papers.xexpr
   (make-page 
-    "Research"
-    `(div ((class "row"))
-          (div ((class "large-3 columns right")
-                #;(role "content"))
-               
-               (div ((id "scroller")) 
-                    (hr)
-                    (h4 ((class "bold-sc")) (a ((href "#")) "research"))
-                    (hr)
-                    (ul ((class "inline-list subheader italic category"))
-                        (li (a ((href "#projects") (class "category")) "Projects"))
-                        (li (a ((href "#students") (class "category")) "Students"))
-                        #;(li (a ((href "#collaborators") (class "category")) "Collaborators"))
-                        (li (a ((href "#papers") (class "category")) "Papers"))
-                        (li (a ((href "#talks") (class "category")) "Talks")))
-                    (hr)))
-          (div ((class "large-9 columns")
+    "Publications"
+    `(div ((class "page-shell row"))
+          (div ((class "page-content")
                 #;(role "content"))           
-               
-               ,@(projects-section projects)
-                  
-               (hr ((id "students") (class "phat midphat")))                   
-               (h4  "Students")
-	       (h5 "Current")
-	       (ul
-                (li (a ((href "https://www.cs.umd.edu/people/dpostol")) "Deena Postol") ", " "Ph.D. student at UMD")
-                (li (a ((href "https://pdarragh.github.io/")) "Pierce Darragh") ", " "Ph.D. student at UMD")
-                (li (a ((href "https://www.cs.umd.edu/people/bquiring")) "Ben Quiring") ", " "Ph.D. student at UMD")
-                (li (a ((href "https://www.cs.umd.edu/people/jpfrank")) "Justin Frank") ", " "Ph.D. student at UMD")
-                #;(li (a ((href "https://www.cs.umd.edu/people/jprinz")) "Jacob Prinz") ", " "Ph.D. student at UMD"))
-                   
-	       (h5 "Past")
-	       (ul (li (a ((href "https://sankhs.com/")) "Sankha Narayan Guria") ", "
-                       (em (a ((href "https://doi.org/10.13016/dspace/txaj-5df6")) "Program Synthesis with Lightweight Abstractions"))
-                       ", Ph.D., UMD, 2023; now asst. prof. at University of Kansas")                   
-                   (li (a ((href "https://philnguyen.github.io/")) "Phúc C. Nguyễn") ", "
-                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/25444")) "Higher-order Symbolic Execution"))
-                       ", Ph.D., UMD, 2019; now at Google")
-                   (li (a ((href "http://thomas.gilray.org/")) "Thomas Gilray") ", "
-		       "Post-doc at UMD; now asst. prof. at University of Alabama, Birmingham")
-		   (li (a ((href "https://nikivazou.github.io/")) "Niki Vazou") ", "
-		       "Post-doc at UMD; now asst. prof. at IMDEA")
-(li (a ((href "https://www.cs.umd.edu/~labichn/")) "Nicholas Labich") ", "
-                       "M.S., UMD, 2018")
-(li (a ((href "http://david.darais.com/")) "David Darais") ", "
-                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/19989")) "Mechanizing Abstract Interpretation"))
-		       ", Ph.D., UMD, 2017; now an asst. prof. at University of Vermont")
-                   (li (a ((href "http://kmicinski.com/")) "Kristopher Micinski") ", "
-                       (em (a ((href "https://drum.lib.umd.edu/handle/1903/16470")) "Interaction-based Security for Mobile Apps"))
-                       ", Ph.D., UMD, 2018 (Committee member); now a visiting asst. prof. at Haverford College")
-                   (li (a ((href "http://www.cs.umd.edu/~ntoronto/")) "Neil Toronto") ", "
-		       "post-doc at UMD; now at MSR, Cambridge")
-		   (li (a ((href "https://deeglaze.github.io/")) "Dionna Amalie Glaze") ", "
-		       (a ((href "http://arxiv.org/abs/1504.08033")) (em "Automating Abstract Interpretation of Abstract Machines"))
-		       ", Ph.D., Northeastern University, 2015; now at Google")
-                   (li (a ((href "http://www.ccs.neu.edu/home/stamourv/")) "Vincent St-Amour") ", "
-		       (a ((href "http://www.ccs.neu.edu/home/stamourv/papers/dissertation.pdf")) 
-			  (em "How to Generate Actionable Advice about Performance Problems"))
-		       ", "
-                       "Ph.D., Northeastern University, 2015 (Committee member)")
-		   (li (a ((href "http://www.cs.umd.edu/~piotrm/")) "Piotr Mardziel") ", "
-		       (em (a ((href "https://drum.lib.umd.edu/handle/1903/16470")) "Modeling, Measuring, and Limiting Adversary Knowledge"))
-		       ", Ph.D., University of Maryland, 2015 (Committee member)")
-                   (li (a ((href "http://www.ccs.neu.edu/home/stchang/")) "Stephen Chang") ", "
-                       (em "On the Relation Between Laziness and Strictness")
-                       ", Ph.D., Northeastern University, 2014 (Committee member)")
-                   (li (a ((href "http://shuying.me/academic.html")) "Shuying Liang") ", "
-                       (em "Static Analysis of Android Applications")
-                       ", Ph.D., University of Utah, 2014"
-                       " (Committee member)"))
-               
-               #;(hr ((id "collaborators") (class "phat midphat")))
-               #;(h4 "Collaborators")
-               
-               (hr ((id "papers") (class "phat midphat")))
+               (hr ((class "phat")))
+               (h4 "Books")
+               (p (span ((class "paper-title"))
+                        (a ((href "http://nostarch.com/realmofracket.htm")) "Realm of Racket"))
+                  ". With "
+                  (a ((href "http://www.ccs.neu.edu/home/matthias/")) "Matthias Felleisen")
+                  ", Conrad Baski, Forrest Bice, Rose DeMaio, Spencer Florence, Feng-Yun Mimi Lin, Scott Lindeman, Nicole Nussbaum, Eric Peterson, and Ryan Plessner.")
                (h4 "Papers")
                ,@papers-list
-#|
-               (h5 "Journal articles")
-               ,@jours
-               (h5 "Conference articles")
-               ,@confs
-               (h5 "Workshop & other articles")
-               ,@workshop&others
-|#
-               ,@(talks-section talks)))))
+               ))))
 
 
 (write-page index.xexpr "index.html")
-(write-page research.xexpr "research.html")
+(write-page papers.xexpr "papers.html")
 (write-page contact.xexpr "contact.html")
-(write-page teaching.xexpr "teaching.html")
-(write-page service.xexpr "service.html")
-
-

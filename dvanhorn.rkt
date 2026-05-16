@@ -133,6 +133,13 @@
                       ")") ".")                   
                    (p "I currently serve as the faculty advisor to " (a ((href "https://www.gotechnica.org/")) "Technica") ", the largest hackathon for
 underrepresented genders in the world.")
+                   (h4 "Research opportunities for undergraduates")
+                   (p "I am looking for current UMD undergraduates interested in Fall 2026 CMSC499As. These projects are available through "
+                      (a ((href "https://undergrad.cs.umd.edu/research-professorial-faculty-cmsc499a")) "CMSC499A: Research with Professorial Faculty")
+                      ".")
+                   (ul
+                (li (a ((href "cmsc499a-fall2026-os.html")) "Operating Systems as Abstract Machines"))
+                (li (a ((href "cmsc499a-fall2026-compiler.html")) "Compiling Concurrent Functional Programs to an Abstract Process Machine")))
 	           (h4 "News")
 	           (ul
                 (li "I'm giving a talk on "
@@ -158,6 +165,77 @@ underrepresented genders in the world.")
                     (em (a ((href "https://arxiv.org/abs/2302.13145")) "Absynthe: Abstract Interpretation-Guided Synthesis")) " to appear at PLDI'23.")
 ))))))		   
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define cmsc499a.xexpr
+  (make-page
+   "CMSC 499A: Operating Systems as Abstract Machines"
+   `(div ((class "page-shell row"))
+         (div ((class "page-content")
+               #;(role "content"))
+              (hr ((class "phat")))
+              (h2 "CMSC 499A: Operating Systems as Abstract Machines")
+              (p (strong "Fall 2026.") " Current UMD undergraduates may participate through "
+                 (a ((href "https://undergrad.cs.umd.edu/research-professorial-faculty-cmsc499a")) "CMSC499A: Research with Professorial Faculty")
+                 ". Interested students should email dvanhorn@cs.umd.edu before the start of the semester.")
+              (p "This research project will explore a new approach to teaching and building operating systems using the Lean programming language and theorem prover. Rather than beginning from low-level hardware mechanisms alone, we will investigate operating systems as implementations of higher-level abstract machines that provide programmers with processes, virtual memory, files, communication channels, and other protected abstractions.")
+              (p "The project will focus on designing and implementing a small executable operating-system model in Lean. We will begin by defining the semantics of an abstract " (q "user machine") " that exposes programmer-visible concepts such as processes, message passing, scheduling, and shell interaction. We will then explore how these abstractions can be realized atop progressively lower-level machine models involving memory, privilege modes, traps, and virtual memory.")
+              (p "The emphasis of the study will be on:")
+              (ul
+               (li "executable semantic models,")
+               (li "systems programming in Lean,")
+               (li "abstract machines and interpreters,")
+               (li "operating-system structure and invariants,")
+               (li "lightweight mechanized reasoning,")
+               (li "and the relationship between high-level system abstractions and low-level implementations."))
+              (p "Students participating in the study may help design:")
+              (ul
+               (li "the abstract process machine,")
+               (li "a small process programming language,")
+               (li "schedulers and memory managers,")
+               (li "IPC and filesystem abstractions,")
+               (li "a toy shell and runtime environment,")
+               (li "and supporting infrastructure for a future course based on these ideas."))
+              (p "The project is intended to be highly exploratory and implementation-oriented. While Lean will be used throughout, the focus is not on large-scale formal proof engineering. Instead, we will emphasize executable models, semantic clarity, testing, and lightweight reasoning about system invariants.")
+              (p "Students with interests in programming languages, operating systems, formal methods, compilers, runtime systems, or semantics are especially encouraged to participate.")))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define cmsc499a-compiler.xexpr
+  (make-page
+   "CMSC 499A: Compiling Concurrent Functional Programs to an Abstract Process Machine"
+   `(div ((class "page-shell row"))
+         (div ((class "page-content")
+               #;(role "content"))
+              (hr ((class "phat")))
+              (h2 "CMSC 499A: Compiling Concurrent Functional Programs to an Abstract Process Machine")
+              (p (strong "Fall 2026.") " Current UMD undergraduates may participate through "
+                 (a ((href "https://undergrad.cs.umd.edu/research-professorial-faculty-cmsc499a")) "CMSC499A: Research with Professorial Faculty")
+                 ". Interested students should email dvanhorn@cs.umd.edu before the start of the semester.")
+              (p "This research project will explore the design and implementation of a compiler for a small concurrent functional programming language inspired by Concurrent ML. The project will investigate how high-level language features such as functions, lexical scope, process spawning, synchronous communication, events, and message passing can be compiled to a lower-level abstract process machine.")
+              (p "The central idea is to treat the operating-system/runtime interface as a semantic target for compilation. Rather than compiling directly to conventional hardware, we will compile programs to an executable process-machine language that provides abstractions such as processes, channels, scheduling, blocking communication, and resource handles. This target machine may also connect to a "
+                 (a ((href "cmsc499a-fall2026-os.html")) "separate project")
+                 " on modeling operating systems as implementations of abstract machines.")
+              (p "The study will focus on:")
+              (ul
+               (li "designing a small ML-like source language,")
+               (li "defining its operational semantics,")
+               (li "implementing a parser, interpreter, and compiler,")
+               (li "designing a process-machine target language,")
+               (li "compiling functional abstractions such as closures and environments,")
+               (li "compiling concurrency constructs such as spawn, send, recv, and possibly CML-style events,")
+               (li "testing compiler correctness using executable semantics,")
+               (li "and stating key semantic correctness properties."))
+              (p "Possible project components include:")
+              (ul
+               (li "a small type checker or type inference engine,")
+               (li "a bytecode or abstract-machine backend,")
+               (li "a runtime representation for closures and channels,")
+               (li "examples such as echo servers, pipelines, client/server programs, and interactive shells,")
+               (li "lightweight correctness proofs or refinement arguments in Lean,")
+               (li "and integration with an executable abstract OS/process-machine model."))
+              (p "The project is exploratory and implementation-oriented. Students do not need prior experience with formal verification, but should be interested in programming languages, compilers, functional programming, concurrency, or operating systems. The goal is to develop working infrastructure and examples that could form the basis for a future course on compiling concurrent functional languages and their runtime systems.")))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -202,5 +280,7 @@ underrepresented genders in the world.")
 
 
 (write-page index.xexpr "index.html")
+(write-page cmsc499a.xexpr "cmsc499a-fall2026-os.html")
+(write-page cmsc499a-compiler.xexpr "cmsc499a-fall2026-compiler.html")
 (write-page papers.xexpr "papers.html")
 (write-page contact.xexpr "contact.html")

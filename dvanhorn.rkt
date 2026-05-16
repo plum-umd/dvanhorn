@@ -28,7 +28,7 @@
      (link ((rel "stylesheet")
             (href "stylesheets/fonts.css")))
      (link ((rel "stylesheet")
-            (href "stylesheets/app.css")))
+            (href "stylesheets/app.css?v=20260516")))
      (link ((rel "stylesheet")
             (href "stylesheets/social_foundicons.css")))
 
@@ -56,7 +56,7 @@
           (div ((class "site-badge large-3 columns"))
                (img ((src "img/seal.png")
                      (alt "UMD")
-                     (style "align: right; padding-top: 1em; padding-bottom: 1em;")))
+                     (style "float: right; padding-top: 1em; padding-bottom: 1em;")))
                #;
                (ul ((class "inline-list right subheader italic"))
                   (li "Research")
@@ -134,14 +134,14 @@
                       ")") ".")                   
                    (p "I currently serve as the faculty advisor to " (a ((href "https://www.gotechnica.org/")) "Technica") ", the largest hackathon for
 underrepresented genders in the world.")
-                   (h4 "Research opportunities for undergraduates")
+                   (h2 ((class "section-heading")) "Research opportunities for undergraduates")
                    (p "I am looking for current UMD undergraduates interested in Fall 2026 CMSC499As. These projects are available through "
                       (a ((href "https://undergrad.cs.umd.edu/research-professorial-faculty-cmsc499a")) "CMSC499A: Research with Professorial Faculty")
                       ".")
                    (ul
                 (li (a ((href "cmsc499a-fall2026-os.html")) "Operating Systems as Abstract Machines"))
                 (li (a ((href "cmsc499a-fall2026-compiler.html")) "Compiling Concurrent Functional Programs to an Abstract Process Machine")))
-	           (h4 "News")
+	           (h2 ((class "section-heading")) "News")
 	           (ul
                 (li "I'm giving a talk on "
                     (em "Principal Gradual Type Inference")

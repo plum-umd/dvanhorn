@@ -112,7 +112,8 @@
                      (div ((class "home-rail-card"))
                           (p ((class "home-rail-label")) "Teaching")
                           (ul ((class "home-rail-links"))
-                              (li (a ((href "https://www.cs.umd.edu/class/fall2025/cmsc430/")) "CMSC 430"))
+                              (li (a ((href "https://www.cs.umd.edu/class/fall2026/cmsc430/")) "CMSC 430"))
+                              (li (a ((href "https://www.cs.umd.edu/class/spring2027/cmsc818C/")) "CMSC 818C"))
                               (li (a ((href "https://www.cs.umd.edu/class/spring2026/cmsc838E/")) "CMSC 838E")))))
               (div ((class "page-content home-main")
                     #;(role "content"))
@@ -143,6 +144,7 @@ underrepresented genders in the world.")
                 (li (a ((href "cmsc499a-fall2026-compiler.html")) "Compiling Concurrent Functional Programs to an Abstract Process Machine")))
 	           (h2 ((class "section-heading")) "News")
 	           (ul
+                (li "I'm serving on the " (a ((href "https://2027.ecoop.org/")) "ECOOP 2027") " Program Committee.")
                 (li "I'm giving a talk on "
                     (em "Principal Gradual Type Inference")
                     " at "
@@ -153,15 +155,15 @@ underrepresented genders in the world.")
                     " at the "
                     (a ((href "https://cmmrs.mpi-sws.org/")) "Cornell, Maryland, Max Planck Pre-doctoral Research School")
                     ", August 3" ndash ndash "7, 2026.")
-                (li "I'm serving on the PLDI 2026 Review Committee.")
-                (li "I'm serving on the POPL 2026 Program Committee.")
+                (li "I'm serving on the " (a ((href "https://conf.researchr.org/home/pldi-2026")) "PLDI 2026") " Review Committee.")
+                (li "I'm serving on the " (a ((href "https://popl26.sigplan.org/")) "POPL 2026") " Program Committee.")
                 (li "New paper: "
                     (em (a ((href "asdf")) "Webs and Flow-Directed Well-Typedness Preserving Program Transformations"))
                     " to appear at PLDI'25.")
                 (li "New paper: "
                     (em (a ((href "asdf")) "Deriving with Derivatives: Optimizing Incremental Fixpoints for Higher-Order Flow Analysis"))
                     " to appear at ICFP'24.")
-                (li "I'm serving on the ICFP 2024 Program Committee.")
+                (li "I'm serving on the " (a ((href "https://icfp24.sigplan.org/")) "ICFP 2024") " Program Committee.")
                 (li "New paper: "
                     (em (a ((href "https://arxiv.org/abs/2302.13145")) "Absynthe: Abstract Interpretation-Guided Synthesis")) " to appear at PLDI'23.")
 ))))))		   

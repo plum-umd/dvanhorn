@@ -13,6 +13,8 @@ jobs:
         architecture: 'x64'
         distribution: 'full'
         version: '7.9'
+    - name: Create output directory
+      run: mkdir -p www
     - name: Run Tests
       run: raco test .
     - name: Archive www
